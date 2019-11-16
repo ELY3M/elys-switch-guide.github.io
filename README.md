@@ -1,12 +1,12 @@
 # Switch Guide
 
-[The guide can be found here!](https://nh-server.github.io/switch-guide)
+[The guide can be found here!](https://ely3m.github.io/switch-guide)
 
-[![Build Status](https://travis-ci.com/nh-server/switch-guide.svg?branch=master)](https://travis-ci.com/nh-server/switch-guide)
 
-Nintendo Switch homebrew guide written by staff members of the Nintendo Homebrew Discord server.
+Nintendo Switch homebrew guide written by staff members of the Nintendo Homebrew Discord server.   
+This guide was modified by ELY M. for simplicity.   
 
-![nh-server.github.io/switch-guide](https://phoenix.s-ul.eu/opEhcK7q.png)
+
 ## Development
 You will need Python 3 installed as well as pip3. The [mkdocs website](https://www.mkdocs.org) will explain how to do this, and how to install mkdocs. This guide was developed on Python 3.6 and 3.7.
 
