@@ -5,10 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <meta name="author" content="NH Discord Server.">
+        <meta name="author" content="NH Discord Server. - Modifed by ELY M.">
         
         <link rel="shortcut icon" href="../../../img/favicon.ico">
-        <title>Sending a payload - NH Switch Guide</title>
+        <title>Sending a payload - NH Switch Guide - Modded by ELY M.</title>
         <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../../css/base.css" rel="stylesheet">
@@ -40,7 +40,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="../../..">NH Switch Guide</a>
+                    <a class="navbar-brand" href="../../..">NH Switch Guide - Modded by ELY M.</a>
                 </div>
 
                 <!-- Expanded navigation -->
@@ -185,7 +185,7 @@
 <p class="admonition-title">If you are here to test if your Switch is patched</p>
 <p>Make sure you have <a href="../entering_rcm/">put your device into RCM</a> and downloaded Hekate (if necessary, extract its zip file onto the root of your SD card) before continuing. Once finished, if your console is <strong>not</strong> patched, continue with <a href="../partitioning_sd/">Partitioning the SD</a> instead of <code>Making the emuMMC</code> at the end of this page.</p>
 </div>
-<p>Now that the device is in RCM, we will need to send it a payload. The methods are mostly the same, but slightly differ depending on what hardware you have available.</p>
+<p>Now that the device is in RCM, we will need to send it a payload. The methods are mostly the same, but slightly differs depending on what hardware you have available.</p>
 <p>&nbsp;</p>
 <h2 id="windows">Windows</h2>
 <h3 id="what-you-need">What you need</h3>
@@ -193,6 +193,7 @@
 <ul>
 <li>The latest release of <a href="https://github.com/eliboa/TegraRcmGUI/releases" target="_blank">TegraRcmGUI</a> (either the MSI or zip)</li>
 <li>The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a> (either the hekate_ctcaer bin or the hekate_ctcaer zip)</li>
+<li>The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">fusee-primary.bin</a> from  <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a> </li>
 <li>A USB-A to USB-C cable (or a standard USB-C cable if your computer natively supports USB-C)</li>
 </ul>
 </div>
@@ -200,6 +201,7 @@
 <div class="admonition tip">
 <ol>
 <li>Install and run TegraRCMGUI</li>
+<li>Copy the hekate_ctcaer <code>.bin</code> file from the Hekate <code>.zip</code> file and fusee-primary.bin to the favorites folder in the TegraRCMGUI program folder. </li>
 <li>Navigate to the <code>Settings</code> tab, then press <code>Install Driver</code> and follow the on-screen instructions</li>
 <li>Connect your Switch in RCM to your PC using the USB cable</li>
 <li>Navigate to the <code>Payload</code> tab of TegraRcmGUI </li>
@@ -215,6 +217,7 @@
 <ul>
 <li>The latest release of <a href="https://github.com/nh-server/fusee-interfacee-tk/releases" target="_blank">fusee-interfacee-tk</a></li>
 <li>The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a> (either the hekate_ctcaer bin or the hekate_ctcaer zip)</li>
+<li>The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">fusee-primary.bin</a> from  <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a> </li>
 <li>A USB-A to USB-C cable (or a standard USB-C cable if your computer natively supports USB-C)</li>
 </ul>
 </div>
@@ -238,6 +241,7 @@
 </ul>
 </li>
 <li>The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a> (either the hekate_ctcaer bin or the hekate_ctcaer zip)</li>
+<li>The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">fusee-primary.bin</a> from  <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a> </li>
 <li>A USB-C cable<ul>
 <li>If your device has a USB-C port, you may use a C-C cable</li>
 <li>If your device only has a Micro USB port, you will need a USB OTG adapter and a USB A-C cable<ul>
@@ -251,7 +255,7 @@
 <h3 id="instructions_2">Instructions</h3>
 <div class="admonition tip">
 <ol>
-<li>Copy the hekate_ctcaer <code>.bin</code> file from the Hekate <code>.zip</code> file to a location on your phone</li>
+<li>Copy the hekate_ctcaer <code>.bin</code> file from the Hekate <code>.zip</code> file and fusee-primary.bin to a location on your phone</li>
 <li>A tool such as Amaze File Manager can do this</li>
 <li>Launch Rekado on your phone</li>
 <li>Navigate to <code>Payloads</code>, then press the <code>+</code> button at the bottom right</li>
