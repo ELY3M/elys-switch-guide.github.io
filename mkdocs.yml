@@ -1,8 +1,8 @@
-site_name: NH Switch Guide
-theme: slate
+site_name: NH Switch Guide - Modded by ELY M. 
+theme: cyborg
 copyright: Copyright &copy; 2019 <a href="https://discord.gg/C29hYvh" target="_blank">Nintendo Homebrew</a>, Maintained by the <a href="/switch-guide/about">NH Discord Server</a>.
-site_description: Switch CFW Guide.
-site_author: NH Discord Server.
+site_description: Switch CFW Guide - Modifed by ELY M. 
+site_author: NH Discord Server. - Modifed by ELY M.
 
 nav:
     - Home: index.md

@@ -8,13 +8,12 @@ Unlike systems such as the DSi, Wii, or 3DS, Switch CFW is currently volatile- i
 
 !!!danger "Keep emuMMC offline at all times"
     You should keep your emuMMC(emunand) offline (or with 90dns) at all times. Not doing this will likely result in a ban
-
+	
 ### Instructions
 
 !!! tip ""
-    1. Power on your Switch into RCM, and inject the Hekate payload
-    2. Navigate to `Launch` using the touch screen
-    3. Find `Atmosphere FSS0 EmuMMC` and launch it
+    1. Power on your Switch into RCM, and inject the fusee-primary.bin payload.
+	2. you should see blue screen with sept and it will boot into Atmosphere.
 
 Your Switch is now booting into Atmosphere.
 

@@ -7,7 +7,8 @@ The first thing to do is determine if your Switch is vulnerable to fusee-gelee, 
 This vulnerability was independently discovered by several different Switch hacking teams, and multiple variants of it were released to the public in April 2018 after a 90-day disclosure period ended. Nintendo and NVIDIA were made aware of the issue before the public release as a result, and Switch systems that are not vulnerable to the exploit started being spotted in the wild in July 2018. NVIDIA [publicly acknowledged the flaw](https://nvidia.custhelp.com/app/answers/detail/a_id/4660/~/security-notice%3A-nvidia-tegra-rcm-vulnerability) in April as well. In July 2019, Nintendo announced updated consoles, a handheld variant of the Switch called the Switch Lite (HOH-001), and a new model of original Switch (HAC-001-01) with better battery life. Both of these new models use a new processor called the T210b01 (also known as T214 and Mariko) with a new bootROM, and are not hackable at the current time.
 
 Patched and Mariko units can be identified by their serial number. This number can be found on the bottom of your Switch adjacent to the USB-C port, or in the Settings applet at **System -> Serial Information**. 
-
+It is best to check the serial in the system info on the switch.  I have gotten a switch on ebay that have mismatched serials on outside and in the system info - ELY M.
+       
 &nbsp;
 
 !!! tip ""
@@ -36,6 +37,7 @@ The homebrew community has crowdsourced a list of known serial numbers which are
 ### Serial list
 
 The following information is based on [this GBATemp thread](https://gbatemp.net/threads/switch-informations-by-serial-number-read-the-first-post-before-asking-questions.481215/).
+Here is easy to use website for checking the serials on the switches at [ismyswitchpatched.com](https://ismyswitchpatched.com)
 
 |  Serial Numbers  | <span style="color:green">Unpatched</span> | <span style="color:orange">Potentially patched</span> | <span style="color:red">Patched</span> |
 | :----|:---------------------------------|:---------------------------------|:----------------------|

@@ -6,7 +6,7 @@
     Make sure you have [put your device into RCM](../emummc/entering_rcm.md) and downloaded Hekate (if necessary, extract its zip file onto the root of your SD card) before continuing. Once finished, if your console is **not** patched, continue with [Partitioning the SD](../emummc/partitioning_sd.md) instead of `Making the emuMMC` at the end of this page.
 
 
-Now that the device is in RCM, we will need to send it a payload. The methods are mostly the same, but slightly differ depending on what hardware you have available.
+Now that the device is in RCM, we will need to send it a payload. The methods are mostly the same, but slightly differs depending on what hardware you have available.
 
 &nbsp;
 
@@ -17,18 +17,20 @@ Now that the device is in RCM, we will need to send it a payload. The methods ar
 !!! tip ""
     - The latest release of <a href="https://github.com/eliboa/TegraRcmGUI/releases" target="_blank">TegraRcmGUI</a> (either the MSI or zip)
     - The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a> (either the hekate_ctcaer bin or the hekate_ctcaer zip)
+	- The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">fusee-primary.bin</a> from  <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a> 
     - A USB-A to USB-C cable (or a standard USB-C cable if your computer natively supports USB-C)
 
 ### Instructions
 
 !!! tip ""
     1. Install and run TegraRCMGUI
-    2. Navigate to the `Settings` tab, then press `Install Driver` and follow the on-screen instructions
-    3. Connect your Switch in RCM to your PC using the USB cable
-    4. Navigate to the `Payload` tab of TegraRcmGUI 
+    2. Copy the hekate_ctcaer `.bin` file from the Hekate `.zip` file and fusee-primary.bin to the favorites folder in the TegraRCMGUI program folder. 
+    3. Navigate to the `Settings` tab, then press `Install Driver` and follow the on-screen instructions
+    4. Connect your Switch in RCM to your PC using the USB cable
+    5. Navigate to the `Payload` tab of TegraRcmGUI 
     - Your Switch should be shown as detected in the bottom left corner
-    5. Press the file button next to `Inject payload`, and navigate to and select your hekate_ctcaer `.bin` file
-    6. Click `Inject payload` to launch Hekate
+    6. Press the file button next to `Inject payload`, and navigate to and select your hekate_ctcaer `.bin` file
+    7. Click `Inject payload` to launch Hekate
 
 &nbsp;
 
@@ -39,6 +41,7 @@ Now that the device is in RCM, we will need to send it a payload. The methods ar
 !!! tip ""
     - The latest release of <a href="https://github.com/nh-server/fusee-interfacee-tk/releases" target="_blank">fusee-interfacee-tk</a>
     - The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a> (either the hekate_ctcaer bin or the hekate_ctcaer zip)
+	- The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">fusee-primary.bin</a> from  <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a> 
     - A USB-A to USB-C cable (or a standard USB-C cable if your computer natively supports USB-C)
 
 ### Instructions
@@ -60,6 +63,7 @@ Now that the device is in RCM, we will need to send it a payload. The methods ar
     - The latest release of <a href="https://github.com/MenosGrante/Rekado/releases" target="_blank">Rekado</a>
         - You will need to enable Unknown Sources in your device settings to install this
     - The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a> (either the hekate_ctcaer bin or the hekate_ctcaer zip)
+    - The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">fusee-primary.bin</a> from  <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a> 
     - A USB-C cable
         - If your device has a USB-C port, you may use a C-C cable
         - If your device only has a Micro USB port, you will need a USB OTG adapter and a USB A-C cable
@@ -68,7 +72,7 @@ Now that the device is in RCM, we will need to send it a payload. The methods ar
 ### Instructions
 
 !!! tip ""
-    1. Copy the hekate_ctcaer `.bin` file from the Hekate `.zip` file to a location on your phone
+    1. Copy the hekate_ctcaer `.bin` file from the Hekate `.zip` file and fusee-primary.bin to a location on your phone
     - A tool such as Amaze File Manager can do this
     2. Launch Rekado on your phone
     3. Navigate to `Payloads`, then press the `+` button at the bottom right

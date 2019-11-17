@@ -9,10 +9,9 @@ Unlike systems such as the DSi, Wii, or 3DS, Switch CFW is currently volatile- i
 ### Instructions
 
 !!! tip ""
-    1. Power on your Switch into RCM, and inject the Hekate payload
-    2. Navigate to `Launch` using the touch screen
-    3. Find `Atmosphere FSS0 SYS` and launch it
-
+    1. Power on your Switch into RCM, and inject the fusee-primary.bin payload
+	2. you should see blue screen with sept and it will boot into Atmosphere.  
+   
 Your Switch is now booting into Atmosphere.
 
 To verify Atmosphere launched properly, open the Settings applet, and navigate to System. You should see `AMS` next to the version number, as well as an `S` at the end, indicating you are booted into sysMMC.
