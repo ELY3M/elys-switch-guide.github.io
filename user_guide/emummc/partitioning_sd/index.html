@@ -96,6 +96,10 @@
 </li>
                                     
 <li >
+    <a href="../../../extras/reinstall/">Reinstalling Atmosphere</a>
+</li>
+                                    
+<li >
     <a href="../../../extras/nandrestore/">Restoring a NAND Backup</a>
 </li>
                                     
@@ -209,17 +213,11 @@
 <li>
 <p>Create a new partition by right clicking on the unallocated space and then pressing <code>Create</code> with the following instructions:</p>
 <ul>
-<li>Set the metrics on the right of <code>Unallocated Space Before</code> and <code>Unallocated Space After</code> to <code>MB</code> if it's set to <code>GB</code>.</li>
-<li>Set the metrics on the right of <code>Partition Size</code> to <code>GB</code> if it's set to <code>MB</code>.</li>
 <li>Set the <code>File System</code> to <code>FAT32</code>.</li>
 <li>Set the <code>Partition Label</code> to <code>SD</code>.</li>
-<li>Set the <code>Partition Size</code> to <code>8.00</code>.</li>
-<li>Set the <code>Unallocated Space After</code> to <code>29872</code>.</li>
-<li>Drag the left arrow of the partition completely to the left, filling all the space to the left.</li>
-<li>Set the <code>Unallocated Space Before</code> to <code>16</code>.</li>
 <li>
-<p>If done correctly, the <code>Unallocated Space After</code> should now display as <code>29856</code> instead of <code>29872</code>.</p>
-<p><img alt="Create_SD_partition" src="../../img/minitool1.png" /></p>
+<p>Drag the right arrow of the partition completely to the left till the <code>Unallocated Space After</code> is almost at 31 GB or 31000 MB</p>
+<p><img alt="Create_SD_partition" src="../../img/elys-minitool1.png" /></p>
 </li>
 <li>
 <p>The final <code>Partition Size</code> of the FAT32 partition will vary depending on your SD card's total size.</p>
@@ -230,24 +228,22 @@
 <p>Create another new partition with the following settings:</p>
 <ul>
 <li>Ignore the warning about Windows not being able to recognize the partition.</li>
-<li>Set the <code>File System</code> to <code>Unformatted</code>.</li>
-<li>Set the metrics on the right of <code>Unallocated Space Before</code>, <code>Partition Size</code>, and <code>Unallocated Space After</code> from <code>GB</code> to <code>MB</code>.</li>
-<li><code>Unallocated Space Before</code> should display as <code>0MB</code>.</li>
-<li><code>Partition Size</code> should display as <code>29856MB</code>.</li>
 <li>
-<p><code>Unallocated Space After</code> should display as <code>0MB</code>.</p>
-<p><img alt="Create_emummc_partition" src="../../img/minitool2.png" /></p>
+<p>Set the <code>File System</code> to <code>Unformatted</code>.</p>
+<p><img alt="Create_emummc_partition" src="../../img/elys-minitool2.png" /></p>
 </li>
 </ul>
 </li>
 <li>
 <p>Your SD card now should look similar to this:</p>
-<p><img alt="SD_format" src="../../img/emummc_final_minitool.png" /></p>
+<p><img alt="SD_format" src="../../img/elys-emummc_final_minitool.png" /></p>
 </li>
 <li>
 <p>Apply the changes to your SD card by hitting <code>Apply</code> in the top left.</p>
 </li>
 </ol>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SF9FpkTLFkQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <p>&nbsp;</p>
 <h4 id="continue-to-sd-preparations"><a href="../sd_preparation/">Continue to SD Preparations <i class="fa fa-arrow-circle-right fa-lg"></i></a></h4>
 <hr />

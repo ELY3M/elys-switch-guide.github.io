@@ -3,6 +3,56 @@ summary {
   outline: none;
 }
 
+body, p, div, ol, li, nav {	
+  color: white;
+  font-family: "fixedsys";
+  font-size: 16px;
+}
+
+ul {
+  color: white;
+  font-family: "fixedsys";
+  font-size: 16px;	
+}
+
+a {	
+  color: #c0c0c0;
+  font-family: "fixedsys";
+  font-size: 16px;
+}
+
+a:link {
+  color: #c0c0c0;
+}
+
+a:visited {
+  color: #c0c0c0;
+}
+
+a:hover {
+  color: #c0c0c0;
+}
+
+a:active {
+  color: #c0c0c0;
+}
+
+
+
+h1 {	
+  background-color: navy;
+  color: white;
+  font-family: "fixedsys";
+  font-size: 23px;
+  padding: 1%;
+}
+h3 {	
+  background-color: navy;
+  color: white;
+  font-family: "fixedsys";
+  font-size: 23px;
+  padding: 1%;
+}
 code {
   white-space: normal !important;
 }
