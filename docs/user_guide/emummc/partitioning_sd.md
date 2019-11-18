@@ -23,39 +23,32 @@
 2. Click the `Disk & Partition Management` button.
 3. Find your SD card and delete the volume on it by right clicking on the partition and pressing delete (This will delete all your data on your SD card!)
 4. Create a new partition by right clicking on the unallocated space and then pressing `Create` with the following instructions:
-	- Set the metrics on the right of `Unallocated Space Before` and `Unallocated Space After` to `MB` if it's set to `GB`.
-	- Set the metrics on the right of `Partition Size` to `GB` if it's set to `MB`.
 	- Set the `File System` to `FAT32`.
 	- Set the `Partition Label` to `SD`.
-	- Set the `Partition Size` to `8.00`.
-	- Set the `Unallocated Space After` to `29872`.
-	- Drag the left arrow of the partition completely to the left, filling all the space to the left.
-	- Set the `Unallocated Space Before` to `16`.
-	- If done correctly, the `Unallocated Space After` should now display as `29856` instead of `29872`.
+	- Drag the right arrow of the partition completely to the left till the `Unallocated Space After` is almost at 31 GB or 31000 MB
 
-		![Create_SD_partition](../img/minitool1.png)
-
-
+		![Create_SD_partition](../img/elys-minitool1.png)
 
 	- The final `Partition Size` of the FAT32 partition will vary depending on your SD card's total size.
 
 5. Create another new partition with the following settings:
 	- Ignore the warning about Windows not being able to recognize the partition.
 	- Set the `File System` to `Unformatted`.
-	- Set the metrics on the right of `Unallocated Space Before`, `Partition Size`, and `Unallocated Space After` from `GB` to `MB`.
-	- `Unallocated Space Before` should display as `0MB`.
-	- `Partition Size` should display as `29856MB`.
-	- `Unallocated Space After` should display as `0MB`.
 
-
-		![Create_emummc_partition](../img/minitool2.png)
+		![Create_emummc_partition](../img/elys-minitool2.png)
 
 
 6. Your SD card now should look similar to this:
    
-	![SD_format](../img/emummc_final_minitool.png)
+	![SD_format](../img/elys-emummc_final_minitool.png)
 
 7. Apply the changes to your SD card by hitting `Apply` in the top left.
+
+
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SF9FpkTLFkQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 &nbsp;
 
