@@ -3,6 +3,52 @@ summary {
   outline: none;
 }
 
+body, p, div, ol, li, nav {	
+  color: white;
+  font-family: "fixedsys";
+  font-size: 16px;
+}
+
+ul {
+  color: white;
+  font-family: "fixedsys";
+  font-size: 16px;	
+}
+
+a {	
+  color: #0000FF;
+  font-family: "fixedsys";
+  font-size: 16px;
+}
+
+a:link {
+  color: #0000FF;
+}
+
+a:visited {
+  color: navy;
+}
+
+a:hover {
+  color: #0000FF;
+}
+
+a:active {
+  color: #0000FF;
+}
+
+
+
+h1 {	
+  color: #00FFFF;
+  font-family: "fixedsys";
+  font-size: 23px;
+}
+h3 {	
+  color: #00FFFF;
+  font-family: "fixedsys";
+  font-size: 23px;
+}
 code {
   white-space: normal !important;
 }
