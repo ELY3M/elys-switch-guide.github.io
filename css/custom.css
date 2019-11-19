@@ -3,7 +3,17 @@ summary {
   outline: none;
 }
 
-body, p, div, ol, li, nav {	
+body, div, ol, li, nav {	
+  background-image: url("http://bmx3r.com/stars_back.gif");
+  background-attachment: fixed;
+  color: white;
+  font-family: "fixedsys";
+  font-size: 16px;
+}
+
+p {	
+  //background-image: url("http://bmx3r.com/stars_back.gif");
+  //background-attachment: fixed;
   color: white;
   font-family: "fixedsys";
   font-size: 16px;
