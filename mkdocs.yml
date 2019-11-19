@@ -17,6 +17,7 @@ nav:
         - 'Launching CFW': 'user_guide/emummc/launching_cfw.md'
     - Extras:
         - 'Blocking Updates': 'extras/blocking_updates.md'
+        - 'Atmosphere Settings Tips': 'extras/tips.md'
         - 'Reinstalling Atmosphere': 'extras/reinstall.md'
         - 'Restoring a NAND Backup': 'extras/nandrestore.md'
         - 'AutoRCM': 'extras/autorcm.md'
