@@ -1,6 +1,13 @@
-<a href="https://discord.gg/C29hYvh" target="_blank"><img style="float: right;" src="../img/discord.png"></a>
-
 # About this guide
+
+I took this guide and modified to make it more simpler and less steps.  
+
+Thank you very much to those people below here.  
+
+ELY M.    
+
+&nbsp;
+
 
 This guide was written by staff members of the [Nintendo Homebrew Discord Server](https://discord.gg/C29hYvh) 
 

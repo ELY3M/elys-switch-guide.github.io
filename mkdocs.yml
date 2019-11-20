@@ -1,6 +1,6 @@
-site_name: NH Switch Guide - Modded by ELY M. 
+site_name: Switch Guide - Modded by ELY M. 
 theme: cyborg
-copyright: Copyright &copy; 2019 <a href="https://discord.gg/C29hYvh" target="_blank">Nintendo Homebrew</a>, Maintained by the <a href="/switch-guide/about">NH Discord Server</a>.
+copyright: Copyright &copy; 2019 Nintendo Homebrew, <a href="/about">About this guide</a>.
 site_description: Switch CFW Guide - Modifed by ELY M. 
 site_author: NH Discord Server. - Modifed by ELY M.
 
@@ -17,7 +17,6 @@ nav:
         - 'Launching CFW': 'user_guide/emummc/launching_cfw.md'
     - Extras:
         - 'Blocking Updates': 'extras/blocking_updates.md'
-        - 'Atmosphere Settings Tips': 'extras/tips.md'
         - 'Reinstalling Atmosphere': 'extras/reinstall.md'
         - 'Restoring a NAND Backup': 'extras/nandrestore.md'
         - 'AutoRCM': 'extras/autorcm.md'
@@ -26,6 +25,7 @@ nav:
         - 'Save Management': 'extras/save_management.md'
         - 'Game Cheating': 'extras/cheating.md' 
         - 'Game Modding': 'extras/game_modding.md'       
+        - 'Sigpatches': 'extras/sigpatches.md'  
         - 'Linux injection without root': 'extras/adding_udev.md'
         - 'Showing File Name Extensions (Windows)': 'extras/showing_file_extensions.md'
         - 'Alternate Boot Setups': 'extras/alternate_bootsetups.md'
@@ -33,6 +33,10 @@ nav:
         - 'RCM Payload Injectors Information': 'extras/rcm_injectors.md'
     - FAQ: faq.md
     - About: about.md
+    - Elys Stuff:
+        - 'My Atmosphere Tips': 'elystips.md'
+        - 'My Reasons and Faqs': 'elysfaq.md'
+     
     
 markdown_extensions:
     - admonition
