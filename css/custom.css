@@ -3,7 +3,7 @@ summary {
   outline: none;
 }
 
-body, div, ol, li, nav {	
+body {	
   background-image: url("http://bmx3r.com/stars_back.gif");
   background-attachment: fixed;
   color: white;
@@ -11,18 +11,17 @@ body, div, ol, li, nav {
   font-size: 16px;
 }
 
-p {	
-  //background-image: url("http://bmx3r.com/stars_back.gif");
-  //background-attachment: fixed;
+p {
   color: white;
   font-family: "fixedsys";
   font-size: 16px;
 }
 
-ul {
+div, ol, li, ul, nav {
+  background: transparent;	
   color: white;
   font-family: "fixedsys";
-  font-size: 16px;	
+  font-size: 16px;
 }
 
 a {	
@@ -50,6 +49,13 @@ a:active {
 
 
 h1 {	
+  background-color: navy;
+  color: white;
+  font-family: "fixedsys";
+  font-size: 23px;
+  padding: 1%;
+}
+h2 {	
   background-color: navy;
   color: white;
   font-family: "fixedsys";
