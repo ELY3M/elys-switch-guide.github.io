@@ -25,6 +25,10 @@ div, ol, li, ul, nav {
   font-size: 16px;
 }
 
+.admonition {
+    background: transparent;
+}
+
 a {	
   color: #c0c0c0;
   font-family: "fixedsys";
