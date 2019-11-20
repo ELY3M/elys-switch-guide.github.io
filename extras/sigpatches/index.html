@@ -8,7 +8,7 @@
         <meta name="author" content="NH Discord Server. - Modifed by ELY M.">
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Atmosphere Settings Tips - NH Switch Guide - Modded by ELY M.</title>
+        <title>Sigpatches - Switch Guide - Modded by ELY M.</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -40,7 +40,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="../..">NH Switch Guide - Modded by ELY M.</a>
+                    <a class="navbar-brand" href="../..">Switch Guide - Modded by ELY M.</a>
                 </div>
 
                 <!-- Expanded navigation -->
@@ -95,10 +95,6 @@
     <a href="../blocking_updates/">Blocking Updates</a>
 </li>
                                     
-<li class="active">
-    <a href="./">Atmosphere Settings Tips</a>
-</li>
-                                    
 <li >
     <a href="../reinstall/">Reinstalling Atmosphere</a>
 </li>
@@ -131,6 +127,10 @@
     <a href="../game_modding/">Game Modding</a>
 </li>
                                     
+<li class="active">
+    <a href="./">Sigpatches</a>
+</li>
+                                    
 <li >
     <a href="../adding_udev/">Linux injection without root</a>
 </li>
@@ -158,6 +158,19 @@
                             <li >
                                 <a href="../../about/">About</a>
                             </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Elys Stuff <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../elystips/">My Atmosphere Tips</a>
+</li>
+                                    
+<li >
+    <a href="../../elysfaq/">My Reasons and Faqs</a>
+</li>
+                                </ul>
+                            </li>
                         </ul>
 
                     <ul class="nav navbar-nav navbar-right">
@@ -167,12 +180,12 @@
                             </a>
                         </li>
                             <li >
-                                <a rel="next" href="../blocking_updates/">
+                                <a rel="next" href="../game_modding/">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li >
-                                <a rel="prev" href="../reinstall/">
+                                <a rel="prev" href="../adding_udev/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -184,150 +197,35 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#atmosphere-tips">Atmosphere Tips</a></li>
+        <li class="main active"><a href="#installing-sigpatches">Installing SigPatches</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="atmosphere-tips">Atmosphere Tips</h1>
-<p><font size=6>changing how you launch hbmenu and games</font><p></p>
-<p>This is the default loader.ini config in /atmosphere/
-<pre>
-[hbl_config]
-title_id=010000000000100D
-override_any_app=true
-path=atmosphere/hbl.nsp
-override_key=R</p>
-<p>[default_config]
-override_key=!L
-cheat_enable_key=!L
-</pre>
-<p></p>
-<p>I started with atmosphere 0.8.3 that I normally tap on album icon to open my hbmenu and tap on games to open games.<br />
-When I updated to 0.8.5, I open my album to see my own gallery of pics like in OFW.  I read thru change logs on the github.<br />
-I had to press R to open hbmenu from my album.  I open games to see hbmenu.  I would have to press R to open one of games to game.<br />
-<p>
-I decided to make it abit easier by editng my loader.ini<br />
-I added ! before R in this line override_key=R
-making this line to be override_key=!R <br />
-<p>
-next thing, when I open one of my games, it go to hbmenu.<br />
-I figured out that it will help me to get full RAM for retroarch or other homebrew apps.  <br />
-I decided to leave it to true because I run retroarch.<br />
-<p>
-I know some people do not need full RAM. <br />
-if you do not need full RAM, you can change this line 
-override_any_app=true to override_any_app=false
-so you do not have to hold R when opening your game.   </p>
-<p><br>
-
-My own loader.ini here<p>
-
-<pre>
-[hbl_config]
-title_id=010000000000100D
-override_any_app=true
-path=atmosphere/hbl.nsp
-override_key=!R
-
-[default_config]
-override_key=!L
-cheat_enable_key=!L
-</pre>
-
-<p>
-
-<br><br><br>
-
-
-<font size=6>Disabling Cheats</font><p>
-
-Atomsphere come with cheat engine enabled on default settings.     
-I saw that many people have issues with games or want cheats disabled.      
-<p>
-Open system_settings.ini in atmosphere folder and find this line 
-<p>
-dmnt_cheats_enabled_by_default = u8!0x1
-<p>
-change this line to <p>
-dmnt_cheats_enabled_by_default = u8!0x0
-
-<p>
-If you want to cheat. you have to leave it as u8!0x1 
-<p>
-More info on cheating here: <a href=cheating.html>My Cheating Tutorial</a>
-<p>
-
-<br><br><br>
-
-<font size=6>Custom Boot Screens</font><p>
-
-
-I read thru gbatemp and found out that people are able to make custom boot splash screen.  
-very cool!    <p>
-
-The custom boot splash screen have to be 1280 x 720 and rotated 90 counterwise.  
-It can be done easily in photoshop and saved as a bmp in 32bit.   
-<p>
-More of the splash screens and more of my made ones too. <br>
-<a href=https://github.com/ELY3M/Atmosphere-Splashes/>Atmosphere Splashes</a>
-<p>
-I add this line to BCT.ini in /atmosphere/ on my sd card.   
-then I put bootlogo.bmp in the atomosphere folder.
-<pre>
-[stage2]
-custom_splash = atmosphere/bootlogo.bmp
-</pre>
-
-
-Here is my custom boot splash screen <p>
-<img src=/extras/img/splash3.png>
-
-
-
-
-<p>
-My own BCT.ini here<p>
-<pre>
-BCT0
-[stage1]
-stage2_path = atmosphere/fusee-secondary.bin
-stage2_addr = 0xF0000000
-stage2_entrypoint = 0xF0000000
-
-[stage2]
-custom_splash = atmosphere/bootlogo.bmp
-
-[exosphere]
-; Note: Disabling debugmode will cause parts of ams.tma to not work, in the future.
-debugmode = 1 
-debugmode_user = 0
-
-[stratosphere]
-nogc = 0
-; To force-enable nogc, add nogc = 1
-; To force-disable nogc, add nogc = 0
-</pre>
-
-
-After 9.0.0 update:  I have issues reading my game carts. 
-after talking with ReSwitched Team.   
-in the stratosphere section.  
-I needed to add this nogc = 0
-
-<pre>
-[stratosphere]
-nogc = 0
-; To force-enable nogc, add nogc = 1
-; To force-disable nogc, add nogc = 0
-</pre>
-
-&nbsp;</div>
+<h1 id="installing-sigpatches">Installing SigPatches</h1>
+<p>I know some users do need them to install homebrew nsps to their switches in their emunand.   <br />
+for example, I made hbmenu nsp and installed hbmenu to my home screen for easy access to full ram.      </p>
+<p>There are two methods to install Sigpatches now.  </p>
+<p>Method #1<br />
+1. download 'sigpatch-updater.nro' from <a href="https://github.com/ITotalJustice/sigpatch-updater/releases">https://github.com/ITotalJustice/sigpatch-updater/releases</a> <br />
+2. make folder sigpatch-updater in switch folder on your sd card<br />
+3. put 'sigpatch-updater.nro' in sigpatch-updater folder in switch folder <br />
+4. make sure you select the top option for atmosphere users<br />
+4. open it in your hbmenu. press A to install the sigpatches<br />
+5. press + to exit the sigpatch-updater<br />
+6. use reboot to payload to reboot atmosphere  </p>
+<p>&nbsp;</p>
+<p><img alt="sigpatch-updater" src="../img/sigpatch-updater.jpg" /></p>
+<p>&nbsp;</p>
+<p>Method #2<br />
+1. download <a href=https://gbatemp.net/threads/i-heard-that-you-guys-need-some-sweet-patches-for-atmosphere.521164/>Sigpatches from here</a> and extract to the root of your sd card.<br />
+2. use reboot to payload to reboot atmosphere</p>
+<p>&nbsp;</p></div>
         </div>
 
         <footer class="col-md-12">
             <hr>
-                <p>Copyright &copy; 2019 <a href="https://discord.gg/C29hYvh" target="_blank">Nintendo Homebrew</a>, Maintained by the <a href="/switch-guide/about">NH Discord Server</a>.</p>
+                <p>Copyright &copy; 2019 Nintendo Homebrew, <a href="/about">About this guide</a>.</p>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
