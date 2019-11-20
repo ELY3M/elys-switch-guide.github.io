@@ -4,7 +4,7 @@ summary {
 }
 
 body {	
-  background-image: url("http://bmx3r.com/stars_back.gif");
+  background-image: url("/stars_back.gif");
   background-attachment: fixed;
   color: white;
   font-family: "fixedsys";
@@ -12,6 +12,7 @@ body {
 }
 
 p {
+  background: transparent;
   color: white;
   font-family: "fixedsys";
   font-size: 16px;
