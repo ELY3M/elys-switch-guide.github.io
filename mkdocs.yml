@@ -36,7 +36,8 @@ nav:
     - Elys Stuff:
         - 'My Atmosphere Tips': 'elystips.md'
         - 'My Reasons and Faqs': 'elysfaq.md'
-     
+        - 'SMO Modding': 'smo_modding.md' 
+        - 'Elys Switch Homebrews on github': 'https://github.com/topics/elys-switch-homebrew'
     
 markdown_extensions:
     - admonition

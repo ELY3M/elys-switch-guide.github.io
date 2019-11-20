@@ -105,7 +105,7 @@ custom_splash = atmosphere/bootlogo.bmp
 Here is my custom boot splash screen <p>
 <img src=/extras/img/splash3.png>
 
-
+Direct download of <a href=../bootlogo.bmp>My favorite boot screen (Mario with middle fingers out)</a>
 
 
 <p>

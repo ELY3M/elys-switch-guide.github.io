@@ -1,5 +1,11 @@
 # Installing SigPatches   
 
+!!! warning "Sigpatches are not supported by ReSwitched, Atmosphere and NH devs so do not ask them about sigpatches!"
+	It is in their rules that it is not allowed to talk about installing nsps on their discord servers.  
+
+&nbsp;
+
+
 I know some users do need them to install homebrew nsps to their switches in their emunand.     
 for example, I made hbmenu nsp and installed hbmenu to my home screen for easy access to full ram.      
 
