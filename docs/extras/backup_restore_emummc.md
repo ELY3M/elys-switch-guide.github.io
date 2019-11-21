@@ -9,8 +9,8 @@ This is method will work on windows pcs.
 
 ### Instructions:
 
-1. download 'NxNandManager_v<version>_x64.zip' from <a href="https://github.com/eliboa/NxNandManager/releases/" target="_blank">https://github.com/eliboa/NxNandManager/releases/</a>
-2. unzip to your place on your pc.  
+1. download `NxNandManager_v(version)_x64.zip` from <a href="https://github.com/eliboa/NxNandManager/releases/" target="_blank">https://github.com/eliboa/NxNandManager/releases/</a>
+2. unzip to your programs place on your pc.  
 3. put your sd card in your pc  
 4. open the NxNandManager and click on Open Drive.  
 ![NxNandManager open drive](../extras/img/nxnand1.png)   

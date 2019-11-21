@@ -18,7 +18,7 @@ nav:
     - Extras:
         - 'Blocking Updates': 'extras/blocking_updates.md'
         - 'Reinstalling Atmosphere': 'extras/reinstall.md'
-        - 'Backing up emuMMC': 'extras/backup_emummc.md'        
+        - 'Backing up and restoring emuMMC': 'extras/backup_restore_emummc.md'        
         - 'Restoring a NAND Backup': 'extras/nandrestore.md'
         - 'AutoRCM': 'extras/autorcm.md'
         - 'Dumping Title Keys': 'extras/dumping_title_keys.md'
