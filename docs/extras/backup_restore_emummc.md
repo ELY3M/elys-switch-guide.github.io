@@ -18,12 +18,10 @@ This is method will work on windows pcs.
 ![found drive](../extras/img/nxnand2.png)   
 6.  Select the drive and it will open like this.   
 ![drive](../extras/img/nxnand3.png)   
-7.  Go to file and select save as raw dump.  
+7.  Clock on `Full Dump` button and it will ask you to save to a place on your pc drive or external hdd.  
 ![save as raw dump](../extras/img/nxnand4.png)   
-8.  It will ask you to save to a place on your pc drive or external hdd.         
+8. it will be 2 to 3 hours for it to finish dumping/saving  
 ![saving...](../extras/img/nxnand5.png)  
-9. it will be 2 to 3 hours for it to finish dumping/saving  
-
 
 
 
