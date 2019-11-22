@@ -1,6 +1,10 @@
 # About this guide
 
 I took this guide and modified to make it more simpler and less steps.  
+I used my Nintendo Switch to modify this guide :)   
+
+!!! tip ""
+    ![my switch](img/myswitch.jpg)
 
 Thank you very much to those people below here.  
 
@@ -21,8 +25,6 @@ This guide was written by staff members of the [Nintendo Homebrew Discord Server
 !!! tip ""
     [You can find this guide on GitHub](https://github.com/nh-server/switch-guide), It is licensed under the [ISC license.](https://github.com/nh-server/switch-guide/blob/master/LICENSE.md)
 
-!!! tip ""
-    ![Nintendo Homebrew](img/nh.jpg)
 
 !!! tip "Developer / Tool credits"
     - **Atmosphere-NX** for [Atmosphere](https://github.com/Atmosphere-NX/Atmosphere).
