@@ -41,12 +41,15 @@ Atmosphere has its own bootloader, called fusee (primary). For the purposes of t
     7. Copy *the contents* of the EdiZon `SD.zip` file to the root of your SD card
     8. Create a folder named `appstore` inside the `switch` folder on your SD card, and put `appstore.nro` in it
     9. Copy `ftpd.nro`, `NX-Shell.nro` and `NxThemesInstaller.nro` to the `switch` folder on your SD card
-    10. Reinsert your SD card back into your Switch
+	10. if you have Nintendo folder, copy to the root of your microSD card then you need to copy the contents of the Nintendo folder from the root of the sd card to the emummc/RAW1/Nintendo folder
+    11. Reinsert your SD card back into your Switch
 
      ![sdfilesimg](../img/sdfiles.png)
 
 !!! note "Restoring your existing Nintendo folder"
-     If you were already using your microSD card as a storage device for your games and backed it up before partitioning your microSD card, it is now safe to restore it. Place it back on the root of your microSD card.
+     If you were already using your microSD card as a storage device for your games and backed it up before partitioning your microSD card, it is now safe to restore it. Place it back on the root of your microSD card.   
+	 
+	 if you want same games on emuMMC, you need to copy the contents of the Nintendo folder from the root of the sd card to the emummc/RAW1/Nintendo folder.    
 
 &nbsp;
 
