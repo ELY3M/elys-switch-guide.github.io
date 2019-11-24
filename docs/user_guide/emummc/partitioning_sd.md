@@ -43,9 +43,11 @@
 	![SD_format](../img/elys-emummc_final_minitool.png)
 
 7. Apply the changes to your SD card by hitting `Apply` in the top left.
+&nbsp;
 
 
 
+you can watch my video of myself do my sd card partitioning.  
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5FXcU6nc1rI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
