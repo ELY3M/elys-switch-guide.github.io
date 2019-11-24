@@ -60,7 +60,7 @@ Now that the device is in RCM, we will need to send it a payload. The methods ar
 ### What you need
 
 !!! tip ""
-    - The latest release of <a href="https://github.com/MenosGrante/Rekado/releases" target="_blank">Rekado</a>
+    - The latest release of <a href="https://github.com/ELY3M/Rekado---modded-by-ELY-M/releases" target="_blank">Rekado Modded by ELY M.</a>
         - You will need to enable Unknown Sources in your device settings to install this
     - The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a> (either the hekate_ctcaer bin or the hekate_ctcaer zip)
     - The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">fusee-primary.bin</a> from  <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a> 
