@@ -17,7 +17,7 @@ Not a ban, so far:
 • Homebrew  
 • Custom themes  
 • Mods/cheating in offline games  
-• emummc  
+• emunand/emummc  
 (this assumes that you disable online syncing for games you intend to save edit of course)  
 
 Thank you to Val (Free Hugs) at ReSwitched server for this list.  
