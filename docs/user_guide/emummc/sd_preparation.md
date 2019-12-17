@@ -21,7 +21,6 @@ Atmosphere has its own bootloader, called fusee (primary). For the purposes of t
     - The latest release of <a href="https://github.com/CTCaer/Hekate/releases/" target="_blank">Hekate</a> (Download the `hekate_ctcaer_(version).zip` release of hekate)
     - The hekate config file: <a href="../../../files/emu/hekate_ipl.ini" download>hekate_ipl.ini</a>
     - The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a> (Download the `atmosphere-(version)-master-(version)+hbl-(version)+hbmenu-(version).zip` release of Atmosphere.)
-    - The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">fusee-primary.bin</a> from  <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a> 
 	- The latest release of <a href="https://github.com/shchmue/Lockpick_RCM/releases" target="_blank">Lockpick_RCM</a> (Download the `Lockpick_RCM.bin` release of Lockpick)
     - The latest release of <a href="https://github.com/WerWolv/EdiZon/releases" target="_blank">EdiZon</a> (Download the `SD.zip` release of EdiZon)
     - The latest release of <a href="https://github.com/mtheall/ftpd/releases" target="_blank">FTPD</a> (Download the `ftpd.nro` release of FTPD)
@@ -36,13 +35,12 @@ Atmosphere has its own bootloader, called fusee (primary). For the purposes of t
     2. Copy *the contents of* the Atmosphere `.zip` file to the root of your SD card
     3. Copy the `bootloader` folder from the Hekate `.zip` file to the root of your SD card
     4. Copy `hekate_ipl.ini` to the `bootloader` folder on your SD card
-	5. Copy `fusee-primary.bin` to the `/bootloader/payloads` folder on your SD card
-    6. Copy `Lockpick_RCM.bin` to the `/bootloader/payloads` folder on your SD card
-    7. Copy *the contents* of the EdiZon `SD.zip` file to the root of your SD card
-    8. Create a folder named `appstore` inside the `switch` folder on your SD card, and put `appstore.nro` in it
-    9. Copy `ftpd.nro`, `NX-Shell.nro` and `NxThemesInstaller.nro` to the `switch` folder on your SD card
-	10. if you have Nintendo folder, copy to the root of your microSD card then you need to copy the contents of the Nintendo folder from the root of the sd card to the emummc/RAW1/Nintendo folder
-    11. Reinsert your SD card back into your Switch
+    5. Copy `Lockpick_RCM.bin` to the `/bootloader/payloads` folder on your SD card
+    6. Copy *the contents* of the EdiZon `SD.zip` file to the root of your SD card
+    7. Create a folder named `appstore` inside the `switch` folder on your SD card, and put `appstore.nro` in it
+    8. Copy `ftpd.nro`, `NX-Shell.nro` and `NxThemesInstaller.nro` to the `switch` folder on your SD card
+	9. if you have Nintendo folder, copy to the root of your microSD card then you need to copy the contents of the Nintendo folder from the root of the sd card to the emummc/RAW1/Nintendo folder
+    10. Reinsert your SD card back into your Switch
 
      ![sdfilesimg](../img/sdfiles.png)
 

@@ -5,7 +5,6 @@
 
 	Note: Before you freak out if the switch's screen stays black when you power on your switch after activating AutoRCM, it's not bricked. it's in RCM.
 
-
 !!! warning "If you don't have a boot0/1 backup yet..."
 	You really want to kill your console huh? If you haven't made a boot0/1 backup yet, it is recommended to make one **right now**.
 

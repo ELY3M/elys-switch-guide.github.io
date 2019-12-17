@@ -2,8 +2,12 @@
 
 this guide is based from [install page on lan-play.com](https://www.lan-play.com/install)
 
-first you need to download the Ncap from this url [https://nmap.org/npcap/#download](https://nmap.org/npcap/#download)  get `Npcap #.#### installer`     
-install it on your computer.   
+first you need to download the Ncap from this url [https://nmap.org/npcap/#download](https://nmap.org/npcap/#download)   
+get `Npcap #.#### installer` install it on your computer.   
+In the Npcap setup options, make sure you have those things checked like in the image below here 
+![npcap setup options](../extras/img/npcap-setup.png)
+
+
 
 get the client for pc from [https://www.lan-play.com/download](https://www.lan-play.com/download)  
 put the client exe in a place that you will know where.   
@@ -49,15 +53,33 @@ hit X then go to the options and press both R and L and press on your left joyst
 It should show up the dialog that the game is in LAN mode.  hit A and go back to the game.  
 you should start seeing people in Y and on your game screen.   
 
+
+Some games need ldn_mitm kip installed. check [lan-play.com for a list of games that need this sysmodule].
+Those games would only limit to hacked switches :(            
+
+
 # Returning to normal wifi  
 
 you just have to change the IP settings to Automatic to use normal wifi.   
-the lan-play IP settings will be saved for later use.    
+the lan-play IP settings will be saved for later use.  
 
 
 
-  
-  
+# Supported games list for both hacked and unhacked switches  
+
+- Pokemon Switch (Press L+R+left joystock in the options)
+- Pokemon Shield (Press L+R+left joystock in the options)
+- Mario Kart 8 Deluxe (Press L+R+left joystock on the main menu selection)
+- Mario Tennis Aces Select (Free Play from the Main Menu. Press left joystick (hold down) and press L + R.
+- ARMS (press L + R + left joystick on the main menu screen)
+- Pokken Tournament DX (From the main screen select a game. Press X + dpad down and press L + R)
+- Titan Quest
+
+
+
+
+
+
 
 
 

@@ -10,7 +10,7 @@ A guide collaboration between Nintendo Homebrew's Helpers and Staff, from stock 
 !!! tip ""
     Homebrew applications are custom, user-made software, which haven’t been authorised by Nintendo. This can include save editing tools, games, emulators, and more.
 
-    Homebrew can be run for free on your Switch as long as you have a "first-generation" system running 9.0.1 or lower, and a USB-C cable.
+    Homebrew can be run for free on your Switch as long as you have a "first-generation" system running 9.1.0 or lower, and a USB-C cable.
 
 ### What is Custom Firmware?
 
@@ -32,6 +32,8 @@ A guide collaboration between Nintendo Homebrew's Helpers and Staff, from stock 
     * Customize your HOME Menu with user-created themes and splash screens
     * Use “ROM hacks” for games that you own
     * Backup, edit, and restore saves for many games
+    * Use cheats for your games and make the cheats for your games.  
+	* Use games mods and make game mods, for Ex: Super Mario Odyssey mods at [https://gamebanana.com/games/6376](https://gamebanana.com/games/6376)
     * Play games for older systems with various emulators, using RetroArch or other standalone emulators
     * Safely update to the latest system version without fear of losing access to homebrew
 
@@ -40,7 +42,7 @@ A guide collaboration between Nintendo Homebrew's Helpers and Staff, from stock 
 !!! tip ""
     Before beginning the guide, you must know the risks of Switch hacking: EVERY time you modify your system, there is always the potential for an UNRECOVERABLE brick. They’re rare but still a possibility so make sure you follow ALL directions EXACTLY.
 
-    This guide will work on first-generation Switch consoles in all regions on firmware 9.0.1 or below.
+    This guide will work on first-generation Switch consoles in all regions on firmware 9.1.0 or below.
 
     You will need one of the following in order to successfully follow this guide:
 
@@ -52,9 +54,9 @@ A guide collaboration between Nintendo Homebrew's Helpers and Staff, from stock 
         - This method is not covered by the guide, but you can read more about it at [this website](https://mologie.github.io/nxboot/)
 
 
-    You will also need a micro SD card that is at least 64 gigabytes or larger if you plan on following this guide through the emummc path, which is safer and strongly recommended. If you must use a smaller SD card, it is possible with the sysmmc path, but strongly not recommended.
+    You will also need a micro SD card that is at least 128 gigabytes or larger if you plan on following this guide through the emummc path, which is safer and strongly recommended. If you must use a smaller SD card, it is possible with the sysmmc path, but strongly not recommended.
 
-If everything goes according to plan, you will lose no data and end up with everything that you started with (games, NNID, saves, etc will be preserved).
+If everything goes according to plan, you will lose no data and end up with everything that you started with (games, Nintendo Account, saves, etc will be preserved).
 
 Keep your device plugged in and charged throughout the entire process to avoid data loss or damage from an unexpected power-off.
 

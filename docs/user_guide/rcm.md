@@ -12,7 +12,7 @@ RCM (short for ReCovery Mode) is a mode for the switch that allows nintendo to s
 ### emuNAND CFW (**Recommended**)
 
 !!!tip "What's needed for emuNAND"
-	- A microSD card that's 64GB or larger
+	- A microSD card that's 128GB or larger
 
 	#### Pros of using emuNAND over sysNAND CFW:
 	
@@ -31,8 +31,8 @@ RCM (short for ReCovery Mode) is a mode for the switch that allows nintendo to s
 
 ### sysNAND CFW (**Not Recommended**)
 
-This is for the people who don't have an 64GB microSD card or larger, or who don't want emuNAND for whatever reason.  
-This method would be best for people who only do pkhex and wants same saves on sysnand.   
+This is for the people who don't have an 128GB microSD card or larger, or who don't want emuNAND for whatever reason.  
+This method would be best for people who only do pkhex or any saves editing and wants same game saves on sysnand.   
 
 !!!note "Note"
 	If you set up an emuNAND you may still have CFW on your sysNAND if you choose to use it. You do not have to follow the guide linked below; all the files are the same, you simply select "sysNAND CFW" from Hekate/Nyx.
