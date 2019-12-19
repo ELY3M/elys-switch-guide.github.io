@@ -40,4 +40,4 @@ What you need:
 
 
 this minitool partition wizard method is here for someone who want to use minitool partition wizard.    
-[Old Method of sd card partitioning with minitool partition wizard - Windows Only](sd_preparation_minitool.md)
+[Old Method of sd card partitioning with minitool partition wizard - Windows Only](partitioning_sd_minitool.md)
