@@ -8,7 +8,7 @@
         <meta name="author" content="NH Discord Server. - Modifed by ELY M.">
         
         <link rel="shortcut icon" href="../../../img/favicon.ico">
-        <title>Partitioning the SD - Switch Guide - Modded by ELY M.</title>
+        <title>Partitioning the SD Card - Switch Guide - Modded by ELY M.</title>
         <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../../css/base.css" rel="stylesheet">
@@ -50,7 +50,7 @@
                             <li >
                                 <a href="../../..">Home</a>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -70,8 +70,8 @@
     <a href="../sending_payload/">Sending a payload</a>
 </li>
                                     
-<li class="active">
-    <a href="./">Partitioning the SD</a>
+<li >
+    <a href="../partitioning_sd/">Partitioning the SD</a>
 </li>
                                     
 <li >
@@ -203,16 +203,6 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li >
-                                <a rel="next" href="../sending_payload/">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li >
-                                <a rel="prev" href="../sd_preparation/">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
                     </ul>
                 </div>
             </div>
@@ -222,7 +212,9 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#partitioning-the-sd-card">Partitioning the SD Card</a></li>
-            <li><a href="#preperations">Preperations</a></li>
+            <li><a href="#windows-instructions">Windows Instructions</a></li>
+            <li><a href="#linux-instructions">Linux Instructions</a></li>
+            <li><a href="#macos-instructions">macOS Instructions</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
@@ -232,42 +224,140 @@
 <p class="admonition-title">This will delete everything on your sd card</p>
 <p>Doing this will delete all your data from your sd card, be warned!</p>
 </div>
+<div class="admonition danger">
+<p class="admonition-title">Make sure you get the right drive</p>
+<p>Make sure you pick your SD card while following thse steps, and not some other drive. <strong>if you pick the wrong drive that drive will be deleted instead, be warned!</strong> </p>
+</div>
 <div class="admonition warning">
 <p class="admonition-title">Backing up your existing Nintendo folder</p>
-<p>Before we start, if you are using a microSD card already as a storage device for your games, you will want to back up your <code>Nintendo</code> folder that is on the root of your microSD card to a safe place on your computer. This folder contains your downloaded games and game updates.</p>
+<p>Before we start, if you are using a microSD card already as a storage device for your games, you will want to back up your <code>Nintendo</code> folder that is on the root of your microSD card to a safe place on your computer. This folder contains your games and saves.</p>
 </div>
 <hr />
-<h2 id="preperations">Preperations</h2>
-<p>What you need:</p>
+<h2 id="windows-instructions">Windows Instructions</h2>
+<div class="admonition tip">
+<p class="admonition-title">What you need (Windows)</p>
 <ul>
-<li>The latest release of <a href="https://github.com/suchmememanyskill/TegraExplorer/releases" target="_blank">TegraExplorer</a></li>
+<li><a href="https://www.partitionwizard.com/download/v11/pw11-free.exe">MiniTool Partition Wizard (or any other good partition manager)</a></li>
 </ul>
-<h3 id="instructions">Instructions</h3>
-<ol>
-<li>Inject the TegraExplorer payload with your 64GB (or larger) SD card inserted into your Switch.<ul>
-<li>If you forgot how to do this, re-read the <a href="../sending_payload/">sending payload</a> section of the guide.</li>
-</ul>
-</li>
-<li>Navigate to <code>SD Format</code> and press the power button to enter the SD format menu.</li>
-<li>Navigate to <code>Format for EmuMMC setup</code> and press the power button to confirm.</li>
-<li>Read the warning, and press power after 10 seconds to format your SD card.<ul>
-<li>Note: This will delete all data on your SD card. Make sure you backed up your Nintendo folder!</li>
-<li>This will take about 5 minutes.</li>
-</ul>
-</li>
-<li>Press any button to return to the main menu.</li>
-<li>Navigate to <code>Exit</code> and press the power button to enter the Exit menu.</li>
-<li>Navigate to <code>Reboot to RCM</code> and press the power button to reboot to RCM. It's now safe to eject your sd card for the next part of the guide.</li>
-</ol>
-<div class="admonition warning">
-<p class="admonition-title">Windows complaining about an unreadable drive</p>
-<p>If you get the issue that Windows says the SD card is unreadable and wants to format it, do not format! This is likely your emuMMC partition.</p>
 </div>
+<h3 id="instructions-windows">Instructions (Windows)</h3>
+<ol>
+<li>Install and open MiniTool Partition Wizard.</li>
+<li>Click the <code>Disk &amp; Partition Management</code> button.</li>
+<li>Find your SD card and delete the volume on it by right clicking on the partition and pressing delete (This will delete all your data on your SD card!)</li>
+<li>
+<p>Create a new partition by right clicking on the unallocated space and then pressing <code>Create</code> with the following instructions:</p>
+<ul>
+<li>Set the <code>File System</code> to <code>FAT32</code>.</li>
+<li>Set the <code>Partition Label</code> to <code>SD</code>.</li>
+<li>
+<p>Drag the right arrow of the partition completely to the left till the <code>Unallocated Space After</code> is almost at 31 GB or 31000 MB</p>
+<p><img alt="Create_SD_partition" src="../../img/elys-minitool1.png" /></p>
+</li>
+<li>
+<p>The final <code>Partition Size</code> of the FAT32 partition will vary depending on your SD card's total size.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Create another new partition with the following settings:</p>
+<ul>
+<li>Ignore the warning about Windows not being able to recognize the partition.</li>
+<li>
+<p>Set the <code>File System</code> to <code>Unformatted</code>.</p>
+<p><img alt="Create_emummc_partition" src="../../img/elys-minitool2.png" /></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Your SD card now should look similar to this:</p>
+<p><img alt="SD_format" src="../../img/elys-emummc_final_minitool.png" /></p>
+</li>
+<li>
+<p>Apply the changes to your SD card by hitting <code>Apply</code> in the top left.
+&nbsp;</p>
+</li>
+</ol>
+<p>you can watch my video of myself do my sd card partitioning.<br />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5FXcU6nc1rI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 <p>&nbsp;</p>
 <h4 id="continue-to-sd-preparations"><a href="../sd_preparation/">Continue to SD Preparations <i class="fa fa-arrow-circle-right fa-lg"></i></a></h4>
+<hr />
+<h2 id="linux-instructions">Linux Instructions</h2>
+<div class="admonition danger">
+<p class="admonition-title">SD card identification</p>
+<p>Make 100% sure you get your microSD card during the following steps. If you are not careful, you can end up wiping your entire linux filesystem. We are not responsible for data loss when doing this.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">What you will need (Linux)</p>
+<ul>
+<li>The latest version of <code>gparted</code></li>
+<li>The latest version of <code>fdisk</code></li>
+<li>Access to an administrator account.</li>
+</ul>
+</div>
+<h3 id="instructions-linux">Instructions (Linux)</h3>
+<ol>
+<li>Open a terminal.</li>
+<li>Run <code>sudo fdisk -l</code>. Enter your password if prompted. This will print information about all drives connected to your computer. Use the information about the file size to identify your microSD card. Specifically, take note of the line after <code>Disk</code>. This will look something like <code>/dev/xxx</code>, where <code>xxx</code> will differ on your system (can also be longer than three characters). It does NOT end with a number.</li>
+<li>Run <code>sudo gparted &lt;value&gt;</code>. Enter your password if prompted. Replace <code>&lt;value&gt;</code> in the command with the information you obtained from step 2.</li>
+<li>You will see a list of partitions on your SD card. Go to <code>Device</code> -&gt; <code>Create partition table</code>. Select <code>msdos</code> as the partition type and select Apply. This will remove all existing partitions from your SD card.</li>
+<li>
+<p>Go to <code>Partition</code> -&gt; <code>New</code>. And do the following:</p>
+<ul>
+<li>Set <code>Free space following (MiB)</code> to <code>30000</code>. </li>
+<li>Set <code>Free space preceding (MiB)</code> to <code>1</code>. </li>
+<li>Set <code>File system</code> to <code>fat32</code>. </li>
+<li>Set the <code>Label</code> to <code>sMicroSD</code>. </li>
+<li>
+<p>Leave everything else untouched and select <code>Add</code>.</p>
+<p><img alt="gparted" src="../../img/gparted.png" /></p>
+</li>
+</ul>
+</li>
+<li>
+<p>At the top part of gparted, you will now see a large gray space to the right. Right click this space, select <code>New</code>.</p>
+</li>
+<li>Set <code>File system</code> to <code>linux-swap</code>. Set <code>Label</code> to <code>emuMMC</code>. Leave everything else untouched and select <code>Add</code>.</li>
+<li>Click the check icon in the toolbar.</li>
+<li>Wait for all operations to succeed. This might take a while.</li>
+<li>Close <code>gparted</code>.</li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">NOFAT error in Hekate</p>
+<p>This error might occur after preforming the previous steps if you are using a 64GB microSD. The reason for this is that Hekate expects the FAT32 partition to use a 32k cluster size, which gparted only does by default if the partition is larger than 32GB, which it likely won't be on a 64GB microSD. <strong>This will wipe all the data on your FAT32 partition</strong>.</p>
+<p>To fix this, follow these instructions:</p>
+<ol>
+<li>Open a terminal.</li>
+<li>Run <code>sudo fdisk -l</code>. Enter your password if prompted. This will print information about all drives connected to your computer. Use this information to determine the FAT32 partition on your SD card. Specifically, note the value under the column <code>Device</code>. This will look something like <code>/dev/xxx</code>, where <code>xxx</code> will differ on your system (can also be longer than three characters). It always ends with a number!</li>
+<li>Run <code>sudo mkdosfs &lt;value&gt; -s 64 -F 32 -I</code>. Enter your password if prompted. Replace <code>&lt;value&gt;</code> with the value you got from step 2.</li>
+<li>Wait until it finishes running. Depending on the size of your microSD card, this might take a while.</li>
+<li>Run <code>sudo fatlabel &lt;value&gt; "sMicroSD"</code>. Enter your password if prompted. Replace <code>&lt;value&gt;</code> with the value you got from step 2.</li>
+</ol>
+</div>
 <p>&nbsp;</p>
-<p>this minitool partition wizard method is here for someone who want to use minitool partition wizard.  <br />
-<a href="sd_preparation_minitool.md">Old Method of sd card partitioning with minitool partition wizard - Windows Only</a></p></div>
+<h4 id="continue-to-sd-preparations_1"><a href="../sd_preparation/">Continue to SD Preparations <i class="fa fa-arrow-circle-right fa-lg"></i></a></h4>
+<hr />
+<h2 id="macos-instructions">macOS Instructions</h2>
+<div class="admonition danger">
+<p class="admonition-title">SD card identification</p>
+<p>Make 100% sure you get your microSD card during the following steps. If you are not careful, you can end up wiping the wrong disk. We are not responsible for data loss when doing this.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">What you will need (macOS)</p>
+<ul>
+<li>Access to an administrator account.</li>
+</ul>
+</div>
+<h3 id="instructions-macos">Instructions (macOS)</h3>
+<ol>
+<li>Open Terminal at <code>/Applications/Terminal.app</code>.</li>
+<li>Run <code>diskutil list</code>. This will print information about all drives connected to your Mac. Use the information about the disk size to identify your microSD card. Use the device name such as <code>/dev/disk#</code> when partitioning the microSD card.</li>
+<li>Run the following command to partition the disk. Ensure that the device name is replaced with the one for your disk.<br />
+<code>diskutil partitionDisk disk# MBR ms-dos SMICROSD R ms-dos EMUMMC 61124608S</code></li>
+</ol>
+<p>&nbsp;</p>
+<h4 id="continue-to-sd-preparations_2"><a href="../sd_preparation/">Continue to SD Preparations <i class="fa fa-arrow-circle-right fa-lg"></i></a></h4></div>
         </div>
 
         <footer class="col-md-12">
