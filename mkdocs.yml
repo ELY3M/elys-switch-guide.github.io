@@ -14,8 +14,9 @@ nav:
         - 'Partitioning the SD': 'user_guide/emummc/partitioning_sd.md'    
         - 'SD preparations': 'user_guide/emummc/sd_preparation.md'
         - 'Making the emuMMC': 'user_guide/emummc/making_emummc.md'
-        - 'Launching CFW': 'user_guide/emummc/launching_cfw.md'
+        - 'Launching CFW': 'user_guide/emummc/launching_cfw.md'       
     - Extras:
+        - 'Troubleshooting': 'extras/troubleshooting.md'     
         - 'Blocking Updates': 'extras/blocking_updates.md'
         - 'Ban Risks': 'extras/banrisks.md'        
         - 'Reinstalling Atmosphere': 'extras/reinstall.md'
