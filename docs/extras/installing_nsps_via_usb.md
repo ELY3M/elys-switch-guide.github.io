@@ -20,7 +20,7 @@ Only requirement for Quark to work is [JRE/JDK 8u60 or higher.](https://www.orac
 
 1. Download latest Goldleaf.nro and Quark.jar from [here](https://github.com/XorTroll/Goldleaf/releases)
 2. on your switch sd card, Make Goldleaf folder in /switch folder and put Goldleaf.nro in the Goldleaf folder in /switch folder.   
-3. put Quark.jar in your preffered place on your computer.   
+3. put Quark.jar in your preferred place on your computer.   
 4. if you do not have JAVA JRE installed on your computer, Download Java JRE from [here](https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)
 5. Install Java JRE on your computer. 
 6. Download Zadig from here [here](https://zadig.akeo.ie/)  
