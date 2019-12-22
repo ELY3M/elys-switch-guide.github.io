@@ -14,7 +14,7 @@ Now that the device is in RCM, we will need to send it a payload. The methods ar
 ### What you need
 
 !!! tip ""
-    - The latest release of <a href="https://github.com/eliboa/TegraRcmGUI/releases" target="_blank">TegraRcmGUI</a> (either the MSI or zip)
+    - The latest release of <a href="https://github.com/ELY3M/TegraRcmGUI---modded-by-ELY-M/releases" target="_blank">TegraRcmGUI</a> (portable zip)
     - The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a> (either the hekate_ctcaer bin or the hekate_ctcaer zip)
 	- The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">fusee-primary.bin</a> from  <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a> 
     - A USB-A to USB-C cable (or a standard USB-C cable if your computer natively supports USB-C)
@@ -22,8 +22,9 @@ Now that the device is in RCM, we will need to send it a payload. The methods ar
 ### Instructions
 
 !!! tip ""
-    1. Install and run TegraRCMGUI
-    2. Copy the hekate_ctcaer `.bin` file from the Hekate `.zip` file and fusee-primary.bin to the favorites folder in the TegraRCMGUI program folder. 
+    1. Install TegraRcmGUI by unzipping and put the contents in your preferred place on your computer.
+	2. TegraRcmGUI came with the payloads in the favorites folder.  We need to make sure we update them with latest payload bins.  
+		- copy the latest payload bins into the favorites folder and just say yes to overwrite.  
     3. Navigate to the `Settings` tab, then press `Install Driver` and follow the on-screen instructions
     4. Connect your Switch in RCM to your PC using the USB cable
     5. Navigate to the `Payload` tab of TegraRcmGUI 

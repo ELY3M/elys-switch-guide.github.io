@@ -5,9 +5,9 @@
 
 
 
+<!--
 
-
-This is the default loader.ini config in /atmosphere/
+This is the default loader.ini config in /atmosphere/config
 <pre>
 [hbl_config]
 title_id=010000000000100D
@@ -20,12 +20,12 @@ override_key=!L
 cheat_enable_key=!L
 </pre>
 <p>
-
+-->
 
 I started with atmosphere 0.8.3 that I normally tap on album icon to open my hbmenu and tap on games to open games.  
 When I updated to 0.8.5, I open my album to see my own gallery of pics like in OFW.  I read thru change logs on the github.  
 I had to press R to open hbmenu from my album.  I open games to see hbmenu.  I would have to press R to open one of games to game.  
-<p>
+<p><strike>
 I decided to make it abit easier by editng my loader.ini  
 I added ! before R in this line override_key=R
 making this line to be override_key=!R   
@@ -37,12 +37,20 @@ I decided to leave it to true because I run retroarch.
 I know some people do not need full RAM.   
 if you do not need full RAM, you can change this line 
 override_any_app=true to override_any_app=false
-so you do not have to hold R when opening your game.   
+so you do not have to hold R when opening your game.  
+<p></strike>
+in Atmosphere 0.10.0 or above, I do not have to do custom setting anymore because
+I am happy with their new changes now.  I just tap on album to go to hbmenu and hold R on games for full RAM.   
+<p>
+in Atmosphere 0.10.0 or above, They change where they do configs now.  
+the configs are in /atmosphere/config now.  it is only BCT.ini in the default atmosphere package.   
+
+There are the config templates in /atmosphere/config_templates  
+I prefer the default settings now.      
 
 
-<p><br>
 
-
+<!--
 My own loader.ini here<p>
 
 <pre>
@@ -58,6 +66,7 @@ cheat_enable_key=!L
 </pre>
 
 <p>
+-->  
 
 <br><br><br>
 
@@ -67,13 +76,15 @@ cheat_enable_key=!L
 Atomsphere come with cheat engine enabled on default settings.     
 I saw that many people have issues with games or want cheats disabled.      
 <p>
-Open system_settings.ini in atmosphere folder and find this line 
+Open system_settings.ini in config_templates folder in the atmosphere folder  
+(/atmosphere/config_templates) and find this line 
 <p>
 dmnt_cheats_enabled_by_default = u8!0x1
 <p>
 change this line to <p>
 dmnt_cheats_enabled_by_default = u8!0x0
-
+<p>
+you need to copy system_settings.ini to the config folder in the atmosphere folder  (/atmosphere/config)
 <p>
 If you want to cheat. you have to leave it as u8!0x1 
 <p>
@@ -94,7 +105,7 @@ It can be done easily in photoshop and saved as a bmp in 32bit.
 More of the splash screens and more of my made ones too. <br>
 <a href=https://github.com/ELY3M/Atmosphere-Splashes/>Atmosphere Splashes</a>
 <p>
-I add this line to BCT.ini in /atmosphere/ on my sd card.   
+I add this line to BCT.ini in /atmosphere/config on my sd card.   
 then I put bootlogo.bmp in the atomosphere folder.
 <pre>
 [stage2]

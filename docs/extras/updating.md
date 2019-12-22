@@ -52,7 +52,7 @@ you can watch me updating my atmosphere using ftp method.
 
 It is also possible to update Atmosphere and Hekate through a homebrew utility called `atmosphere-updater`. This utility should be installed if you followed our guide.
 
-If you did not install this utility, you can download it from <a href="https://github.com/ELY3M/atmosphere-updater---modded-by-ELY-M/releases" target="_blank">here</a> or from the homebrew appstore.
+If you did not install this utility, you can download it from <a href="https://github.com/ELY3M/atmosphere-updater---modded-by-ELY-M/releases" target="_blank">here.</a>
 
 Updating your Atmosphere and Hekate installation using atmosphere-updater:
 
@@ -98,7 +98,7 @@ you should have the ftpd app in your hbmenu if you followed the guide.
 
 It is also possible to update Atmosphere and Hekate through a homebrew utility called `atmosphere-updater`. This utility should be installed if you followed our guide. 
 
-If you did not install this utility, you can download it from <a href="https://github.com/ELY3M/atmosphere-updater---modded-by-ELY-M/releases" target="_blank">here</a> or from the homebrew appstore.
+If you did not install this utility, you can download it from <a href="https://github.com/ELY3M/atmosphere-updater---modded-by-ELY-M/releases" target="_blank">here.</a>
 
 Updating your Atmosphere and Hekate installation using atmosphere-updater:
 
