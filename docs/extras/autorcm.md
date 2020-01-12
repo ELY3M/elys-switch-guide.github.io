@@ -25,15 +25,17 @@
 	- If you want to keep fuses unburned, you can do so with AutoRCM, as the Switch never gets the change to burn them after updating when using AutoRCM
 	- Easier to inject a payload using a payload injector
 
-If, despite all of the warnings above, you still want to install AutoRCM, and understand the risks, do the following:
+If, despite all of the warnings above, you still want to install AutoRCM, and understand the risks, do the following:  
 
 1. Boot Hekate
 2. Go to `Tools`
 3. At the bottom of the page, tap `Archive bit - AutoRCM`
 4. Then tap `AutoRCM`. It will show a little `ON` next to the option once you have done this   
+
 &nbsp;  
 &nbsp;  
-!!! tip "How to disable AutoRCM"
+!!! tip "How to disable AutoRCM"  
+
 1. Boot Hekate  
 2. Go to `Tools`    
 3. At the bottom of the page, tap `Archive bit - AutoRCM`  
