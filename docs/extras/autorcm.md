@@ -31,3 +31,11 @@ If, despite all of the warnings above, you still want to install AutoRCM, and un
 2. Go to `Tools`
 3. At the bottom of the page, tap `Archive bit - AutoRCM`
 4. Then tap `AutoRCM`. It will show a little `ON` next to the option once you have done this
+
+
+!!! tip "How to disable AutoRCM"
+
+1. Boot Hekate
+2. Go to `Tools`
+3. At the bottom of the page, tap `Archive bit - AutoRCM`
+4. Then tap `AutoRCM`. It will show a little `OFF` next to the option once you have done this
