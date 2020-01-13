@@ -61,9 +61,24 @@ Updating your Atmosphere and Hekate installation using atmosphere-updater:
 2. Open `Atmosphere-Updater`.
 3. Select `Update Atmosphere (ignoring .ini files)`.
 4. Press `A` when prompted.
-5. Wait for it to complete.
+5. Wait for it to complete. 
 6. Select `Reboot (reboot to payload)`.
 7. Press `A`.
+
+## Updating Atmosphere fusee-primary.bin payload
+
+It is important that you update the fusee-primary.bin payload.  
+you can get latest fusee-primary.bin from <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a> (Download the `fusee-primary.bin` release of Atmosphere.)
+It depends how are you injecting your payloads.   
+- tegraguircm: replace fusee-primary.bin in your favorites folder with latest fusee-primary.bin  
+- rcmloader: plug your rcmloader in your computer usb port and it should bring up a drive and 
+you should replace the payload.bin in atmosphere folder.  it may be named differently.  delete payload.bin then copy fusee-primary.bin and rename it to payload.bin  
+- hekate: replace fusee-primary.bin in /bootloader/payloads with latest fusee-primary.bin  (for trinket m0/mod chip users/hekate users)    
+
+ 
+
+2. Download the latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a> (Download the `atmosphere-(version).zip` release of Atmosphere.)
+
 
 ## Updating Hekate
 
