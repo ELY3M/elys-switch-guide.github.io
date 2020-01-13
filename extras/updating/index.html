@@ -231,6 +231,7 @@
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#keeping-your-system-up-to-date">Keeping your system up-to-date</a></li>
             <li><a href="#updating-atmosphere">Updating Atmosphere</a></li>
+            <li><a href="#updating-atmosphere-fusee-primarybin-payload">Updating Atmosphere fusee-primary.bin payload</a></li>
             <li><a href="#updating-hekate">Updating Hekate</a></li>
             <li><a href="#updating-your-firmware">Updating your firmware</a></li>
             <li><a href="#updating-emummc-by-dumping-an-updated-firmware-from-your-sysmmc">Updating emuMMC by dumping an updated firmware from your sysMMC</a></li>
@@ -285,9 +286,20 @@ you should have the ftpd app in your hbmenu if you followed the guide.   </p>
 <li>Open <code>Atmosphere-Updater</code>.</li>
 <li>Select <code>Update Atmosphere (ignoring .ini files)</code>.</li>
 <li>Press <code>A</code> when prompted.</li>
-<li>Wait for it to complete.</li>
+<li>Wait for it to complete. </li>
 <li>Select <code>Reboot (reboot to payload)</code>.</li>
 <li>Press <code>A</code>.</li>
+</ol>
+<h2 id="updating-atmosphere-fusee-primarybin-payload">Updating Atmosphere fusee-primary.bin payload</h2>
+<p>It is important that you update the fusee-primary.bin payload.<br />
+you can get latest fusee-primary.bin from <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a> (Download the <code>fusee-primary.bin</code> release of Atmosphere.)
+It depends how are you injecting your payloads. <br />
+- tegraguircm: replace fusee-primary.bin in your favorites folder with latest fusee-primary.bin<br />
+- rcmloader: plug your rcmloader in your computer usb port and it should bring up a drive and 
+you should replace the payload.bin in atmosphere folder.  it may be named differently.  delete payload.bin then copy fusee-primary.bin and rename it to payload.bin<br />
+- hekate: replace fusee-primary.bin in /bootloader/payloads with latest fusee-primary.bin  (for trinket m0/mod chip users/hekate users)    </p>
+<ol>
+<li>Download the latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a> (Download the <code>atmosphere-(version).zip</code> release of Atmosphere.)</li>
 </ol>
 <h2 id="updating-hekate">Updating Hekate</h2>
 <p>When updating Hekate always make sure to <em>read the release notes</em>. They may list important changes and modifications to your system.</p>
