@@ -230,6 +230,7 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#troubleshooting">Troubleshooting</a></li>
+        <li class="main "><a href="#your-game-cartridges-do-not-work-or-wont-be-read-in-atmosphere">your game cartridges do not work or won't be read in atmosphere.</a></li>
         <li class="main "><a href="#archive-bits">archive bits</a></li>
     </ul>
 </div></div>
@@ -237,6 +238,44 @@
 
 <h1 id="troubleshooting">Troubleshooting</h1>
 <p>This page is about common issues with atmosphere and situations to fix them.   </p>
+<h1 id="your-game-cartridges-do-not-work-or-wont-be-read-in-atmosphere">your game cartridges do not work or won't be read in atmosphere.</h1>
+<p>I put in my game cart and I get error reading the game cart. 
+This is because of game cart efuses (Lotus Firmware)<br />
+it get burnt no matter even you try to avoid burning efuses.    </p>
+<p>You need to add ncgc = 0 in bottom of BCT.ini in /atmosphere/config   </p>
+<ol>
+<li>go on your sd card by ftpd method or in your computer.  </li>
+<li>go to /atmosphere/config</li>
+<li>open BCT.ini with notepad or your favorite text editor. </li>
+<li>go down to [stratosphere] and add nogc = 0 after [stratosphere]    </li>
+<li>save the BCT.ini and if your sd card is in computer, put it back in switch.  </li>
+<li>reboot switch via reboot to payload or inject fusee-primary.bin payload.    </li>
+</ol>
+<p>your BCT.ini should look like this: </p>
+<pre>
+BCT0
+[stage1]
+stage2_path = atmosphere/fusee-secondary.bin
+stage2_mtc_path = atmosphere/fusee-mtc.bin
+stage2_addr = 0xF0000000
+stage2_entrypoint = 0xF0000000
+
+[exosphere]
+; Note: Disabling debugmode will cause parts of ams.tma to not work, in the future.
+debugmode = 1
+debugmode_user = 0
+; Note: Disabling usermode exception handlers will cause atmosphere to not fail gracefully under error conditions.
+; Support will not be provided to users who disable these. If you do not know what you are doing, leave them on.
+disable_user_exception_handlers = 0
+; Note: It's currently unknown what effects enabling the usermode PMU register access may have on official code.
+enable_user_pmu_access = 0
+
+[stratosphere]
+nogc = 0 
+; To force-enable nogc, add nogc = 1
+; To force-disable nogc, add nogc = 0
+</pre>
+
 <h1 id="archive-bits">archive bits</h1>
 <p>None of my homebrew is showing up.<br />
 atmosphere crash on boot with 
@@ -244,7 +283,7 @@ atmosphere crash on boot with
 A fatal error occurred when running Atmosphére.
 Title ID: 010041544d530000
 Error Desc: std::abort() called (0xffe)
-</pre>   </p>
+</pre>  </p>
 <p>This is usually due to an archive metadata bit used by some OS’s that Horizon simply can’t deal with. Here’s how to fix it:</p>
 <ol>
 <li>Get your switch in RCM mode.  </li>
@@ -253,7 +292,8 @@ Error Desc: std::abort() called (0xffe)
 <li>Tap on "Archive Bit - AutoRCM" on the right bottom.  </li>
 <li>Tap on "Unset archive bit" button.  This might take a while, be patient.</li>
 </ol>
-<p>&nbsp;</p></div>
+<p>&nbsp;</p>
+<h1 id="_1"></h1></div>
         </div>
 
         <footer class="col-md-12">
