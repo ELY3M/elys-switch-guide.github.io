@@ -1,11 +1,48 @@
 # Troubleshooting 
 This page is about common issues with atmosphere and situations to fix them.   
 
-   
-   
-   
+# your game cartridges do not work or won't be read in atmosphere. 
+I put in my game cart and I get error reading the game cart. 
+This is because of game cart efuses (Lotus Firmware)  
+it get burnt no matter even you try to avoid burning efuses.    
+  
+You need to add ncgc = 0 in bottom of BCT.ini in /atmosphere/config   
+
+1. go on your sd card by ftpd method or in your computer.  
+2. go to /atmosphere/config
+3. open BCT.ini with notepad or your favorite text editor. 
+4. go down to [stratosphere] and add nogc = 0 after [stratosphere]    
+5. save the BCT.ini and if your sd card is in computer, put it back in switch.  
+6. reboot switch via reboot to payload or inject fusee-primary.bin payload.    
+
+your BCT.ini should look like this: 
+
+<pre>
+BCT0
+[stage1]
+stage2_path = atmosphere/fusee-secondary.bin
+stage2_mtc_path = atmosphere/fusee-mtc.bin
+stage2_addr = 0xF0000000
+stage2_entrypoint = 0xF0000000
+
+[exosphere]
+; Note: Disabling debugmode will cause parts of ams.tma to not work, in the future.
+debugmode = 1
+debugmode_user = 0
+; Note: Disabling usermode exception handlers will cause atmosphere to not fail gracefully under error conditions.
+; Support will not be provided to users who disable these. If you do not know what you are doing, leave them on.
+disable_user_exception_handlers = 0
+; Note: It's currently unknown what effects enabling the usermode PMU register access may have on official code.
+enable_user_pmu_access = 0
+
+[stratosphere]
+nogc = 0 
+; To force-enable nogc, add nogc = 1
+; To force-disable nogc, add nogc = 0
+</pre>
 
 
+  
 
 # archive bits
 None of my homebrew is showing up.  
@@ -14,7 +51,7 @@ atmosphere crash on boot with
 A fatal error occurred when running Atmosphére.
 Title ID: 010041544d530000
 Error Desc: std::abort() called (0xffe)
-</pre>   
+</pre>  
 
 This is usually due to an archive metadata bit used by some OS’s that Horizon simply can’t deal with. Here’s how to fix it:
 
@@ -27,3 +64,7 @@ This is usually due to an archive metadata bit used by some OS’s that Horizon 
 
 	   
 &nbsp;
+
+
+
+# 
