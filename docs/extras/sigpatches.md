@@ -20,6 +20,7 @@ for example, I made hbmenu nsp and installed hbmenu to my home screen for easy a
 
 # Installing SigPatches 
 
+<!--
 There are two methods to install Sigpatches now.  
 
 
@@ -39,6 +40,11 @@ Method #1
 &nbsp;
 
 Method #2  
+
+-->  
+
+&nbsp;
+
 1. download <a href=https://gbatemp.net/threads/i-heard-that-you-guys-need-some-sweet-patches-for-atmosphere.521164/>Sigpatches from here</a> and extract to the root of your sd card.  
 2. use reboot to payload to reboot atmosphere
 
