@@ -1,4 +1,4 @@
-# NH Switch Guide
+# Switch Guide
 
 A guide collaboration between Nintendo Homebrew's Helpers and Staff, from stock to Atmosphere.
 
