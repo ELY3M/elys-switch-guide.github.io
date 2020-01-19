@@ -27,6 +27,30 @@ div, ol, li, ul, nav {
   font-size: 16px;
 }
 
+table, td, tr, tbody {
+  //background: transparent;	
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  font-family: "fixedsys";
+  font-size: 16px;
+}
+
+thead {
+  background-color: navy;
+  //border: 1px solid white;
+  border-bottom: 0.186981em solid white;
+}
+
+th {
+  background-color: navy;
+  border: 1px solid white;
+  //border-bottom: 4px solid white;
+  color: white;
+  font-family: "fixedsys";
+  font-size: 16px;
+}
+
 .admonition {
     background: transparent;
 }
