@@ -5,7 +5,7 @@
 |----|----|----|----|----|----|
 |Free   | ✓  | ✓  | ✓  | x (~$30 USD)  |   |
 |Open Source   | ✓  |  ✓ |  ✓ |  x |   |
-|Firmware 9.1.0+ Support    | ✓ | ✓ | x | ✓ |   |
+|Firmware 9.1.0+ Support    | ✓ | ✓ | x | ✓ | ReiNX have not been updated since 8.1.0 :(  |
 |Supports Custom Sysmodules| ✓ | ✓ | ✓ | ✓ |   |
 |Realtime Cheat Engine    | ✓ | ✓ | ✓ | ✓ |   |
 |Support Game Modding   | ✓ | ✓ | ✓ | ✓ |   |
