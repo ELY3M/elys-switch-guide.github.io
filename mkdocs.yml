@@ -36,6 +36,7 @@ nav:
         - 'Alternate Boot Setups': 'extras/alternate_bootsetups.md'
         - 'RCM Payload Injectors Information': 'extras/rcm_injectors.md'
         - 'Updating CFW': 'extras/updating.md'
+        - 'CFW Comparsion': 'cfw_comparsion.md'
         - 'Glossary': 'extras/glossary.md'
     - FAQ: faq.md
     - About: about.md
