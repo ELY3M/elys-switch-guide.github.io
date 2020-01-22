@@ -13,7 +13,9 @@ Goldleaf is multipurpose homebrew tool for Nintendo Switch.
 More info about Goldleaf is at [https://github.com/XorTroll/Goldleaf](https://github.com/XorTroll/Goldleaf)   
 
 Quark.jar is a PC tool, with a fancy UI and made in Java, in order to help Goldleaf with the remote PC option. It should work on Windows, Linux or Mac.   
-Only requirement for Quark to work is [JRE/JDK 8u60 or higher.](https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)     
+Only requirement for Quark to work is Java 9 or above in Windows (or a very simple one) is to install [AdoptOpenJDK 11 or higher](https://adoptopenjdk.net).   
+Right now, I am using Java JDK 13 from [https://www.oracle.com/technetwork/java/javase/downloads/jdk13-downloads-5672538.html](https://www.oracle.com/technetwork/java/javase/downloads/jdk13-downloads-5672538.html)
+
 
 !!! tips "you need sigpatches installed on your CFW.  go to [sigpatches](/extras/sigpatches) for instructions on installing the sigpatches.  "
 
