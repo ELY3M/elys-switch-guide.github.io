@@ -25,8 +25,8 @@ Right now, I am using Java JDK 13 from [https://www.oracle.com/technetwork/java/
 2. Download latest Goldleaf.nro and Quark.jar from [here](https://github.com/XorTroll/Goldleaf/releases)
 3. on your switch sd card, Make Goldleaf folder in /switch folder and put Goldleaf.nro in the Goldleaf folder in /switch folder.   
 4. put Quark.jar in your preferred place on your computer.   
-5. if you do not have JAVA JRE installed on your computer, Download Java JRE from [here](https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)
-6. Install Java JRE on your computer. 
+5. if you do not have JAVA JDK installed on your computer, Download Java JDK from [here](https://adoptopenjdk.net)
+6. Install Java JDK on your computer. 
 7. Download Zadig from here [here](https://zadig.akeo.ie/)  
 8. Open Goldleaf and connect your Switch via USB with your PC  
 9. Open Zadig  
