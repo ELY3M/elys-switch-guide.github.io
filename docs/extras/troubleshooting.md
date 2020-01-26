@@ -42,7 +42,33 @@ nogc = 0
 </pre>
 
 
-  
+If you are using hekate to boot atmosphere.  you need to do change in hekate_ipl.ini  
+change autonogc=1 to autonogc=0 in [config] section
+if it is missing, add autonogc=0 to [config] section  
+like this 
+
+<pre>
+[config]
+autoboot=0
+autoboot_list=0
+bootwait=3
+customlogo=0
+verification=2
+backlight=160
+autohosoff=0
+autonogc=1
+</pre>
+
+
+# My homebrew freeze or crash 
+
+you need to hold R as you tap on one of your games to open hbmenu in full ram.   
+
+It will help with smooth running of homebrew apps.   
+
+
+
+
 
 # archive bits
 None of my homebrew is showing up.  
