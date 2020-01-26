@@ -235,6 +235,7 @@
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#troubleshooting">Troubleshooting</a></li>
         <li class="main "><a href="#your-game-cartridges-do-not-work-or-wont-be-read-in-atmosphere">your game cartridges do not work or won't be read in atmosphere.</a></li>
+        <li class="main "><a href="#my-homebrew-freeze-or-crash">My homebrew freeze or crash</a></li>
         <li class="main "><a href="#archive-bits">archive bits</a></li>
     </ul>
 </div></div>
@@ -280,6 +281,25 @@ nogc = 0
 ; To force-disable nogc, add nogc = 0
 </pre>
 
+<p>If you are using hekate to boot atmosphere.  you need to do change in hekate_ipl.ini<br />
+change autonogc=1 to autonogc=0 in [config] section
+if it is missing, add autonogc=0 to [config] section<br />
+like this </p>
+<pre>
+[config]
+autoboot=0
+autoboot_list=0
+bootwait=3
+customlogo=0
+verification=2
+backlight=160
+autohosoff=0
+autonogc=1
+</pre>
+
+<h1 id="my-homebrew-freeze-or-crash">My homebrew freeze or crash</h1>
+<p>you need to hold R as you tap on one of your games to open hbmenu in full ram.   </p>
+<p>It will help with smooth running of homebrew apps.   </p>
 <h1 id="archive-bits">archive bits</h1>
 <p>None of my homebrew is showing up.<br />
 atmosphere crash on boot with 
