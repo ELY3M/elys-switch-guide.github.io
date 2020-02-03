@@ -1,6 +1,6 @@
 # About this guide
 
-I took this guide and modified to make it more simpler and less steps.  
+I took [this guide](https://switchgui.de) and modified it to make it more simpler and less steps.  
 I used my Nintendo Switch to modify this guide :)   
 
 !!! tip ""
@@ -12,7 +12,7 @@ ELY M.
 
 &nbsp;
 
-
+The original guide at [https://switchgui.de](https://switchgui.de)
 This guide was written by staff members of the [Nintendo Homebrew Discord Server](https://discord.gg/C29hYvh) 
 
 &nbsp;

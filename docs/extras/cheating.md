@@ -35,8 +35,8 @@ might you may want to edit the text file to remove the cheats that you do not wa
 ignore the titles folder, this pic was taken when atmosphere was 0.9.4
 ![Cheating](../extras/img/cheats.png)
 
-
-
+Video here of myself loading the cheats txt for pokemon sword.  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z5ia4YvLry8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
        
 &nbsp;
