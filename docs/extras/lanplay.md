@@ -2,10 +2,9 @@
 
 this guide is based from [install page on lan-play.com](https://www.lan-play.com/install)
 
-first you need to download the Ncap from this url [https://nmap.org/npcap/#download](https://nmap.org/npcap/#download)   
-get `Npcap #.#### installer` install it on your computer.   
-In the Npcap setup options, make sure you have those things checked like in the image below here 
-![npcap setup options](../extras/img/npcap-setup.png)
+first you need to download the WinPcap from this url [https://www.winpcap.org/install/default.htm](https://www.winpcap.org/install/default.htm)   
+get `WinPcap_4_1_3.exe` from [here](https://www.winpcap.org/install/default.htm) then install it on your computer.   
+
 
 
 
