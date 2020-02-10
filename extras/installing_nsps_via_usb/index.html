@@ -233,27 +233,67 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#installing-nsps-over-usb-with-goldleaf-quark">Installing nsps over USB with goldleaf + Quark</a></li>
+        <li class="main active"><a href="#installing-nsps-over-usb">Installing nsps over USB</a></li>
+        <li class="main "><a href="#installing-nsps-over-usb-with-awoo-ns-usbloader">Installing nsps over USB with Awoo + ns-usbloader</a></li>
             <li><a href="#one-time-setup">One time setup</a></li>
+            <li><a href="#usage-of-awoo-installer-and-ns-usbloader">Usage of awoo installer and ns-usbloader</a></li>
+        <li class="main "><a href="#installing-nsps-over-usb-with-goldleaf-quark">Installing nsps over USB with goldleaf + Quark</a></li>
+            <li><a href="#one-time-setup_1">One time setup</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="installing-nsps-over-usb-with-goldleaf-quark">Installing nsps over USB with goldleaf + Quark</h1>
+<h1 id="installing-nsps-over-usb">Installing nsps over USB</h1>
 <div class="admonition warning">
 <p class="admonition-title">Installing homebrew nsps will lead to the console ban!</p>
 <p>you need to make sure you are using emunand offline or with incoginto enabled, to prevent ban on your sysnand.    <br />
 if your console is already banned, just ignore this warning :)  </p>
 </div>
+<div class="admonition tips">
+<p class="admonition-title">you need sigpatches installed on your CFW.  go to <a href="/extras/sigpatches">sigpatches</a> for instructions on installing the sigpatches.  </p>
+</div>
+<h1 id="installing-nsps-over-usb-with-awoo-ns-usbloader">Installing nsps over USB with Awoo + ns-usbloader</h1>
+<p>Awoo Installer is simple installer homebrew tool for Nintendo Switch. <br />
+More info about Awoo Installer is at <a href="https://github.com/Huntereb/Awoo-Installer">https://github.com/Huntereb/Awoo-Installer</a>  </p>
+<p><a href="https://github.com/developersu/ns-usbloader/releases">NS-USBloader</a> is a PC tool, with a fancy UI and made in Java, in order to help Awoo Installer with the remote PC option. It should work on Windows, Linux or Mac. <br />
+Only requirement for Quark to work is Java 8u60 or above in Windows (or a very simple one) is to install <a href="https://adoptopenjdk.net">AdoptOpenJDK 11 or higher</a>. <br />
+Right now, I am using Java JDK 13 from <a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk13-downloads-5672538.html">https://www.oracle.com/technetwork/java/javase/downloads/jdk13-downloads-5672538.html</a></p>
+<h2 id="one-time-setup">One time setup</h2>
+<ol>
+<li>install the sigpatches, you have not installed them before.  Read <a href="/extras/sigpatches">here</a> for instructions on installing the sigpatches.  </li>
+<li>Download latest <code>Awoo-Installer.zip</code> from <a href="https://github.com/Huntereb/Awoo-Installer">here</a></li>
+<li>extract the switch folder from <code>Awoo-Installer.zip</code> to the root fo your sd card. Just overwrite your switch folder.   </li>
+<li>Download latest <code>ns-usbloader-1.0-Win10.jar</code> from <a href="https://github.com/developersu/ns-usbloader/releases">here</a>  for other OS than windows 10  get <code>ns-usbloader-1.0.jar</code> instead.  </li>
+<li>put <code>ns-usbloader-1.0-Win10.jar</code> or <code>ns-usbloader-1.0.jar</code> in your preferred place on your computer.   </li>
+<li>if you do not have JAVA JDK installed on your computer, Download Java JDK from <a href="https://adoptopenjdk.net">here</a></li>
+<li>Install Java JDK on your computer. </li>
+<li>Download Zadig from <a href="https://zadig.akeo.ie/">here</a>  </li>
+<li>Connect your Switch via USB with your computer. </li>
+<li>Open Zadig  </li>
+<li>Click "Options" and select "List all devices"  </li>
+<li>Select the Switch from the drop-down menu  </li>
+<li>Change the driver (right next to the green arrow) to "libusbK"  </li>
+<li>Click on the button below "Install WCID Driver" or "Replace Driver"  </li>
+<li>Done. Now you can use awoo installer and ns-usbloader to directly access your PC! </li>
+</ol>
+<h2 id="usage-of-awoo-installer-and-ns-usbloader">Usage of awoo installer and ns-usbloader</h2>
+<ol>
+<li>connect your switch to your computer. </li>
+<li>open ns-usbloader on your pc and go to select file and select the nsp you want to install on your switch.   </li>
+<li>open awoo installer on your switch and select install over USB. Click on ok on warning dialog. next screen should say "USB connection successful! Waiting for list of files to be sent...  </li>
+<li>go to your pc and open ns-usbloader and select files to be installed to your switch.     </li>
+<li>when you are done with selecting the files, click on "upload to NS" button </li>
+<li>you should see the screen with list of your files come up on your switch.  hit Y then +  to install them.   </li>
+<li>the install should go well as long the files are good.   </li>
+<li>enjoy your new installs.   </li>
+</ol>
+<h1 id="installing-nsps-over-usb-with-goldleaf-quark">Installing nsps over USB with goldleaf + Quark</h1>
 <p>Goldleaf is multipurpose homebrew tool for Nintendo Switch. <br />
 More info about Goldleaf is at <a href="https://github.com/XorTroll/Goldleaf">https://github.com/XorTroll/Goldleaf</a>   </p>
 <p>Quark.jar is a PC tool, with a fancy UI and made in Java, in order to help Goldleaf with the remote PC option. It should work on Windows, Linux or Mac. <br />
 Only requirement for Quark to work is Java 9 or above in Windows (or a very simple one) is to install <a href="https://adoptopenjdk.net">AdoptOpenJDK 11 or higher</a>. <br />
 Right now, I am using Java JDK 13 from <a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk13-downloads-5672538.html">https://www.oracle.com/technetwork/java/javase/downloads/jdk13-downloads-5672538.html</a></p>
-<div class="admonition tips">
-<p class="admonition-title">you need sigpatches installed on your CFW.  go to <a href="/extras/sigpatches">sigpatches</a> for instructions on installing the sigpatches.  </p>
-</div>
-<h2 id="one-time-setup">One time setup</h2>
+<h2 id="one-time-setup_1">One time setup</h2>
 <ol>
 <li>install the sigpatches, you have not installed them before.  Read <a href="/extras/sigpatches">here</a> for instructions on installing the sigpatches.  </li>
 <li>Download latest Goldleaf.nro and Quark.jar from <a href="https://github.com/XorTroll/Goldleaf/releases">here</a></li>
