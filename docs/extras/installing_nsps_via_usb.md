@@ -11,7 +11,7 @@
 !!! tips "you need sigpatches installed on your CFW.  go to [sigpatches](/extras/sigpatches) for instructions on installing the sigpatches.  "
 
 
-# Installing nsps over USB with Awoo + ns-usbloader
+# Installing nsps over USB with Awoo Installer + ns-usbloader
 
 Awoo Installer is simple installer homebrew tool for Nintendo Switch.   
 More info about Awoo Installer is at [https://github.com/Huntereb/Awoo-Installer](https://github.com/Huntereb/Awoo-Installer)  
