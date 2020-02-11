@@ -8,13 +8,10 @@ Atmosphere has its own bootloader, called fusee (primary). For the purposes of t
 
 !!! danger "Notice"
     Your SD card will need to be formatted as either FAT32 or exFAT. FAT32 is recommended as it is more stable and will work out of the box with the Switch's operating system, but has a file size limit of 4GB. If you plan on using exFAT, you will need to install the exFAT update for your Switch, which is downloaded when you insert an exFAT formatted SD card in to your Switch. Note that this will update your console and requires an internet connection.
-	I recommend FAT32 because I read about too many data loss from the CFW users.   
+	I recommend FAT32 because I read about too many data loss from the CFW users.  There are two ways to format your sd card as fat32, use [guiformat](http://www.ridgecrop.demon.co.uk/guiformat.htm) or follow this [guide for formatting sd card as fat32](format_sd.md)
 
-!!! warning "NxThemeInstaller"
-    The ban risks of using Switch themes are at this time unknown. Use them at your own risk.
-    
 
-!!! warning "File name extensions"
+ !!! warning "File name extensions"
     If you use Windows, you should enable file name extensions before continuing. See [this link](../../extras/showing_file_extensions.md) for a guide on how to do this.
 
 &nbsp;
@@ -38,14 +35,16 @@ Atmosphere has its own bootloader, called fusee (primary). For the purposes of t
 
 !!! tip ""
     1. Insert your Switch's SD card into your PC
-    2. Copy *the contents of* the Atmosphere `.zip` file to the root of your SD card
-    3. Copy the `bootloader` folder from the Hekate `.zip` file to the root of your SD card
-    4. Copy `hekate_ipl.ini` to the `bootloader` folder on your SD card
-    5. Copy `Lockpick_RCM.bin` to the `/bootloader/payloads` folder on your SD card
-    6. Copy *the contents* of the EdiZon `SD.zip` file to the root of your SD card
-    7. Create a folder named `appstore` inside the `switch` folder on your SD card, and put `appstore.nro` in it
-    8. Copy `ftpd.nro`, `NX-Shell.nro`, `NxThemesInstaller.nro` and `atmosphere-updater.nro` to the `switch` folder on your SD card
-    9. Reinsert your SD card back into your Switch
+	2. if you are on windows, format your sd card as fat32 with guiformat from [here](http://www.ridgecrop.demon.co.uk/guiformat.htm) (make sure you know which drive letter that your sd card is on.  Close all explorer windows before open guiformat app)
+    alternatively, use tegraexplorer payload to format sd card as fat32. the guide is [here](format_sd.md)
+	3. Copy *the contents of* the Atmosphere `.zip` file to the root of your SD card
+    4. Copy the `bootloader` folder from the Hekate `.zip` file to the root of your SD card
+    5. Copy `hekate_ipl.ini` to the `bootloader` folder on your SD card
+    6. Copy `Lockpick_RCM.bin` to the `/bootloader/payloads` folder on your SD card
+    7. Copy *the contents* of the EdiZon `SD.zip` file to the root of your SD card
+    8. Create a folder named `appstore` inside the `switch` folder on your SD card, and put `appstore.nro` in it
+    9. Copy `ftpd.nro`, `NX-Shell.nro`, `NxThemesInstaller.nro` and `atmosphere-updater.nro` to the `switch` folder on your SD card
+    10. Reinsert your SD card back into your Switch
 
      ![sdfilesimg](../img/sdfiles.png)
 
