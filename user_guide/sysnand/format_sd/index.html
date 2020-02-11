@@ -8,7 +8,7 @@
         <meta name="author" content="NH Discord Server. - Modifed by ELY M.">
         
         <link rel="shortcut icon" href="../../../img/favicon.ico">
-        <title>Partitioning the SD - Switch Guide - Modded by ELY M.</title>
+        <title>Formatting the SD Card as FAT32 - Switch Guide - Modded by ELY M.</title>
         <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../../css/base.css" rel="stylesheet">
@@ -50,7 +50,7 @@
                             <li >
                                 <a href="../../..">Home</a>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -63,27 +63,27 @@
 </li>
                                     
 <li >
-    <a href="../entering_rcm/">Entering RCM</a>
+    <a href="../../emummc/entering_rcm/">Entering RCM</a>
 </li>
                                     
 <li >
-    <a href="../sending_payload/">Sending a payload</a>
-</li>
-                                    
-<li class="active">
-    <a href="./">Partitioning the SD</a>
+    <a href="../../emummc/sending_payload/">Sending a payload</a>
 </li>
                                     
 <li >
-    <a href="../sd_preparation/">SD preparations</a>
+    <a href="../../emummc/partitioning_sd/">Partitioning the SD</a>
 </li>
                                     
 <li >
-    <a href="../making_emummc/">Making the emuMMC</a>
+    <a href="../../emummc/sd_preparation/">SD preparations</a>
 </li>
                                     
 <li >
-    <a href="../launching_cfw/">Launching CFW</a>
+    <a href="../../emummc/making_emummc/">Making the emuMMC</a>
+</li>
+                                    
+<li >
+    <a href="../../emummc/launching_cfw/">Launching CFW</a>
 </li>
                                 </ul>
                             </li>
@@ -215,16 +215,6 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li >
-                                <a rel="next" href="../sending_payload/">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li >
-                                <a rel="prev" href="../sd_preparation/">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
                     </ul>
                 </div>
             </div>
@@ -233,13 +223,13 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#partitioning-the-sd-card">Partitioning the SD Card</a></li>
+        <li class="main active"><a href="#formatting-the-sd-card-as-fat32">Formatting the SD Card as FAT32</a></li>
             <li><a href="#preperations">Preperations</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="partitioning-the-sd-card">Partitioning the SD Card</h1>
+<h1 id="formatting-the-sd-card-as-fat32">Formatting the SD Card as FAT32</h1>
 <div class="admonition warning">
 <p class="admonition-title">This will delete everything on your sd card</p>
 <p>Doing this will delete all your data from your sd card, be warned!</p>
@@ -256,7 +246,7 @@
 </ul>
 <h3 id="instructions">Instructions</h3>
 <ol>
-<li>Inject the TegraExplorer payload with your 128GB (or larger) SD card inserted into your Switch.<ul>
+<li>Inject the TegraExplorer payload with your 64GB (or larger) SD card inserted into your Switch.<ul>
 <li>If you forgot how to do this, re-read the <a href="../sending_payload/">sending payload</a> section of the guide.</li>
 </ul>
 </li>
@@ -264,7 +254,7 @@
 <li>If you can't find the SD Format option, make sure that your SD card is inserted and select Mount SD.</li>
 </ul>
 </li>
-<li>Navigate to <code>Format for EmuMMC setup</code> and press the power button to confirm.</li>
+<li>Navigate to <code>Format entire SD to FAT32</code> and press the power button to confirm.</li>
 <li>Read the warning, and press power after 10 seconds to format your SD card.<ul>
 <li>Note: This will delete all data on your SD card. Make sure you backed up your Nintendo folder!</li>
 <li>This will take about 5 minutes.</li>
