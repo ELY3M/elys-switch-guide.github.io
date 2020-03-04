@@ -27,7 +27,7 @@ It is best to check the serial in the system info on the switch.  I have gotten 
 The homebrew community has crowdsourced a list of known serial numbers which are vulnerable to fusee-gelee. 
 
 - If your serial number is on this list as "potentially patched", follow the guide and see if your system works. 
-- If your serial number is listed as "patched", there is nothing you can do at this time.  It is good idea to test payload sending.  I know serveral cases that the switch is hackable even the serial is "patched". 
+- If your serial number is listed as "patched", there is nothing you can do at this time.  It is good idea to test payload sending.  I know several cases that the switch is hackable even the serial is "patched". 
 - If your system is patched, it is highly advised to keep it on 7.0.1 or lower, if possible, as there may be a vulnerability for these versions in the far future. **DO NOT update patched consoles past 7.0.1 if you want to ever have a chance of running homebrew and/or CFW on them.**
 - Team Xecuter have been working on a situation for patched switches and switch lites. You can read more about it [here.](https://gbatemp.net/threads/more-info-regarding-switch-mariko-lite-mods-by-team-xecuter.551848/)
 
@@ -46,9 +46,9 @@ Here is easy to use website for checking the serials on the switches at [ismyswi
 
 |  Serial Numbers  | <span style="color:green">Unpatched</span> | <span style="color:orange">Potentially patched</span> | <span style="color:red">Patched</span> |
 | :----|:---------------------------------|:---------------------------------|:----------------------|
-| XAW1 | XAW10000000000 to XAW10074000000 | XAW10075000000 to XAW10120000000 | XAW10120000000 and up |
+| XAW1 | XAW10000000000 to XAW10074000000 | XAW10074000000 to XAW10120000000 | XAW10120000000 and up |
 | XAW4 | XAW40000000000 to XAW40011000000 | XAW40011000000 to XAW40012000000 | XAW40012000000 and up |
-| XAW7 | XAW70000000000 to XAW70017800000 | XAW70017800000 to XAW70030000000 | XAW40012000000 and up |
+| XAW7 | XAW70000000000 to XAW70017800000 | XAW70017800000 to XAW70030000000 | XAW70030000000 and up |
 | XAJ1 | XAJ10000000000 to XAJ10020000000 | XAJ10020000000 to XAJ10030000000 | XAJ10030000000 and up |
 | XAJ4 | XAJ40000000000 to XAJ40046000000 | XAJ40046000000 to XAJ40060000000 | XAJ40060000000 and up |
 | XAJ7 | XAJ70000000000 to XAJ70040000000 | XAJ70040000000 to XAJ70050000000 | XAJ70050000000 and up |
@@ -88,7 +88,7 @@ Here is easy to use website for checking the serials on the switches at [ismyswi
 | 5.0.0 - 7.0.0 | [**RCM**](rcm.md)               | Wait for CFW               | **N/A**                     | **N/A**                |
 | 7.0.1         | [**RCM**](rcm.md)               | Wait for CFW               | Cart update to 8.0.1        | **N/A**                |
 | 8.0.1         | [**RCM**](rcm.md)               | Wait for homebrew          | Wait for homebrew           | Wait for homebrew      |
-| 8.1.0 - 9.1.0 | [**RCM**](rcm.md)               | Unhackable (currently)     | Unhackable (currently)      | Unhackable (currently) |
+| 8.1.0 - 9.2.0 | [**RCM**](rcm.md)               | Unhackable (currently)     | Unhackable (currently)      | Unhackable (currently) |
 
 &nbsp;
 
