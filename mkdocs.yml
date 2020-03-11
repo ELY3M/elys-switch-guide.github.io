@@ -16,7 +16,8 @@ nav:
         - 'Making the emuMMC': 'user_guide/emummc/making_emummc.md'
         - 'Launching CFW': 'user_guide/emummc/launching_cfw.md'       
     - Extras:
-        - 'Troubleshooting': 'extras/troubleshooting.md'     
+        - 'Troubleshooting': 'extras/troubleshooting.md' 
+        - 'NAND Backup': 'extras/nandbackup.md'        
         - 'Blocking Updates': 'extras/blocking_updates.md'
         - 'Ban Risks': 'extras/banrisks.md'        
         - 'Reinstalling Atmosphere': 'extras/reinstall.md'
