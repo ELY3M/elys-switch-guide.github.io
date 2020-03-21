@@ -18,7 +18,7 @@ This guide was written by staff members of the [Nintendo Homebrew Discord Server
 &nbsp;
 
 !!! tip "Credits"
-    **Flump, jerbear64, Phoenix, xGhostBoyx, Such Meme Many Skill, and oreo639.**
+    **SciresM, TuxSH, hexkyz, fincs, Flump, jerbear64, Phoenix, xGhostBoyx, Such Meme Many Skill, and oreo639.**
 
     Thank you to [everyone else](https://github.com/nh-server/switch-guide/graphs/contributors) that contributed to the guide on GitHub, but special thanks to **noirscape**.
 
@@ -27,6 +27,7 @@ This guide was written by staff members of the [Nintendo Homebrew Discord Server
 
 
 !!! tip "Developer / Tool credits"
+	- **ReSwitched** for some of texts in the guides [ReSwitched discord]()
     - **Atmosphere-NX** for [Atmosphere](https://github.com/Atmosphere-NX/Atmosphere).
     - **switchbrew** for [nx-hbloader](https://github.com/switchbrew/nx-hbloader) and [nx-hbmenu](https://github.com/switchbrew/nx-hbmenu).
     - **nwert** and **CTCaer** for [Hekate](https://github.com/CTCaer/hekate).
@@ -46,3 +47,10 @@ This guide was written by staff members of the [Nintendo Homebrew Discord Server
     - **exelix11** for [Switch Theme Injector](https://github.com/exelix11/SwitchThemeInjector/releases).
     - **vgmoose** for [hb-appstore](https://github.com/vgmoose/hb-appstore).
     - **ITotalJustice** for [atmosphere-updater](https://github.com/ITotalJustice/atmosphere-updater).
+	- **noahc3, Team AtlasNX** for some of texts and ideas from [The Ultimate Noob Guide for Hacking your Nintendo Switch](https://switch.homebrew.guide/index) 
+	- **XorTroll** for [Goldleaf](https://github.com/XorTroll/Goldleaf)  
+	- **huntereb** for [Awoo-Installer](https://github.com/Huntereb/Awoo-Installer)
+	- **developersu** for [ns-usbloader](https://github.com/developersu/ns-usbloader)
+	- **Joonie86** for [Sigpatches](https://github.com/Joonie86/hekate/releases/tag/5.0.0J)
+	- **spacemeowx2** for [Lan-play](https://www.lan-play.com)
+
