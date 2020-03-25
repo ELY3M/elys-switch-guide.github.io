@@ -1,6 +1,7 @@
 # About this guide
 
-I took [this guide](https://switchgui.de) and modified it to make it more simpler and less steps.  
+I want to be clear that I did improved and modified the Nintendo Homebrew's guide and I am giving credit and thanks to those people listed here.    
+I took [this guide](https://switchgui.de) and modified it to make it more simpler, less steps, and have more extra guides for common things done on Switch CFW.   
 I used my Nintendo Switch to modify this guide :)   
 
 !!! tip ""
