@@ -28,8 +28,8 @@ Right now, I am using Java JDK 13 from [https://www.oracle.com/technetwork/java/
 1. install the sigpatches, you have not installed them before.  Read [here](/extras/sigpatches) for instructions on installing the sigpatches.  
 2. Download latest `Awoo-Installer.zip` from [here](https://github.com/Huntereb/Awoo-Installer)
 3. extract the switch folder from `Awoo-Installer.zip` to the root fo your sd card. Just overwrite your switch folder.   
-4. Download latest `ns-usbloader-1.0-Win10.jar` from [here](https://github.com/developersu/ns-usbloader/releases)  for other OS than windows 10  get `ns-usbloader-1.0.jar` instead.  
-5. put `ns-usbloader-1.0-Win10.jar` or `ns-usbloader-1.0.jar` in your preferred place on your computer.   
+4. Download latest `ns-usbloader-#.#.jar` from [here](https://github.com/developersu/ns-usbloader/releases)  
+5. put `ns-usbloader-#.#.jar` in your preferred place on your computer.   
 6. if you do not have JAVA JDK installed on your computer, Download Java JDK from [here](https://adoptopenjdk.net)
 7. Install Java JDK on your computer. 
 8. Download Zadig from [here](https://zadig.akeo.ie/)  

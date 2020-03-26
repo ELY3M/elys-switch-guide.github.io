@@ -3,7 +3,7 @@
 A guide collaboration between Nintendo Homebrew's Helpers and Staff, from stock to Atmosphere.
 
 ### Credits and Thanks
-I took [this guide](https://switchgui.de) and modified it to make it more simpler, less steps, and have more extra guides for common things done on Switch CFW.  
+I forked [this guide](https://switchgui.de) and modified it to make it more simpler, less steps, and have more extra guides for common things done on Switch CFW.  
 
 Thank you very much to those people below here.  
 
