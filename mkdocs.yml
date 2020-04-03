@@ -28,6 +28,7 @@ nav:
         - 'Theming': 'extras/theming.md'
         - 'Save Management': 'extras/save_management.md'
         - 'Game Cheating': 'extras/cheating.md' 
+        - 'Tesla Overlay': 'extras/tesla_overlay.md'         
         - 'Game Modding': 'extras/game_modding.md'       
         - 'Sigpatches': 'extras/sigpatches.md' 
         - 'Installing nsps over USB': 'extras/installing_nsps_via_usb.md'           
