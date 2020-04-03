@@ -8,7 +8,7 @@
         <meta name="author" content="NH Discord Server. - Modifed by ELY M.">
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Incognito - NH Switch Guide - Modifed by ELY M.</title>
+        <title>Tesla Overlay - NH Switch Guide - Modifed by ELY M.</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -87,7 +87,7 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Extras <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -139,8 +139,8 @@
     <a href="../cheating/">Game Cheating</a>
 </li>
                                     
-<li >
-    <a href="../tesla_overlay/">Tesla Overlay</a>
+<li class="active">
+    <a href="./">Tesla Overlay</a>
 </li>
                                     
 <li >
@@ -223,6 +223,16 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li >
+                                <a rel="next" href="../cheating/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../game_modding/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -231,93 +241,32 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#incognito">Incognito</a></li>
-        <li class="main "><a href="#what-is-incognito_rcm">What is Incognito_RCM</a></li>
-        <li class="main "><a href="#usage">Usage</a></li>
-        <li class="main "><a href="#screenshots">Screenshots</a></li>
-            <li><a href="#what-you-need">What you need:</a></li>
-            <li><a href="#instructions">Instructions:</a></li>
+        <li class="main active"><a href="#tesla-overlay-tutorial">Tesla Overlay Tutorial</a></li>
+        <li class="main "><a href="#overlay-apps">Overlay Apps</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="incognito">Incognito</h2>
-<div class="admonition danger">
-<p class="admonition-title">Warning:</p>
-<ul>
-<li>Incoginito_RCM is dangerous and will wipe serial and parts of your prodinfo in your switch nand.  It will make your switch totally offline and wont be able to access Nintendo services at all.      </li>
-<li>it is same as Super Ban.  it will not be able to do normal firmware updates.   </li>
-<li>Make sure you do your NAND backup before doing incognito.   </li>
-<li>Do NAND back up, if you have not done your nand backup.  The nand backup guide is <a href="/../extras/nandbackup">here</a></li>
-<li>I know several people who made their switches "Super Banned" due to running incognito without doing prodinfo and nand backups.  </li>
-<li>one person sent his console to Nintendo and get patched unit.   </li>
-<li>very important to select emummc to incognito if you want to make your emummc totally offline and keep sysnand clean and online.   </li>
-</ul>
-</div>
-<h2 id="what-is-incognito_rcm">What is Incognito_RCM</h2>
-<p>This is from their github.<br />
-Incognito_RCM is a bare metal Nintendo Switch payload that derives encryption keys for de- and encrypting PRODINFO partition (sysnand and emummc) and wiping personal information from your Nintendo Switch as to go online while worrying slightly less about a ban.
-It has a builtin backup and restore functionality.</p>
-<p>It is heavily based on <a href="https://github.com/shchmue/Lockpick_RCM">Lockpick_RCM</a> and takes inspiration from <a href="https://github.com/blawar/incognito">incognito</a>.</p>
-<p>Massive Thanks to CTCaer, shchmue and blawar!</p>
-<p>This project is in early stage, so have a nand backup!!</p>
-<h1 id="usage">Usage</h1>
-<ul>
-<li>Launch Incoginito_RCM.bin using your favorite payload injector</li>
-<li>Use menu to make a backup! (Will be written to <code>sd:/prodinfo_sysnand.bin</code> and <code>sd:/prodinfo_emunand.bin</code> respectively)</li>
-<li>Choose Incognito (emuMMC) to wipe personal information from your emunand/emuMMCs</li>
-<li>If you ever want to revert, choose restore menu points</li>
-</ul>
-<h1 id="screenshots">Screenshots</h1>
-<table>
-<thead>
-<tr>
-<th align="center">Main</th>
-<th align="center">Incognito</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center"><img alt="" src="/extras/incognito/main.png" /></td>
-<td align="center"><img alt="" src="/extras/incognito/incognito.png" /></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th align="center">Backup</th>
-<th align="center">Restore</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center"><img alt="" src="/extras/incognito/backup.png" /></td>
-<td align="center"><img alt="" src="/extras/incognito/restore.png" /></td>
-</tr>
-</tbody>
-</table>
-<h3 id="what-you-need">What you need:</h3>
-<ul>
-<li>The <a href="https://github.com/jimzrt/Incognito_RCM/releases" target="_blank">Incognito_RCM</a> Payload</li>
-</ul>
-<h3 id="instructions">Instructions:</h3>
-<div class="admonition tip">
+<h1 id="tesla-overlay-tutorial">Tesla Overlay Tutorial</h1>
 <ol>
-<li>Copy <code>Incognito_RCM.bin</code> to the <code>/bootloader/payloads</code> folder on your SD card    </li>
-<li>Enter RCM and inject the Hekate payload</li>
-<li>Tap the <code>Payloads</code> option, then press Incognito_RCM.bin.</li>
-<li>Backup both sysnand and emummc prodinfos by selecting Backup in the menu</li>
-<li>reboot back to RCM and put your sd card in your computer.   </li>
-<li>copy the <code>sd:/prodinfo_sysnand.bin</code> and <code>sd:/prodinfo_emunand.bin</code> files and save them in safe place.  best to keep them with where you keep your nand backups.   </li>
-<li>put sd card back in your switch.  </li>
-<li>inject the Hekate payload</li>
-<li>Choose Incognito (emuMMC) to wipe personal information from your emunand/emuMMCs</li>
-<li>reboot back to RCM AND Inject the fuse-primary.bin to boot atmosphere.  </li>
-<li>go to system settings and check the serial info. it should be blank like in the image below here.     </li>
+<li>Download <a href="https://github.com/WerWolv/nx-ovlloader/releases">nx-ovlloader</a> and extract it onto your SD card</li>
+<li>Download <a href="https://github.com/WerWolv/Tesla-Menu/releases">Tesla-Menu</a> and extract it onto your SD card</li>
+<li>Download <a href="http://werwolv.net/downloads/EdiZonOverlay.zip">EdiZon Overlay</a> and extract it onto the root of your SD card</li>
+<li>reboot your cfw via reboot to payload if you used ftp to copy files or other way without pulling out your sd card.   </li>
+<li>Press <code>L + D-Pad-Down + R-Stick</code> to launch Tesla-Menu after reboot</li>
+<li>Select <code>EdiZon</code> from the menu</li>
+<li>Select <code>Cheats</code> for cheats or <code>Stats</code> for system and game infos from the menu</li>
+<li>to exit the overday menu, you can press B till the overlay menu is gone or press <code>L + D-Pad-Down + R-Stick</code> to close the overlay menu.   </li>
 </ol>
-</div>
-<p><img alt="" src="/extras/incognito/after.png" /></p></div>
+<h1 id="overlay-apps">Overlay Apps</h1>
+<ul>
+<li><a href="http://werwolv.net/downloads/EdiZonOverlay.zip">EdiZon</a></li>
+<li><a href="https://github.com/zaksabeast/CaptureSight">CaptureSight</a></li>
+<li><a href="https://github.com/diwo/TextReaderOverlay-NX">Text Reader</a></li>
+<li><a href="https://github.com/WerWolv/ovl-sysmodules/releases">ovl-sysmodules</a></li>
+<li><a href="https://github.com/HookedBehemoth/ShareNX-Overlay">ShareNX-Overlay</a></li>
+</ul>
+<p>&nbsp;</p></div>
         </div>
 
         <footer class="col-md-12">
