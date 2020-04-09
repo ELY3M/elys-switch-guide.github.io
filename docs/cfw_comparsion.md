@@ -5,7 +5,7 @@
 |----|----|----|----|----|----|
 |Free   | ✓  | ✓  | ✓  | x (~$30 USD)  |   |
 |Open Source   | ✓  |  ✓ |  ✓ |  x |   |
-|Firmware 9.1.0+ Support    | ✓ | ✓ | x | ✓ | it is DEAD Project now. ReiNX have not been updated since 8.1.0 :(  |
+|Firmware 9.1.0+ Support    | ✓ | ✓ | x | ✓ | ReiNX is DEAD Project now. ReiNX have not been updated since 8.1.0 :(  |
 |Homebrew Support| ✓ | ✓ | ✓ | ? | Be aware: Many homebrew app authors do not support sxos. |
 |Supports Custom Sysmodules| ✓ | ✓ | ✓ | ✓ | not all sysmodules will work on sxos.  |
 |Realtime Cheat Engine    | ✓ | ✓ | ✓ | ✓ | sxos have laggy cheat engine. it lags game with cheats enabled.  |
