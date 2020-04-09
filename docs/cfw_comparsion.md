@@ -5,13 +5,13 @@
 |----|----|----|----|----|----|
 |Free   | ✓  | ✓  | ✓  | x (~$30 USD)  |   |
 |Open Source   | ✓  |  ✓ |  ✓ |  x |   |
-|Firmware 9.1.0+ Support    | ✓ | ✓ | x | ✓ | ReiNX have not been updated since 8.1.0 :(  |
-|Homebrew Support| ✓ | ✓ | ✓ | ? | Not all homebrew apps support sxos |
-|Supports Custom Sysmodules| ✓ | ✓ | ✓ | ✓ |   |
-|Realtime Cheat Engine    | ✓ | ✓ | ✓ | ✓ |   |
+|Firmware 9.1.0+ Support    | ✓ | ✓ | x | ✓ | it is DEAD Project now. ReiNX have not been updated since 8.1.0 :(  |
+|Homebrew Support| ✓ | ✓ | ✓ | ? | Be aware: Many homebrew app authors do not support sxos. |
+|Supports Custom Sysmodules| ✓ | ✓ | ✓ | ✓ | not all sysmodules will work on sxos.  |
+|Realtime Cheat Engine    | ✓ | ✓ | ✓ | ✓ | sxos have laggy cheat engine. it lags game with cheats enabled.  |
 |Support Game Modding   | ✓ | ✓ | ✓ | ✓ |   |
 |Custom Themes   | ✓ | ✓ | ✓ | ✓ | need to add a fix for lock screen themes on sxos  |
-|Custom boot screens| ✓ | ✓ | ✓ | x |   |
+|Custom boot screens| ✓ | ✓ | ✓ | x | you cannot change boot screen on sxos at all.  |
 |FS Patches  | ✓ | ✓ | ✓ | ✓ |   |
 |ES Patches   | ✓ | ✓ | ✓ | ✓ | Atmosphere & Kosmos Sigpatches must be installed manually  |
 |Configuration Tools   | x | ✓ | ✓ | ✓ |   |
