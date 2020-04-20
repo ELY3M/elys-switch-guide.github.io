@@ -43,7 +43,7 @@ Method #2
 &nbsp;
 
 1. download <a href=https://gbatemp.net/threads/i-heard-that-you-guys-need-some-sweet-patches-for-atmosphere.521164/>Sigpatches from here</a> 
-2. open `2.0.0-9.2.0.zip` and there will be folder named `2.0.0-9.2.0` inside. go in that folder and drag atmosphere folder to the root of your sd card, overwrite the atmosphere folder.    
+2. open `2.0.0-10.0.0.zip` and there will be folder named `2.0.0-10.0.0` inside. go in that folder and drag atmosphere folder to the root of your sd card, overwrite the atmosphere folder.    
 3. use reboot to payload to reboot atmosphere
 
 
