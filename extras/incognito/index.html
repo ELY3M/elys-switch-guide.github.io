@@ -87,7 +87,7 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Extras <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -105,6 +105,10 @@
                                     
 <li >
     <a href="../banrisks/">Ban Risks</a>
+</li>
+                                    
+<li class="active">
+    <a href="./">Incognito</a>
 </li>
                                     
 <li >
@@ -218,6 +222,16 @@
                         </ul>
 
                     <ul class="nav navbar-nav navbar-right">
+                            <li >
+                                <a rel="next" href="../banrisks/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../reinstall/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -227,13 +241,39 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#incognito">Incognito</a></li>
-        <li class="main "><a href="#under-construction">Under Construction</a></li>
+        <li class="main "><a href="#enabling-incognito-in-atmosphere-0120-or-above">Enabling Incognito in atmosphere 0.12.0 or above</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
 <h2 id="incognito">Incognito</h2>
-<h2 id="under-construction">Under Construction</h2>
+<h2 id="enabling-incognito-in-atmosphere-0120-or-above">Enabling Incognito in atmosphere 0.12.0 or above</h2>
+<div class="admonition warning">
+<p class="admonition-title">Caution</p>
+<p>This will 100% stop online play or any game or firmware updates from happening if it is enabled. 
+This is designed for totally offline emunands.   </p>
+</div>
+<ol>
+<li>download <code>exosphere.ini</code> from <a href="https://raw.githubusercontent.com/Atmosphere-NX/Atmosphere/master/config_templates/exosphere.ini">here</a></li>
+<li>open exosphere.ini in notepad or your favorite text editor.  </li>
+</ol>
+<p>look at the section in exosphere.ini</p>
+<pre>
+[exosphere]
+debugmode=1
+debugmode_user=0
+disable_user_exception_handlers=0
+enable_user_pmu_access=0
+blank_prodinfo_sysmmc=0
+blank_prodinfo_emummc=0
+allow_writing_to_cal_sysmmc=0
+</pre>
+
+<ol>
+<li>if you are only running CFW in emunand.  you can change this line blank_prodinfo_emummc=0 to blank_prodinfo_emummc=1  </li>
+<li>save exosphere.ini and put it on the root of your sd card.   </li>
+<li>reboot atmosphere via reboot by payload or rcm method.   </li>
+</ol>
 <!--
 !!! danger "Warning:"   
     - Incoginito_RCM is dangerous and will wipe serial and parts of your prodinfo in your switch nand.  It will make your switch totally offline and wont be able to access Nintendo services at all.      
