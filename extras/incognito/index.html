@@ -227,92 +227,80 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#incognito">Incognito</a></li>
-        <li class="main "><a href="#what-is-incognito_rcm">What is Incognito_RCM</a></li>
-        <li class="main "><a href="#usage">Usage</a></li>
-        <li class="main "><a href="#screenshots">Screenshots</a></li>
-            <li><a href="#what-you-need">What you need:</a></li>
-            <li><a href="#instructions">Instructions:</a></li>
+        <li class="main "><a href="#under-construction">Under Construction</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
 <h2 id="incognito">Incognito</h2>
-<div class="admonition danger">
-<p class="admonition-title">Warning:</p>
-<ul>
-<li>Incoginito_RCM is dangerous and will wipe serial and parts of your prodinfo in your switch nand.  It will make your switch totally offline and wont be able to access Nintendo services at all.      </li>
-<li>it is same as Super Ban.  it will not be able to do normal firmware updates.   </li>
-<li>Make sure you do your NAND backup before doing incognito.   </li>
-<li>Do NAND back up, if you have not done your nand backup.  The nand backup guide is <a href="/../extras/nandbackup">here</a></li>
-<li>I know several people who made their switches "Super Banned" due to running incognito without doing prodinfo and nand backups.  </li>
-<li>one person sent his console to Nintendo and get patched unit.   </li>
-<li>very important to select emummc to incognito if you want to make your emummc totally offline and keep sysnand clean and online.   </li>
-</ul>
-</div>
-<h2 id="what-is-incognito_rcm">What is Incognito_RCM</h2>
-<p>This is from their github.<br />
+<h2 id="under-construction">Under Construction</h2>
+<!--
+!!! danger "Warning:"   
+    - Incoginito_RCM is dangerous and will wipe serial and parts of your prodinfo in your switch nand.  It will make your switch totally offline and wont be able to access Nintendo services at all.      
+    - it is same as Super Ban.  it will not be able to do normal firmware updates.   
+    - Make sure you do your NAND backup before doing incognito.   
+    - Do NAND back up, if you have not done your nand backup.  The nand backup guide is [here](/../extras/nandbackup)
+    - I know several people who made their switches "Super Banned" due to running incognito without doing prodinfo and nand backups.  
+    - one person sent his console to Nintendo and get patched unit.   
+    - very important to select emummc to incognito if you want to make your emummc totally offline and keep sysnand clean and online.
+
+## What is Incognito_RCM    
+
+This is from their github.  
 Incognito_RCM is a bare metal Nintendo Switch payload that derives encryption keys for de- and encrypting PRODINFO partition (sysnand and emummc) and wiping personal information from your Nintendo Switch as to go online while worrying slightly less about a ban.
-It has a builtin backup and restore functionality.</p>
-<p>It is heavily based on <a href="https://github.com/shchmue/Lockpick_RCM">Lockpick_RCM</a> and takes inspiration from <a href="https://github.com/blawar/incognito">incognito</a>.</p>
-<p>Massive Thanks to CTCaer, shchmue and blawar!</p>
-<p>This project is in early stage, so have a nand backup!!</p>
-<h1 id="usage">Usage</h1>
-<ul>
-<li>Launch Incoginito_RCM.bin using your favorite payload injector</li>
-<li>Use menu to make a backup! (Will be written to <code>sd:/prodinfo_sysnand.bin</code> and <code>sd:/prodinfo_emunand.bin</code> respectively)</li>
-<li>Choose Incognito (emuMMC) to wipe personal information from your emunand/emuMMCs</li>
-<li>If you ever want to revert, choose restore menu points</li>
-</ul>
-<h1 id="screenshots">Screenshots</h1>
-<table>
-<thead>
-<tr>
-<th align="center">Main</th>
-<th align="center">Incognito</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center"><img alt="" src="/extras/incognito/main.png" /></td>
-<td align="center"><img alt="" src="/extras/incognito/incognito.png" /></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th align="center">Backup</th>
-<th align="center">Restore</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center"><img alt="" src="/extras/incognito/backup.png" /></td>
-<td align="center"><img alt="" src="/extras/incognito/restore.png" /></td>
-</tr>
-</tbody>
-</table>
-<h3 id="what-you-need">What you need:</h3>
-<ul>
-<li>The <a href="https://github.com/jimzrt/Incognito_RCM/releases" target="_blank">Incognito_RCM</a> Payload</li>
-</ul>
-<h3 id="instructions">Instructions:</h3>
-<div class="admonition tip">
-<ol>
-<li>Copy <code>Incognito_RCM.bin</code> to the <code>/bootloader/payloads</code> folder on your SD card    </li>
-<li>Enter RCM and inject the Hekate payload</li>
-<li>Tap the <code>Payloads</code> option, then press Incognito_RCM.bin.</li>
-<li>Backup both sysnand and emummc prodinfos by selecting Backup in the menu</li>
-<li>reboot back to RCM and put your sd card in your computer.   </li>
-<li>copy the <code>sd:/prodinfo_sysnand.bin</code> and <code>sd:/prodinfo_emunand.bin</code> files and save them in safe place.  best to keep them with where you keep your nand backups.   </li>
-<li>put sd card back in your switch.  </li>
-<li>inject the Hekate payload</li>
-<li>Choose Incognito (emuMMC) to wipe personal information from your emunand/emuMMCs</li>
-<li>reboot back to RCM AND Inject the fuse-primary.bin to boot atmosphere.  </li>
-<li>go to system settings and check the serial info. it should be blank like in the image below here.     </li>
-</ol>
-</div>
-<p><img alt="" src="/extras/incognito/after.png" /></p></div>
+It has a builtin backup and restore functionality.
+
+It is heavily based on [Lockpick_RCM](https://github.com/shchmue/Lockpick_RCM) and takes inspiration from [incognito](https://github.com/blawar/incognito).
+
+Massive Thanks to CTCaer, shchmue and blawar!
+
+This project is in early stage, so have a nand backup!!
+
+Usage
+=
+* Launch Incoginito_RCM.bin using your favorite payload injector
+* Use menu to make a backup! (Will be written to `sd:/prodinfo_sysnand.bin` and `sd:/prodinfo_emunand.bin` respectively)
+* Choose Incognito (emuMMC) to wipe personal information from your emunand/emuMMCs
+* If you ever want to revert, choose restore menu points
+
+Screenshots
+=
+
+Main            |  Incognito
+:-------------------------:|:-------------------------:
+![](/extras/incognito/main.png)  |  ![](/extras/incognito/incognito.png)
+
+Backup            |  Restore
+:-------------------------:|:-------------------------:
+![](/extras/incognito/backup.png)  |  ![](/extras/incognito/restore.png)
+
+
+
+
+
+### What you need:
+- The <a href="https://github.com/jimzrt/Incognito_RCM/releases" target="_blank">Incognito_RCM</a> Payload
+
+### Instructions:
+
+!!! tip ""
+    1. Copy `Incognito_RCM.bin` to the `/bootloader/payloads` folder on your SD card    
+    2. Enter RCM and inject the Hekate payload
+    3. Tap the `Payloads` option, then press Incognito_RCM.bin.
+    4. Backup both sysnand and emummc prodinfos by selecting Backup in the menu
+    5. reboot back to RCM and put your sd card in your computer.   
+    6. copy the `sd:/prodinfo_sysnand.bin` and `sd:/prodinfo_emunand.bin` files and save them in safe place.  best to keep them with where you keep your nand backups.   
+    7. put sd card back in your switch.  
+    8. inject the Hekate payload
+    9. Choose Incognito (emuMMC) to wipe personal information from your emunand/emuMMCs
+    10. reboot back to RCM AND Inject the fuse-primary.bin to boot atmosphere.  
+    11. go to system settings and check the serial info. it should be blank like in the image below here.     
+
+
+
+![](/extras/incognito/after.png)
+
+--></div>
         </div>
 
         <footer class="col-md-12">
