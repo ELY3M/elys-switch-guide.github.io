@@ -47,16 +47,18 @@ nav:
         - 'My Reasons and Faqs': 'elysfaq.md'
         - 'SMO Modding': 'smo_modding.md' 
         - 'Elys Switch Homebrews on github': 'https://github.com/topics/elys-switch-homebrew'
+
+plugins:
+    - markdownextradata
     
 markdown_extensions:
     - admonition
     - fontawesome_markdown
-    - markdownextradata
 
 extra_css:
     - css/custom.css
 
-extras:
+extra:
   versions:
     firmware: 10.0.2
     atmosphere: 0.12.0
