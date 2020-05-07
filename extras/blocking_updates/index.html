@@ -243,23 +243,44 @@
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#blocking-updates">Blocking Updates</a></li>
             <li><a href="#instructions">Instructions</a></li>
+            <li><a href="#setting-up-a-new-connection-via-wifi">Setting up a new connection via WiFi</a></li>
+            <li><a href="#editing-an-existing-wifi-connection">Editing an existing WiFi connection</a></li>
             <li><a href="#testing-if-your-90dns-connection-is-working">Testing if your 90dns connection is working</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
 <h1 id="blocking-updates">Blocking Updates</h1>
-<p>You can add custom DNS to your WiFi connection that will block all communication with the Nintendo servers. This will stop any updates and reporting to Nintendo, but it will prevent use of the eShop and online games.</p>
+<p>You can add a custom DNS to your WiFi connection that will block all communication with Nintendo's servers. This will stop any updates and reporting to Nintendo, but it will prevent use of the eShop and online games.</p>
 <p>We will be using <a href="https://gitlab.com/a/90dns">90DNS</a>, a community-run custom DNS server. If you prefer, you can run your own DNS server following the instructions on the <a href="https://gitlab.com/a/90dns/blob/master/SELFHOST.md">GitLab repository.</a></p>
 <p>&nbsp;</p>
 <h3 id="instructions">Instructions</h3>
 <div class="admonition tip">
+<p>Enter the console's System Settings, and then proceed to the Internet tab. From here:</p>
+<h3 id="setting-up-a-new-connection-via-wifi">Setting up a new connection via WiFi</h3>
+<div class="admonition warning">
+<p class="admonition-title">Open WiFi networks without a password</p>
+<p>Not all WiFi networks require a password to connect. If your network does not use one, you can use the <code>Manual Setup</code> option, located at the very bottom of the <code>Internet Settings</code> screen below all other WiFi networks.</p>
+</div>
 <ol>
-<li>Go to the Settings applet, and then to the Internet tab.</li>
-<li>Select the WiFi network you are connected to and click <code>Change Settings</code>.</li>
-<li>Change DNS Settings to Manual.</li>
-<li>Pick the Server that is the closest to your device out of the below chart and      enter its Primary and Secondary DNS into your connection.</li>
-<li>Save Settings and test connection.</li>
+<li>Select your WiFi network from the list of networks.</li>
+<li>Enter an <strong>incorrect</strong> password that is 8 characters long and press <code>OK</code>.</li>
+<li>After a few moments of attempting to connect, the console will display a connection error.</li>
+<li>Press <code>OK</code> to close the error message.</li>
+<li>Press <code>Close</code> when it offers to display more details about the error.</li>
+<li>When asked if you want to re-enter the password, pick <code>View Settings</code>.</li>
+<li>Change <code>DNS Settings</code> to <code>Manual</code>.</li>
+<li>Pick the server that is the closest to your location out of the below chart and enter its <code>Primary</code> and <code>Secondary</code> DNS into your connection settings.</li>
+<li>Enter the correct password for your WiFi connection.</li>
+<li>Save the settings and test the connection.</li>
+</ol>
+<hr />
+<h3 id="editing-an-existing-wifi-connection">Editing an existing WiFi connection</h3>
+<ol>
+<li>Select your existing WiFi network from the list of networks.</li>
+<li>Select <code>Change Settings</code>.</li>
+<li>Pick the server that is the closest to your location out of the below chart and enter its Primary and Secondary DNS into your connection settings.</li>
+<li>Save the settings and test the connection.</li>
 </ol>
 </div>
 <table>
