@@ -51,6 +51,17 @@ nav:
 markdown_extensions:
     - admonition
     - fontawesome_markdown
+    - markdownextradata
 
 extra_css:
     - css/custom.css
+
+extras:
+  versions:
+    firmware: 10.0.2
+    atmosphere: 0.12.0
+    
+    
+    
+    
+  
