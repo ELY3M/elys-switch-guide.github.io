@@ -1,7 +1,34 @@
 ## Incognito
 
 
-## Under Construction 
+## Enabling Incognito in atmosphere 0.12.0 or above 
+
+
+!!!warning "Caution"
+	This will 100% stop online play or any game or firmware updates from happening if it is enabled. 
+	This is designed for totally offline emunands.   
+	
+1. download `exosphere.ini` from [here](https://raw.githubusercontent.com/Atmosphere-NX/Atmosphere/master/config_templates/exosphere.ini)
+2. open exosphere.ini in notepad or your favorite text editor.  
+
+look at the section in exosphere.ini
+
+<pre>
+[exosphere]
+debugmode=1
+debugmode_user=0
+disable_user_exception_handlers=0
+enable_user_pmu_access=0
+blank_prodinfo_sysmmc=0
+blank_prodinfo_emummc=0
+allow_writing_to_cal_sysmmc=0
+</pre>
+
+
+3. if you are only running CFW in emunand.  you can change this line blank_prodinfo_emummc=0 to blank_prodinfo_emummc=1  
+4. save exosphere.ini and put it on the root of your sd card.   
+5. reboot atmosphere via reboot by payload or rcm method.   
+
 
 
 
