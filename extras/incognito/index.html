@@ -248,6 +248,8 @@
 
 <h2 id="incognito">Incognito</h2>
 <h2 id="enabling-incognito-in-atmosphere-0120-or-above">Enabling Incognito in atmosphere 0.12.0 or above</h2>
+<p>Atmosphere devs added in this nice thing.
+more info/changelog at <a href="https://github.com/Atmosphere-NX/Atmosphere/releases/tag/0.12.0">https://github.com/Atmosphere-NX/Atmosphere/releases/tag/0.12.0</a></p>
 <div class="admonition warning">
 <p class="admonition-title">Caution</p>
 <p>This will 100% stop online play or any game or firmware updates from happening if it is enabled. 
@@ -257,7 +259,7 @@ This is designed for totally offline emunands.   </p>
 <li>download <code>exosphere.ini</code> from <a href="https://raw.githubusercontent.com/Atmosphere-NX/Atmosphere/master/config_templates/exosphere.ini">here</a></li>
 <li>open exosphere.ini in notepad or your favorite text editor.  </li>
 </ol>
-<p>look at the section in exosphere.ini</p>
+<p>look at the section in bottom of exosphere.ini</p>
 <pre>
 [exosphere]
 debugmode=1
@@ -271,6 +273,7 @@ allow_writing_to_cal_sysmmc=0
 
 <ol>
 <li>if you are only running CFW in emunand.  you can change this line blank_prodinfo_emummc=0 to blank_prodinfo_emummc=1  </li>
+<li>if you want to make sysnand offline for some reasons, use this line blank_prodinfo_sysmmc=0 and change it to blank_prodinfo_sysmmc=1 (not recommeneded)</li>
 <li>save exosphere.ini and put it on the root of your sd card.   </li>
 <li>reboot atmosphere via reboot by payload or rcm method.   </li>
 </ol>
