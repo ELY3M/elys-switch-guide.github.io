@@ -27,7 +27,7 @@ allow_writing_to_cal_sysmmc=0
 
 
 3. if you are only running CFW in emunand.  you can change this line blank_prodinfo_emummc=0 to blank_prodinfo_emummc=1  
-  - if you want to make sysnand offline for some reasons, use this line blank_prodinfo_sysmmc=0 and change it to blank_prodinfo_sysmmc=1 (not recommeneded)
+   if you want to make sysnand offline for some reasons, use this line blank_prodinfo_sysmmc=0 and change it to blank_prodinfo_sysmmc=1 (not recommeneded)
 4. save exosphere.ini and put it on the root of your sd card.   
 5. reboot atmosphere via reboot by payload or rcm method.   
 
