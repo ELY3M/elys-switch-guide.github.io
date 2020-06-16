@@ -242,7 +242,7 @@
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#making-the-emummc-getting-keys-and-making-essential-backups">Making the Emummc, getting keys, and making essential backups</a></li>
             <li><a href="#making-the-emummc">Making the emuMMC</a></li>
-            <li><a href="#making-a-nand-backup">Making a nand backup</a></li>
+            <li><a href="#making-a-nand-backup">Making a NAND backup</a></li>
             <li><a href="#instructions">Instructions</a></li>
             <li><a href="#getting-your-consoles-unique-keys">Getting your Console's Unique Keys</a></li>
     </ul>
@@ -261,13 +261,13 @@
 <li>Enter RCM and inject the Hekate payload</li>
 <li>Use the touch screen to navigate to <code>emuMMC</code></li>
 <li>Tap on <code>Create emuMMC</code>, then select <code>SD Partition</code></li>
-<li>Tap on <code>Continue</code>. It will start making the emummc now. After it's done return to the emuMMC menu using the <code>Close</code> buttons</li>
+<li>Tap on <code>Part 1</code>. It will start making the emummc now. After it's done return to the emuMMC menu using the <code>Close</code> buttons</li>
 <li>Tap on <code>Change emuMMC</code>, then <code>SD RAW 1</code></li>
 <li>Go back to the main menu</li>
 </ol>
 </div>
 <hr />
-<h3 id="making-a-nand-backup">Making a nand backup</h3>
+<h3 id="making-a-nand-backup">Making a NAND backup</h3>
 <div class="admonition danger">
 <p class="admonition-title">Important</p>
 <p>A NAND backup is crucial. They can be used to restore the device to a working state in case of emergencies.</p>
@@ -280,9 +280,9 @@
 <li>Enter RCM and inject the Hekate payload</li>
 <li>Use the touch screen to navigate to <code>Tools</code> and then <code>Backup eMMC</code></li>
 <li>Tap on <code>eMMC BOOT0 &amp; BOOT1</code></li>
-<li>This may take a few minutes</li>
+<li>This should only take a few seconds, but if your SD card is very slow, it may take around a minute.</li>
 <li>Tap on <code>Close</code> to continue, then tap on <code>eMMC RAW GPP</code></li>
-<li>This will take a long time</li>
+<li>This will take a long time. Expect it to take between 10 minutes to an hour (or more, if your SD card is very slow).</li>
 <li>On FAT32 SD cards or cards that have less than 32 gigabytes of space available, the NAND will be split into 1 or 2 gigabyte parts.<ul>
 <li>Hekate will stop producing these parts when it runs out of space. When this happens, do the following:</li>
 <li>Power off your system</li>
