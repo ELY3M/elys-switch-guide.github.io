@@ -193,7 +193,7 @@ If you keep your emuMMC offline, you will have to use a gamecard to update your 
 ### Updating your emuMMC with ChoiDujourNX
 
 1. Boot up atmosphere with fusee-primary.bin payload, if you have not booted up atmosphere. 
-2. Once booted, hold `R` while launching a game to boot into the homebrew launcher.
+2. Once booted, Tap on Album icon to boot into the homebrew launcher.  (ChoiDujourNX will not work proper, if you hold R and launch hbmenu from one of your games.)
 3. Navigate to the `system updates` folder where you should see ChoiDujourNX, launch it.
 4. Once in ChoiDujourNX, navigate to `tegraexplorer/Firmware/<latest firmware number>`. In that folder you should see a large number of `.nca` files.
 5. Tap on `Choose` in the bottom right hand corner of the screen.

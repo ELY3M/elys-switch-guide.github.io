@@ -61,8 +61,8 @@ extra_css:
 
 extra:
   versions:
-    firmware: 10.0.2
-    atmosphere: 0.12.0
+    firmware: 10.0.4
+    atmosphere: 0.13.0
     
     
     

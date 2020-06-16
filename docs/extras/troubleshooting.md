@@ -56,7 +56,7 @@ customlogo=0
 verification=2
 backlight=160
 autohosoff=0
-autonogc=1
+autonogc=0
 </pre>
 
 

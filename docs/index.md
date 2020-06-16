@@ -32,6 +32,7 @@ This guide was written by staff members of the [Nintendo Homebrew Discord Server
     - **nwert** and **CTCaer** for [Hekate](https://github.com/CTCaer/hekate).
     - **WerWolv** for [EdiZon](https://github.com/WerWolv/EdiZon/releases).
     - **Flagbrew** for [Checkpoint](https://github.com/FlagBrew/Checkpoint).
+	- **J-D-K** for [JKSV](https://github.com/J-D-K/JKSV).
     - **mtheall** for [FTPD](https://github.com/mtheall/ftpd/).
     - **joel16** for [NX-Shell](https://github.com/joel16/NX-Shell).
     - **Cease & DeSwitch** for [fusee-gelee](https://github.com/Qyriad/fusee-launcher).

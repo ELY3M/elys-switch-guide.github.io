@@ -20,32 +20,10 @@ for example, I made hbmenu nsp and installed hbmenu to my home screen for easy a
 
 # Installing SigPatches 
 
-<!--
-There are two methods to install Sigpatches now.  
-
-
-Method #1  
-1. download 'sigpatch-updater.nro' from [https://github.com/ITotalJustice/sigpatch-updater/releases](https://github.com/ITotalJustice/sigpatch-updater/releases)   
-2. make folder sigpatch-updater in switch folder on your sd card  
-3. put 'sigpatch-updater.nro' in sigpatch-updater folder in switch folder   
-4. make sure you select the top option for atmosphere users  
-4. open it in your hbmenu. press A to install the sigpatches  
-5. press + to exit the sigpatch-updater  
-6. use reboot to payload to reboot atmosphere  
-
 &nbsp;
 
-![sigpatch-updater](../extras/img/sigpatch-updater.jpg)
-
-&nbsp;
-
-Method #2    
---> 
-
-&nbsp;
-
-1. download `2.0.0-10.0.0 AMS 0.12.zip` from <a href=https://gbatemp.net/threads/atmosphere-patches-es-fs-and-loader-fusee_primary-only.562812/>Sigpatches from here</a> It will be a `2.0.0-10.0.0 AMS 0.12.zip` download on bottom of the first post in the link.  
-2. open `2.0.0-10.0.0 AMS 0.12.zip` and there will be folder named `2.0.0-10.0.0` inside. go in that folder and drag atmosphere folder to the root of your sd card, overwrite the atmosphere folder.    
+1. download `2.0.0-10.0.4_for_AMS_0.13_and_0.12_and_0.11.1.zip` from <a href=https://gbatemp.net/threads/sigpatches-for-atmosphere-0-13-0.567542>Sigpatches from here</a> It will be a `2.0.0-10.0.4_for_AMS_0.13_and_0.12_and_0.11.1.zip` download on bottom of the first post in the link.  
+2. open `2.0.0-10.0.4_for_AMS_0.13_and_0.12_and_0.11.1.zip` and there will be folder named `atmosphere` inside.  atmosphere folder to be copied over the atmosphere folder on the root of your sd card. 
 3. use reboot to payload to reboot atmosphere
 
 
