@@ -26,7 +26,6 @@ Atmosphere has its own bootloader, called fusee (primary). For the purposes of t
     - The latest release of <a href="https://github.com/mtheall/ftpd/releases" target="_blank">FTPD</a> (Download the `ftpd.nro` release of FTPD)
     - The latest release of <a href="https://github.com/exelix11/SwitchThemeInjector/releases" target="_blank">NXThemeInstaller</a> (Download the `NxThemesInstaller.nro` release of NxThemeInstaller)
     - The latest release of <a href="https://github.com/joel16/NX-Shell/releases" target="_blank">NX-Shell</a> (Download the `NX-Shell.nro` release of nx-shell)
-    - The latest release of <a href="https://github.com/ELY3M/atmosphere-updater---modded-by-ELY-M/releases" target="_blank">atmosphere-updater</a>.
     - The latest release of the <a href="https://github.com/vgmoose/hb-appstore/releases" target="_blank">hbappstore</a> (Download the `appstore.nro` release of hbappstore)
 
 ### Instructions
@@ -38,7 +37,7 @@ Atmosphere has its own bootloader, called fusee (primary). For the purposes of t
     4. Copy `hekate_ipl.ini` to the `bootloader` folder on your SD card
     5. Copy `Lockpick_RCM.bin` to the `/bootloader/payloads` folder on your SD card
     6. Create a folder named `appstore` inside the `switch` folder on your SD card, and put `appstore.nro` in it
-    7. Copy `JKSV.nro`, `ftpd.nro`, `NX-Shell.nro`, `NxThemesInstaller.nro`, and `atmosphere-updater.nro` to the `switch` folder on your SD card
+    7. Copy `JKSV.nro`, `ftpd.nro`, `NX-Shell.nro` and `NxThemesInstaller.nro` to the `switch` folder on your SD card
     8. if you have Nintendo folder, copy to the root of your microSD card then you need to copy the contents of the Nintendo folder from the root of the sd card to the emummc/RAW1/Nintendo folder
     9. Reinsert your SD card back into your Switch
 

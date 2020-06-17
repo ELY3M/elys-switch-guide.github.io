@@ -46,25 +46,6 @@ you can watch me updating my atmosphere using ftp method.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fhQiabtZq3I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-
-
-### Automated method: atmosphere-updater
-
-It is also possible to update Atmosphere and Hekate through a homebrew utility called `atmosphere-updater`. This utility should be installed if you followed our guide.
-
-If you did not install this utility, you can download it from <a href="https://github.com/ELY3M/atmosphere-updater---modded-by-ELY-M/releases" target="_blank">here.</a>
-
-Updating your Atmosphere and Hekate installation using atmosphere-updater:
-
-
-1. Open the Homebrew menu
-2. Open `Atmosphere-Updater`.
-3. Select `Update Atmosphere (ignoring .ini files)`.
-4. Press `A` when prompted.
-5. Wait for it to complete. 
-6. Select `Reboot (reboot to payload)`.
-7. Press `A`.
-
 ## Updating Atmosphere fusee-primary.bin payload
 
 It is important that you update the fusee-primary.bin payload.  
@@ -108,21 +89,6 @@ you should have the ftpd app in your hbmenu if you followed the guide.
 7. Download the latest version of <a href="https://github.com/CTCaer/Hekate/releases/" target="_blank">Hekate</a> (Download the `hekate_ctcaer_(version).zip` release of hekate).
 8. copy over the `bootloader` folder with the new `bootloader` folder from the hekate zip on your SD card.
 
-
-### Automated method: atmosphere-updater
-
-It is also possible to update Atmosphere and Hekate through a homebrew utility called `atmosphere-updater`. This utility should be installed if you followed our guide. 
-
-If you did not install this utility, you can download it from <a href="https://github.com/ELY3M/atmosphere-updater---modded-by-ELY-M/releases" target="_blank">here.</a>
-
-Updating your Atmosphere and Hekate installation using atmosphere-updater:
-
-
-1. Open the Homebrew menu
-2. Open `Atmosphere-Updater`.
-3. Select `Update Hekate files only`.
-4. When asked to update hekate, press `A` (Yes).
-5. Wait for it to complete.
 
 ## Updating your firmware
 
