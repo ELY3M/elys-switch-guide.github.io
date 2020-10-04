@@ -241,8 +241,8 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#linux-run-payload-sender-without-root">Linux - Run payload sender without root</a></li>
-            <li><a href="#creating-a-new-group">Creating a new group</a></li>
-            <li><a href="#adding-a-udev-rule">Adding a udev rule</a></li>
+            <li><a href="#option-1-manually-adding-rules-and-group">Option 1: Manually adding rules and group</a></li>
+            <li><a href="#option-2-installing-a-package-with-the-rules">Option 2: Installing a package with the rules</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
@@ -250,16 +250,17 @@
 <h1 id="linux-run-payload-sender-without-root">Linux - Run payload sender without root</h1>
 <p>This section details how to add an udev rule to let you send a payload to the Nintendo Switch without needing to use <code>sudo</code>.</p>
 <div class="admonition tip">
-<p>The following instructions are not for beginners. Only do this if you are confident in what you are doing.</p>
-</div>
-<div class="admonition tip">
 <p>The following instructions only work if you have a system that implements <code>udev</code>. Most modern distros come with <code>systemd</code> already installed, which includes a <code>udev</code> implementation.</p>
-<p>There are differing implementations of the following commands on different distros. The commands below are assumed to be ran on Ubuntu. Check your distros manual if you are not running Ubuntu for the equivalent commands.</p>
 </div>
 <div class="admonition tip">
 <p>Do the following instructions while your Switch is <em>not</em> connected to your computer.</p>
 </div>
-<h2 id="creating-a-new-group">Creating a new group</h2>
+<p>&nbsp;</p>
+<h2 id="option-1-manually-adding-rules-and-group">Option 1: Manually adding rules and group</h2>
+<div class="admonition tip">
+<p>The following instructions are not for beginners. Only do this if you understand what you are doing.</p>
+</div>
+<h3 id="creating-a-new-group">Creating a new group</h3>
 <p>To start, we will create a new group and add ourselves to it. The group the Nintendo Switch device will be owned by on Linux will be set to this group.</p>
 <ol>
 <li>Open a terminal.</li>
@@ -268,7 +269,7 @@
 <li>Enter the following command: <code>sudo usermod -a -G nintendo_switch $USER</code>. Make sure that the <code>G</code> is capitalized!</li>
 <li>Close the terminal.</li>
 </ol>
-<h2 id="adding-a-udev-rule">Adding a udev rule</h2>
+<h3 id="adding-a-udev-rule">Adding a udev rule</h3>
 <p>Next we're gonna add a new udev rule. udev is a device manager for the linux kernel. The rule we're gonna specify is that if the Switch is connected in RCM mode, the group the Switch belongs to will be the group we made in the previous section.</p>
 <ol>
 <li>Open a terminal.</li>
@@ -279,7 +280,21 @@
 <li>Enter the following command: <code>udevadm trigger</code>.</li>
 <li>Logout and log back in.</li>
 </ol>
-<p>You should now be able to run the payload sender without having to use <code>sudo</code>.</p></div>
+<p>You should now be able to run the payload sender without having to use <code>sudo</code>.</p>
+<p>&nbsp;</p>
+<h2 id="option-2-installing-a-package-with-the-rules">Option 2: Installing a package with the rules</h2>
+<div class="admonition tip">
+<p class="admonition-title">Note:</p>
+<p>These rules will actually allow <em>ANY</em> user to access your switch via USB, not only <em>your</em> user.</p>
+</div>
+<p>You may just follow the instructions at <a href="https://github.com/pheki/nx-udev" target="_blank">nx-udev</a>, or if you're on Ubuntu / Debian:</p>
+<ol>
+<li>Download <a href="https://github.com/pheki/nx-udev/releases/latest/download/nx-udev_latest_all.deb
+" target="_blank">nx-udev_latest_all.deb</a>.</li>
+<li>Open a terminal in the same directory as your download.</li>
+<li>Run <code>sudo dpkg -i nx-udev_latest_all.deb</code> to install the package</li>
+</ol>
+<p>You should now be able to run the payload injector and homebrew with USB communication without having to use <code>sudo</code>.</p></div>
         </div>
 
         <footer class="col-md-12">
