@@ -22,8 +22,8 @@ for example, I made hbmenu nsp and installed hbmenu to my home screen for easy a
 
 &nbsp;
 
-1. download `2.0.0-10.0.4_for_AMS_0.13_and_0.12_and_0.11.1.zip` from <a href=https://gbatemp.net/threads/sigpatches-for-atmosphere-0-13-0.567542>Sigpatches from here</a> It will be a `2.0.0-10.0.4_for_AMS_0.13_and_0.12_and_0.11.1.zip` download on bottom of the first post in the link.  
-2. open `2.0.0-10.0.4_for_AMS_0.13_and_0.12_and_0.11.1.zip` and there will be folder named `atmosphere` inside.  atmosphere folder to be copied over the atmosphere folder on the root of your sd card. 
+1. download `sigpatches.zip` from <a href=https://github.com/eXhumer/patches/releases>Sigpatches from here</a> It will be a `sigpatches.zip` download on bottom of the first post in the link.  
+2. open `sigpatches.zip` and there will be folder named `atmosphere` inside.  atmosphere folder to be copied over the atmosphere folder on the root of your sd card. 
 3. use reboot to payload to reboot atmosphere
 
 
