@@ -65,11 +65,11 @@ Now that the device is in RCM, we will need to send it a payload. The methods ar
 ### Instructions
 
 !!! tip ""
-    1. Download and run the payload injector (if you are on Linux, you will need to run this program as root or use `sudo`).
+    1. Download and run the payload injector (if you're on Linux, you will need to run this program as root, use `sudo`, or follow the instructions at [Linux injection without root](../../extras/adding_udev.md)).
     2. Connect your Switch in RCM to your PC using the USB cable.
     3. Wait for your Switch to be shown as found in the injector.
     4. Press `Select Payload`, and navigate to and select your payload `.bin` file.
-        - The first time you read this page you should inject TegraExplorer.bin for partitioning your sd card for emuMMC.
+        - The first time you read this page you should inject TegraExplorer.bin.
     5. Click `Send Payload!` to launch the payload you selected.
 
 &nbsp;
@@ -108,7 +108,7 @@ Now that the device is in RCM, we will need to send it a payload. The methods ar
 
 &nbsp;
 
-## Chomebook
+## Chromebook
 
 ### What you need
 

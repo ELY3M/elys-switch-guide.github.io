@@ -22,9 +22,10 @@ If you need to troubleshoot something, or need to try a different boot setup, re
 !!! tip ""
     1. Insert your Switch's SD card into your PC
     2. Copy *the contents of* the Atmosphere `.zip` file to the root of your SD card
-    3. Copy the `bootloader` folder from the Hekate `.zip` file to the root of your SD card
-    4. Copy `hekate_ipl.ini` to the `bootloader` folder on your SD card
-    5. Setup is complete, now you can boot CFW by injecting the fusee-primary.bin payload
+    3. Copy `fusee-primary.bin` to the atmosphere folder on your SD card
+    4. Copy the `bootloader` folder from the Hekate `.zip` file to the root of your SD card
+    5. Copy `hekate_ipl.ini` to the `bootloader` folder on your SD card
+    6. Setup is complete, now you can boot CFW by injecting the hekate_ctcaer `.bin` file from the Hekate zip
 
 
 &nbsp;
