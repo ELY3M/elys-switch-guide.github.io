@@ -14,7 +14,7 @@ nav:
         - 'Partitioning the SD': 'user_guide/emummc/partitioning_sd.md'    
         - 'SD preparations': 'user_guide/emummc/sd_preparation.md'
         - 'Making the emuMMC': 'user_guide/emummc/making_emummc.md'
-        - 'Launching CFW': 'user_guide/emummc/launching_cfw.md'       
+        - 'Launching CFW': 'user_guide/emummc/launching_cfw.md'      
     - Extras:
         - 'Troubleshooting': 'extras/troubleshooting.md' 
         - 'NAND Backup': 'extras/nandbackup.md'        
@@ -39,6 +39,7 @@ nav:
         - 'Alternate Boot Setups': 'extras/alternate_bootsetups.md'
         - 'RCM Payload Injectors Information': 'extras/rcm_injectors.md'
         - 'Updating CFW': 'extras/updating.md'
+        - 'Changing SD cards': 'extras/transfer_sd.md'	
         - 'CFW Comparsion': 'cfw_comparsion.md'
         - 'Glossary': 'extras/glossary.md'
     - FAQ: faq.md
@@ -61,8 +62,8 @@ extra_css:
 
 extra:
   versions:
-    firmware: 10.2.0
-    atmosphere: 0.14.4
+    firmware: 11.0.0
+    atmosphere: 0.16
     
     
     
