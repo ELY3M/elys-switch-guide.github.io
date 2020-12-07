@@ -39,7 +39,7 @@ nav:
         - 'Alternate Boot Setups': 'extras/alternate_bootsetups.md'
         - 'RCM Payload Injectors Information': 'extras/rcm_injectors.md'
         - 'Updating CFW': 'extras/updating.md'
-        - 'Changing SD cards': 'extras/transfer_sd.md'	
+        - 'Changing SD cards': 'extras/transfer_sd.md'
         - 'CFW Comparsion': 'cfw_comparsion.md'
         - 'Glossary': 'extras/glossary.md'
     - FAQ: faq.md
@@ -63,9 +63,5 @@ extra_css:
 extra:
   versions:
     firmware: 11.0.0
-    atmosphere: 0.16
-    
-    
-    
-    
-  
+    atmosphere: 0.16    
+
