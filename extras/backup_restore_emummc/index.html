@@ -8,7 +8,7 @@
         <meta name="author" content="NH Discord Server. - Modifed by ELY M.">
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Showing File Name Extensions (Windows) - NH Switch Guide - Modifed by ELY M.</title>
+        <title>Backing up and restoring emuMMC - NH Switch Guide - Modifed by ELY M.</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -115,8 +115,8 @@
     <a href="../reinstall/">Reinstalling Atmosphere</a>
 </li>
                                     
-<li >
-    <a href="../backup_restore_emummc/">Backing up and restoring emuMMC</a>
+<li class="active">
+    <a href="./">Backing up and restoring emuMMC</a>
 </li>
                                     
 <li >
@@ -167,8 +167,8 @@
     <a href="../adding_udev/">Linux injection without root</a>
 </li>
                                     
-<li class="active">
-    <a href="./">Showing File Name Extensions (Windows)</a>
+<li >
+    <a href="../showing_file_extensions/">Showing File Name Extensions (Windows)</a>
 </li>
                                     
 <li >
@@ -227,12 +227,12 @@
 
                     <ul class="nav navbar-nav navbar-right">
                             <li >
-                                <a rel="next" href="../adding_udev/">
+                                <a rel="next" href="../reinstall/">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li >
-                                <a rel="prev" href="../alternate_bootsetups/">
+                                <a rel="prev" href="../nandrestore/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -244,26 +244,62 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#showing-file-name-extensions-on-windows-10">Showing File Name Extensions on Windows 10</a></li>
-            <li><a href="#instructions">Instructions</a></li>
+        <li class="main active"><a href="#backing-up-your-emummc-partition-on-your-sd-card">Backing up your emuMMC partition on your sd card</a></li>
+            <li><a href="#what-you-need">What you need:</a></li>
+            <li><a href="#instructions">Instructions:</a></li>
+        <li class="main "><a href="#restoring-your-emummc-partition-to-your-sd-card-from-the-backup">Restoring your emuMMC partition to your sd card from the backup.</a></li>
+            <li><a href="#what-you-need_1">What you need:</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="showing-file-name-extensions-on-windows-10">Showing File Name Extensions on Windows 10</h1>
-<p>By default, Microsoft Windows 10 does not show file extensions for known file types. This can result in problems when you need to rename files.</p>
-<p>&nbsp;</p>
-<h3 id="instructions">Instructions</h3>
-<div class="admonition tip">
-<ol>
-<li>Open a new File Explorer window.</li>
-<li>Switch to the View tab/ribbon.</li>
-<li>On this tab, if the "File name extensions" checkbox is blank, put a check/tick mark in it by clicking it.</li>
-</ol>
+<h2 id="backing-up-your-emummc-partition-on-your-sd-card">Backing up your emuMMC partition on your sd card</h2>
+<p>I know some people want to backup emuMMC.        <br />
+We will be using <a href="https://github.com/CTCaer/hekate/releases/">hekate</a> to both backup and restore the emuMMC, so make sure that you have its latest files on your SD card already.</p>
+<h3 id="what-you-need">What you need:</h3>
+<ul>
+<li><a href="https://github.com/CTCaer/hekate/releases/">Latest hekate</a></li>
+<li>Your sd card with emuMMC partition</li>
+</ul>
+<h3 id="instructions">Instructions:</h3>
+<div class="admonition warning">
+<p class="admonition-title">Space for the backup</p>
+<p>You need at least 30GB of free space to be able to backup and restore the emuMMC!</p>
 </div>
-<div class="admonition tip">
-<p><img alt="Visual for the above instructions" src="../img/file_extensions.png" /></p>
-</div></div>
+<ol>
+<li>Inject the hekate payload.</li>
+<li>In the main menu, tap on <code>Tools</code>, then <code>Backup eMMC</code> and set <code>SD emuMMC Raw Partition</code> at the bottom of your screen to <code>ON</code>.</li>
+<li>Backup both <code>SD emuMMC BOOT0 &amp; BOOT1</code> and <code>SD emuMMC RAW GPP</code> (Note: raw gpp may take a while).</li>
+<li>Once both are done, go back to the main menu, remove your SD card and insert it into your PC.</li>
+<li>If Windows asks you to format a drive, discard it and select the drive with your SD contents.</li>
+<li>Copy the backup folder from your your SD card to a safe place on your PC.</li>
+<li>Put your sd card back in your switch.  </li>
+</ol>
+<h2 id="restoring-your-emummc-partition-to-your-sd-card-from-the-backup">Restoring your emuMMC partition to your sd card from the backup.</h2>
+<h3 id="what-you-need_1">What you need:</h3>
+<ul>
+<li><a href="https://github.com/CTCaer/hekate/releases/">Latest hekate</a></li>
+<li>Your sd card with emuMMC partition that you wish to restore from the backup.    </li>
+<li>if the sd card is new or not partitioned, make sure you follow <a href="https://switchgui.de/switch-guide/user_guide/emummc/partitioning_sd/">this guide</a></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Space for the backup</p>
+<p>You need at least 30GB of free space to be able to backup and restore the emuMMC!</p>
+</div>
+<ol>
+<li>Copy your emuMMC backup folder from your pc to your sd card.</li>
+<li>Navigate to <code>/backup/&lt;some characters&gt;/</code> on your SD card and move <code>BOOT0</code>, <code>BOOT1</code> and the <code>rawnand.bin.xx</code> files to the <code>restore</code> folder.</li>
+<li>Eject the SD card and insert it into your switch.</li>
+<li>Inject the hekate payload.</li>
+<li>Tap on <code>Tools</code>, <code>Restore eMMC</code>, set <code>SD emuMMC Raw Partition</code> at the bottom of your screen to <code>ON</code>.</li>
+<li>Restore the backup by tapping on both <code>SD emuMMC BOOT0 &amp; BOOT1</code> and <code>SD emuMMC RAW GPP</code> (Note: raw gpp may take a while).<ul>
+<li>It is very important that for both of these the <code>SD emuMMC Raw Partition</code> option is enabled, otherwise you will be altering your sysMMC
+  which is not what you want.</li>
+</ul>
+</li>
+<li>Make sure you have latest atmosphere files on your sd card.   </li>
+<li>Your emuMMC is now restored on the new SD card and you should be able to launch it with fuse-primary.bin in your TegraRcmGUI or payload launcher.  </li>
+</ol></div>
         </div>
 
         <footer class="col-md-12">
