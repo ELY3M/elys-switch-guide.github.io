@@ -8,7 +8,7 @@
         <meta name="author" content="NH Discord Server. - Modifed by ELY M.">
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Backing up and restoring emuMMC - NH Switch Guide - Modifed by ELY M.</title>
+        <title>Changing SD cards - NH Switch Guide - Modifed by ELY M.</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -115,8 +115,8 @@
     <a href="../reinstall/">Reinstalling Atmosphere</a>
 </li>
                                     
-<li class="active">
-    <a href="./">Backing up and restoring emuMMC</a>
+<li >
+    <a href="../backup_restore_emummc.md">Backing up and restoring emuMMC</a>
 </li>
                                     
 <li >
@@ -183,6 +183,10 @@
     <a href="../updating/">Updating CFW</a>
 </li>
                                     
+<li class="active">
+    <a href="./">Changing SD cards</a>
+</li>
+                                    
 <li >
     <a href="../../cfw_comparsion/">CFW Comparsion</a>
 </li>
@@ -223,12 +227,12 @@
 
                     <ul class="nav navbar-nav navbar-right">
                             <li >
-                                <a rel="next" href="../reinstall/">
+                                <a rel="next" href="../updating/">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li >
-                                <a rel="prev" href="../nandrestore/">
+                                <a rel="prev" href="../../cfw_comparsion/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -240,40 +244,63 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#backing-up-your-emummc-partition-on-your-sd-card">Backing up your emuMMC partition on your sd card</a></li>
-            <li><a href="#what-you-need">What you need:</a></li>
-            <li><a href="#instructions">Instructions:</a></li>
-        <li class="main "><a href="#restoring-your-emummc-partition-to-your-sd-card">Restoring your emuMMC partition to your sd card</a></li>
+        <li class="main active"><a href="#changing-sd-cards">Changing SD cards</a></li>
+            <li><a href="#instructions">Instructions</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="backing-up-your-emummc-partition-on-your-sd-card">Backing up your emuMMC partition on your sd card</h2>
-<p>I know some people want to backup emuMMC.  <br />
-This is method will work on windows pcs.       </p>
-<h3 id="what-you-need">What you need:</h3>
-<ul>
-<li>The <a href="https://github.com/eliboa/NxNandManager/releases/" target="_blank">NxNandManager</a></li>
-<li>Your sd card with emuMMC partition</li>
-</ul>
-<h3 id="instructions">Instructions:</h3>
+<h1 id="changing-sd-cards">Changing SD cards</h1>
+<p>The goal of this page is to transfer the contents from one SD card to another one. The method to do this will differ, depending on whether you're using a partition based emuMMC on your SD card or not.</p>
+<p>We will be using <a href="https://github.com/CTCaer/hekate/releases/">hekate</a> to both backup and restore the emuMMC, so make sure that you have its latest files on your SD card already.</p>
+<h2 id="instructions">Instructions</h2>
+<p>You should first check whether you have a file or partition based emuMMC:</p>
 <ol>
-<li>download <code>NxNandManager_v(version)_x64.zip</code> from <a href="https://github.com/eliboa/NxNandManager/releases/" target="_blank">https://github.com/eliboa/NxNandManager/releases/</a></li>
-<li>unzip to your programs place on your pc.  </li>
-<li>put your sd card in your pc  </li>
-<li>open the NxNandManager and click on Open Drive.<br />
-<img alt="NxNandManager open drive" src="../img/nxnand1.png" />   </li>
-<li>let it scan drives, when it is done scanning, you should see your sd card partition like this below <br />
-<img alt="found drive" src="../img/nxnand2.png" />   </li>
-<li>Select the drive and it will open like this. <br />
-<img alt="drive" src="../img/nxnand3.png" />   </li>
-<li>Clock on <code>Full Dump</code> button and it will ask you to save to a place on your pc drive or external hdd.<br />
-<img alt="save as raw dump" src="../img/nxnand4.png" />   </li>
-<li>it will be 2 to 3 hours for it to finish dumping/saving<br />
-<img alt="saving..." src="../img/nxnand5.png" />  </li>
+<li>Inject the hekate payload.</li>
+<li>Tap on <code>emuMMC</code>.</li>
+<li>Under <code>emuMMC Info &amp; Selection</code>, check the text next to <code>Type</code>.<ul>
+<li>If you have one it should be either <code>SD Raw Partition</code> or <code>SD File</code>.</li>
+</ul>
+</li>
 </ol>
-<h2 id="restoring-your-emummc-partition-to-your-sd-card">Restoring your emuMMC partition to your sd card</h2>
-<p>Not done yet.....</p></div>
+<p>IF YOU USE A FILE BASED EMUMMC OR YOU DO NOT HAVE AN EMUMMC: </p>
+<ol>
+<li>Remove your SD card.   </li>
+<li>Insert your old SD card into your computer.</li>
+<li>Copy the contents of your SD card somewhere to your PC.</li>
+<li>Eject the SD card and insert your new one.</li>
+<li>Format your new SD card to FAT32 if it isn’t already.<ul>
+<li>To do this, use <a href="http://ridgecrop.co.uk/index.htm?guiformat.htm">guiformat</a> for example (Windows).</li>
+</ul>
+</li>
+<li>Copy the files from your PC to your new SD card and you’re done.</li>
+</ol>
+<p>IF YOU USE A PARTITION BASED EMUMMC:</p>
+<div class="admonition warning">
+<p class="admonition-title">Space for the backup</p>
+<p>You need at least 30GB of free space to be able to backup and restore the emuMMC!</p>
+</div>
+<ol>
+<li>Inject the hekate payload.</li>
+<li>In the main menu, tap on <code>Tools</code>, then <code>Backup eMMC</code> and set <code>SD emuMMC Raw Partition</code> at the bottom of your screen to <code>ON</code>.</li>
+<li>Backup both <code>SD emuMMC BOOT0 &amp; BOOT1</code> and <code>SD emuMMC RAW GPP</code> (Note: raw gpp may take a while).</li>
+<li>Once both are done, go back to the main menu, remove your SD card and insert it into your PC.</li>
+<li>If Windows asks you to format a drive, discard it and select the drive with your SD contents.</li>
+<li>Copy the contents of your SD card somewhere to your PC.</li>
+<li>Follow only <a href="https://switchgui.de/switch-guide/user_guide/emummc/partitioning_sd/">this page</a> to partition the new SD card for an emuMMC setup.</li>
+<li>After it’s done, exit and insert your new SD card into your PC.</li>
+<li>Copy the contents of your old SD card to your new one.</li>
+<li>Navigate to <code>/backup/&lt;some characters&gt;/</code> on your SD card and move <code>BOOT0</code>, <code>BOOT1</code> and the <code>rawnand.bin.xx</code> files to the <code>restore</code> folder.</li>
+<li>Eject the SD card and insert it into your switch.</li>
+<li>Inject the hekate payload once again.</li>
+<li>Tap on <code>Tools</code>, <code>Restore eMMC</code>, set <code>SD emuMMC Raw Partition</code> at the bottom of your screen to <code>ON</code>.</li>
+<li>Restore the backup by tapping on both <code>SD emuMMC BOOT0 &amp; BOOT1</code> and <code>SD emuMMC RAW GPP</code> (Note: raw gpp may take a while).<ul>
+<li>It is very important that for both of these the <code>SD emuMMC Raw Partition</code> option is enabled, otherwise you will be altering your sysMMC
+  which is not what you want.</li>
+</ul>
+</li>
+<li>Your emuMMC is now restored on the new SD card and you should be able to launch it with fuse-primary.bin in your TegraRcmGUI or payload launcher.  </li>
+</ol></div>
         </div>
 
         <footer class="col-md-12">
