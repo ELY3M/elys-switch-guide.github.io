@@ -25,22 +25,24 @@ We will be using [hekate](https://github.com/CTCaer/hekate/releases/) to both ba
 
 ### What you need:
 - [Latest hekate](https://github.com/CTCaer/hekate/releases/)
+- your backed up emuMMC files that you have saved.  
 - Your sd card with emuMMC partition that you wish to restore from the backup.    
 - if the sd card is new or not partitioned, make sure you follow [this guide](https://switchgui.de/switch-guide/user_guide/emummc/partitioning_sd/)
-
+  
 
 !!!warning "Space for the backup"
     You need at least 30GB of free space to be able to backup and restore the emuMMC!
-
-1. Copy your emuMMC backup folder from your pc to your sd card.
-2. Navigate to `/backup/<some characters>/` on your SD card and move `BOOT0`, `BOOT1` and the `rawnand.bin.xx` files to the `restore` folder.
-3. Eject the SD card and insert it into your switch.
-4. Inject the hekate payload.
-5. Tap on `Tools`, `Restore eMMC`, set `SD emuMMC Raw Partition` at the bottom of your screen to `ON`.
-6. Restore the backup by tapping on both `SD emuMMC BOOT0 & BOOT1` and `SD emuMMC RAW GPP` (Note: raw gpp may take a while).
+	
+1. Remove SD card from your Switch then Insert your SD card into your computer.
+2. Copy your emuMMC backup folder from your pc to your sd card.
+3. Navigate to `/backup/<some characters>/` on your SD card and move `BOOT0`, `BOOT1` and the `rawnand.bin.xx` files to the `restore` folder.
+4. Eject the SD card and insert it into your switch.
+5. Inject the hekate payload.
+6. Tap on `Tools`, `Restore eMMC`, set `SD emuMMC Raw Partition` at the bottom of your screen to `ON`.
+7. Restore the backup by tapping on both `SD emuMMC BOOT0 & BOOT1` and `SD emuMMC RAW GPP` (Note: raw gpp may take a while).
     - It is very important that for both of these the `SD emuMMC Raw Partition` option is enabled, otherwise you will be altering your sysMMC
       which is not what you want.
-7. Make sure you have latest atmosphere files on your sd card.   
-8. Your emuMMC is now restored on the new SD card and you should be able to launch it with fuse-primary.bin in your TegraRcmGUI or payload launcher.  
+8. Make sure you have latest atmosphere files on your sd card.   
+9. Your emuMMC is now restored on the new SD card and you should be able to launch it with fuse-primary.bin in your TegraRcmGUI or payload launcher.  
 
 
