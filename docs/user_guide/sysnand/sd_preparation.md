@@ -8,7 +8,7 @@ Atmosphere has its own bootloader, called fusee (primary). For the purposes of t
 
 !!! danger "FAT32 vs exFAT"
     Your SD card will need to be formatted as either FAT32 or exFAT. FAT32 is recommended as it is more stable and will work out of the box with the Switch's operating system, but has a file size limit of 4GB. If you plan on using exFAT, you will need to install the exFAT update for your Switch, which is downloaded when you insert an exFAT formatted SD card in to your Switch. Note that this will update your console and requires an internet connection.
-	I recommend FAT32 because I read about too many data loss from the CFW users.  There are two ways to format your sd card as fat32, use [guiformat](http://www.ridgecrop.demon.co.uk/guiformat.htm) or follow this [guide for formatting sd card as fat32](format_sd.md)
+	I recommend FAT32 because I read about too many data loss from the CFW users.  There are two ways to format your sd card as fat32, use [guiformat](http://ridgecrop.co.uk/index.htm?guiformat.htm) or follow this [guide for formatting sd card as fat32](format_sd.md)
 
 
  !!! warning "File name extensions"
@@ -34,7 +34,7 @@ Atmosphere has its own bootloader, called fusee (primary). For the purposes of t
 
 !!! tip ""
     1. Insert your Switch's SD card into your PC
-	2. if you are on windows, format your sd card as fat32 with guiformat from [here](http://www.ridgecrop.demon.co.uk/guiformat.htm) (make sure you know which drive letter that your sd card is on.  Close all explorer windows before open guiformat app)
+	2. if you are on windows, format your sd card as fat32 with guiformat from [here](http://ridgecrop.co.uk/index.htm?guiformat.htm) (make sure you know which drive letter that your sd card is on.  Close all explorer windows before open guiformat app)
     alternatively, use tegraexplorer payload to format sd card as fat32. the guide is [here](format_sd.md)
 	3. Copy *the contents of* the Atmosphere `.zip` file to the root of your SD card
     4. Copy the `bootloader` folder from the Hekate `.zip` file to the root of your SD card
