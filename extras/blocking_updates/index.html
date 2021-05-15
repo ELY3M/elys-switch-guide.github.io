@@ -249,6 +249,7 @@
             <li><a href="#instructions-90dns">Instructions (90dns)</a></li>
             <li><a href="#setting-up-a-new-connection-via-wifi">Setting up a new connection via WiFi</a></li>
             <li><a href="#editing-an-existing-wifi-connection">Editing an existing WiFi connection</a></li>
+            <li><a href="#using-homebrew-to-set-90dns-on-all-existing-wifi-networks">Using homebrew to set 90dns on all existing WiFi networks</a></li>
             <li><a href="#testing-if-you-can-reach-nintendo">Testing if you can reach nintendo</a></li>
     </ul>
 </div></div>
@@ -278,7 +279,7 @@
 <p>You can verify the functionality of the DNS redirection by booting into emummc (or sysmmc if you applied the config to sys), and powering off after. </p>
 <p>A report will be generated in sd:/atmosphere/logs called <code>dns_mitm_startup.log</code>. If this starts with the following, the dns redirection is active</p>
 <div class="admonition tip">
-<p><img alt="dnsmitmlog" src="../extras/img/dnsmitm.png" /></p>
+<p><img alt="dnsmitmlog" src="../img/dnsmitm.png" /></p>
 </div>
 </div>
 <p>&nbsp;</p>
@@ -310,6 +311,16 @@
 <li>Select <code>Change Settings</code>.</li>
 <li>Pick the server that is the closest to your location out of the below chart and enter its Primary and Secondary DNS into your connection settings.</li>
 <li>Save the settings and test the connection.</li>
+</ol>
+<hr />
+<h3 id="using-homebrew-to-set-90dns-on-all-existing-wifi-networks">Using homebrew to set 90dns on all existing WiFi networks</h3>
+<ol>
+<li>Download <a href="https://github.com/suchmememanyskill/switch-90dns-setter/releases">switch-90dns-setter</a> and put it in the switch folder.</li>
+<li>Launch CFW and open the homebrew menu.</li>
+<li>Launch <code>90dns setter</code>.</li>
+<li>Press X to apply 90dns to all WiFi networks.</li>
+<li>Press Y to reboot the switch.</li>
+<li>Check in system settings if networks have a custom DNS applied.</li>
 </ol>
 </div>
 <table>
