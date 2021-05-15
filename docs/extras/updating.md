@@ -41,9 +41,9 @@ you should have the ftpd app in your hbmenu if you followed the guide.
 ![ftpd windows](../extras/img/ftpd_windows.png)
 
 
-
 you can watch me updating my atmosphere using ftp method.   
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fhQiabtZq3I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 
 ## Updating Atmosphere fusee-primary.bin payload
@@ -71,10 +71,15 @@ When a new version of Hekate releases, you can always update by following these 
 
 1. Turn off your Nintendo Switch and plug your SD card in your computer.
 2. Download the latest version of <a href="https://github.com/CTCaer/Hekate/releases/" target="_blank">Hekate</a> (Download the `hekate_ctcaer_(version).zip` release of hekate).
-3. copy over the `bootloader` folder with the new `bootloader` folder from the hekate zip on your SD card.
+3. Copy the `bootloader` folder from the Hekate `.zip` file to the root of your SD card. If you are asked to overwrite or merge files while copying, say yes to merge/overwrite them.
 4. Put your SD card back in your Switch and launch CFW.
 
+### USB method: USB access to your sd card via your computer. 
+1. reboot to hekate 
+2. 
 
+
+<!--
 ### FTP method: FTP access to your sd card.  
 
 I prefer this method because I try to avoid pulling out sd card unnecessarily.   
@@ -88,7 +93,7 @@ you should have the ftpd app in your hbmenu if you followed the guide.
 6. The explorer should open up your sd card centents.  Make sure you are in the root of your sd card in the window. 
 7. Download the latest version of <a href="https://github.com/CTCaer/Hekate/releases/" target="_blank">Hekate</a> (Download the `hekate_ctcaer_(version).zip` release of hekate).
 8. copy over the `bootloader` folder with the new `bootloader` folder from the hekate zip on your SD card.
-
+-->  
 
 ## Updating your firmware
 
@@ -106,7 +111,9 @@ In addition, updating to or past some firmwares update the gamecard firmware. Re
 | On or above 4.0.0, but below 9.0.0   | 9.0.0 or above                                | Yes                       |
 | On or above 9.0.0, but below 11.0.0  | At least 9.1.0 but below 11.0.0               | No                        |
 | On or above 9.0.0, but below 11.0.0  | 11.0.0 or above                               | Yes                       |
-| On or above 11.0.0                   | Latest supported Atmosphere & Hekate revision | No                        |
+| On or above 11.0.0 but below 12.0.0  | At least 11.0.1 but below 12.0.0              | No                        |
+| On or above 11.0.0 but below 12.0.0  | 12.0.0 or above                               | Yes                       |
+| On or above 12.0.0                   | Latest supported Atmosphere & Hekate revision | No                        |
 
 If at least one of the versions you are updating towards also updates the gamecard firmware, you will not be able to downgrade below that version without making the gamecard slot unusable until you update.
 
@@ -139,7 +146,6 @@ If you keep your emuMMC offline, you will have to use a gamecard to update your 
 !!!tip ""
     - The latest release of <a href="https://github.com/suchmememanyskill/TegraExplorer/releases" target="_blank">TegraExplorer</a>
     - The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a>
-    - Your prod.keys file (if you don't have them, use <a href="https://github.com/shchmue/Lockpick_RCM" target="_blank">Lockpick_RCM</a> to dump them)
 
 ### Preparing your SD card
 
@@ -152,10 +158,10 @@ If you keep your emuMMC offline, you will have to use a gamecard to update your 
 
 1. Make sure your sysMMC is up to date. If your sysMMC is not up-to-date, update it through the System Settings.
 2. Inject `TegraExplorer.bin` using TegraRCMGUI (Like you would with Hekate).
-3. Using the volume and power buttons, select `Tools`, then `Dump Firmware` and for the format type choose `Daybreak`.
+3. Using the joystick and the A buttons, select `Dump Firmware`.
 4. Wait about 1-2 minutes for the tool to dump your firmware.
-5. When the tool finishes, press any volume button.
-6. Select `Exit` and then `Reboot to Atmosphere`.
+5. When the tool finishes, press any button.
+6. Select `Reboot to atmosphere/reboot_payload.bin`.
 
 ### Updating your emuMMC with Daybreak
 

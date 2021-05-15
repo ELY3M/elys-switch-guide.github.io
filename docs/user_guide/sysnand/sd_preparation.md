@@ -11,17 +11,19 @@ Atmosphere has its own bootloader, called fusee (primary). For the purposes of t
 	I recommend FAT32 because I read about too many data loss from the CFW users.  There are two ways to format your sd card as fat32, use [guiformat](http://ridgecrop.co.uk/index.htm?guiformat.htm) or follow this [guide for formatting sd card as fat32](format_sd.md)
 
 
- !!! warning "File name extensions"
+!!! warning "File name extensions"
     If you use Windows, you should enable file name extensions before continuing. See [this link](../../extras/showing_file_extensions.md) for a guide on how to do this.
 
 &nbsp;
 
 ### What you need
 
+<!-- Notice for easy removal later once WITHOUT_MESOSPHERE releases aren't needed:  This section below has a notice about WITHOUT_MESOSPHERE release. -->
+
 !!! tip ""
     - The latest release of <a href="https://github.com/CTCaer/Hekate/releases/" target="_blank">Hekate</a> (Download the `hekate_ctcaer_(version).zip` release of hekate)
     - The hekate config file: <a href="../../../files/sys/hekate_ipl.ini" download>hekate_ipl.ini</a>
-    - The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a> (Download the `atmosphere-(version)-master-(version)+hbl-(version)+hbmenu-(version).zip` release of Atmosphere.)
+    - The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a>. Download the `atmosphere-(version)-master-(version)+hbl-(version)+hbmenu-(version).zip` release of Atmosphere. Do not download the `atmosphere-(version)-master-(version)-WITHOUT_MESOSPHERE+hbl-(version)+hbmenu-(version).zip` release.
     - The latest release of <a href="https://github.com/shchmue/Lockpick_RCM/releases" target="_blank">Lockpick_RCM</a> (Download the `Lockpick_RCM.bin` release of Lockpick)
     - The latest release of <a href="https://github.com/J-D-K/JKSV/releases" target="_blank">JKSV</a> (Download the `JKSV.nro` release of JKSV)
     - The latest release of <a href="https://github.com/mtheall/ftpd/releases" target="_blank">FTPD</a> (Download the `ftpd.nro` release of FTPD)
@@ -44,7 +46,9 @@ Atmosphere has its own bootloader, called fusee (primary). For the purposes of t
     8. Copy `JKSV.nro`, `ftpd.nro`, `NX-Shell.nro` and `NxThemesInstaller.nro` to the `switch` folder on your SD card
     9. Reinsert your SD card back into your Switch
 
-     ![sdfilesimg](../img/sdfiles.png)
+    !!! tip ""
+        Your SD card should look similar to this. The `Nintendo` folder will not be present if your switch has not already booted with the microSD card inserted.
+        ![sdfilesimg](../img/sdfiles.png)
 
 &nbsp;
 

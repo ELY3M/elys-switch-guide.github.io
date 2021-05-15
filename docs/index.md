@@ -20,14 +20,19 @@ This guide was written by staff members of the [Nintendo Homebrew Discord Server
 ### What is homebrew?
 
 !!! tip ""
-    Homebrew applications are custom, user-made software, which haven’t been authorised by Nintendo. This can include save editing tools, games, emulators, and more.
+    Homebrew is a term for unoffical software written by hobbyists and amateur developers for locked down systems (i.e. the Switch).
 
-    Homebrew can be run for free on your Switch as long as you have a "first-generation" system running {{ versions.firmware }} or lower, and a USB-C cable.
+    This can include save editing tools, games, emulators, and more.
+
+    Homebrew can be run for free on your Switch through Custom Firmware as long as you have a "first-generation" system running {{ versions.firmware }} or lower, and a USB-C cable.
 
 ### What is Custom Firmware?
 
 !!! tip ""
-    Custom Firmware (“CFW”) enables you to use more advanced hacks that userland homebrew can’t easily do. For instance, installing game modifications with ease.
+    Custom Firmware (“CFW”) is a piece software that modifies the system firmware.
+    Atmosphere, for example, does this by running in the background and patching the OS on the fly.
+
+    This allows one to extend the functionality of their system by giving homebrew higher levels of permission than most userland exploits and can be used to provide extra features for homebrew devs and users to take advantage of for various purposes, for instance, game modding using LayeredFS.
 
     CFW can be set up on any first-generation console on any version (but will require additional tools).
 
@@ -62,11 +67,13 @@ This guide was written by staff members of the [Nintendo Homebrew Discord Server
     - A USB-OTG cable, a USB-A to USB-C cable, and an Android device
 		- This does not work on every android phone
     - A USB-C cable, and an Android device with a USB-C port
-    - A Lightning to USB-C cable, and a jailbroken iOS device
+    - A Lightning-OTG adapter, a USB-A to USB-C cable, and a jailbroken iOS device
         - This method is not covered by the guide, but you can read more about it at [this website](https://mologie.github.io/nxboot/)
 
 
     You will also need a micro SD card that is at least 128 gigabytes or larger if you plan on following this guide through the emummc path, which is safer and strongly recommended. If you must use a smaller SD card, it is possible with the sysmmc path, but strongly not recommended.
+
+    Finally, you will need a way to access Recovery Mode. (This will be further explained in the "Entering RCM section")
 
 If everything goes according to plan, you will lose no data and end up with everything that you started with (games, Nintendo Account, saves, etc will be preserved).
 
