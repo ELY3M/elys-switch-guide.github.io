@@ -20,6 +20,7 @@ Atmosphere has its own bootloader, called fusee (primary). For the purposes of t
 !!! tip ""
     - The latest release of <a href="https://github.com/CTCaer/Hekate/releases/" target="_blank">Hekate</a> (Download the `hekate_ctcaer_(version).zip` release of hekate)
     - The hekate config file: <a href="../../../files/emu/hekate_ipl.ini" download>hekate_ipl.ini</a>
+    - The 90dns DNS redirection config: <a href="../../../files/emummc.txt" download>emummc.txt</a> (Optional) (Best to use this, if you do not want to play online in CFW) (It will block normal online play)
     - The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a> (Download the `atmosphere-(version)-master-(version)+hbl-(version)+hbmenu-(version).zip` release of Atmosphere.)
     - The latest release of <a href="https://github.com/shchmue/Lockpick_RCM/releases" target="_blank">Lockpick_RCM</a> (Download the `Lockpick_RCM.bin` release of Lockpick)
     - The latest release of <a href="https://github.com/J-D-K/JKSV/releases" target="_blank">JKSV</a> (Download the `JKSV.nro` release of JKSV)
@@ -36,10 +37,11 @@ Atmosphere has its own bootloader, called fusee (primary). For the purposes of t
     3. Copy the `bootloader` folder from the Hekate `.zip` file to the root of your SD card
     4. Copy `hekate_ipl.ini` to the `bootloader` folder on your SD card
     5. Copy `Lockpick_RCM.bin` to the `/bootloader/payloads` folder on your SD card
-    6. Create a folder named `appstore` inside the `switch` folder on your SD card, and put `appstore.nro` in it
-    7. Copy `JKSV.nro`, `ftpd.nro`, `NX-Shell.nro` and `NxThemesInstaller.nro` to the `switch` folder on your SD card
-    8. if you have Nintendo folder, copy to the root of your microSD card then you need to copy the contents of the Nintendo folder from the root of the sd card to the emummc/RAW1/Nintendo folder
-    9. Reinsert your SD card back into your Switch
+    6. Create a folder named `hosts` inside the `atmosphere` folder on your SD card, and put `emummc.txt` in it. (Optional) (Best to use this, if you do not want to play online in CFW) (It will block normal online play)
+    7. Create a folder named `appstore` inside the `switch` folder on your SD card, and put `appstore.nro` in it
+    8. Copy `JKSV.nro`, `ftpd.nro`, `NX-Shell.nro` and `NxThemesInstaller.nro` to the `switch` folder on your SD card
+    9. if you have Nintendo folder, copy to the root of your microSD card then you need to copy the contents of the Nintendo folder from the root of the sd card to the emummc/RAW1/Nintendo folder
+    10. Reinsert your SD card back into your Switch
 
      ![sdfilesimg](../img/sdfiles.png)
 
