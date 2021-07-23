@@ -2,6 +2,7 @@
 
 !!!warning "This will delete everything on your sd card"
 	Doing this will delete all your data from your sd card, be warned!
+	Hekate will backup the data on main partition on your SD card.    
 
 !!! warning "Back up your existing Nintendo folder"
 	Before we start, if you are using a microSD card already as a storage device for your games, you will want to back up your `Nintendo` folder that is on the root of your microSD card to a safe place on your computer. This folder contains your downloaded games and game updates.
@@ -18,7 +19,7 @@ What you need:
 
 ### Instructions
 
-1. Make sure you are done with SD preparation part of this guide.   
+1. Make sure you are done with [SD preparation](sd_preparation.md) part of this guide.   
 
 2. Inject the Hekate payload with your 128GB (or larger) SD card inserted into your Switch.
 	- If you forgot how to do this, re-read the [sending payload](sending_payload.md) section of the guide.
