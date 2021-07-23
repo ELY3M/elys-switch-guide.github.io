@@ -50,7 +50,7 @@ What you need:
 15. It will take 15 to 30 mins creating your emuMMC in the new sd partition.    
 
 
-you can watch me making partition on my sd card in Hekate here.   
+you can watch me making partition on my sd card and creating emuMMC in Hekate here.   
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5M7qJja0zB8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
