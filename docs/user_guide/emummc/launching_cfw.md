@@ -11,7 +11,16 @@ Unlike systems such as the DSi, Wii, or 3DS, Switch CFW is currently volatile- i
 	
 ### Instructions
 
+There are several ways to launch atmosphere.  
+1. via reboot to payload in hbmenu (for restarting)
+2. in Hekate, Tap on payloads and select fuse-primary.bin 
+3. in Hekate, Tap on launch and select atmosphere (emuMMC)
+3. RCM method - injecting with fuse-primary.bin via payload launcher  
+
+
 !!! tip ""
+    1. if you are still in Hekate. you can tap on "Payloads" button and select fuse-primary.bin to launch atmosphere.  
+	if you are not in Hekate anymore or powered off, follow below.  
     1. Power on your Switch into RCM, and inject the fusee-primary.bin payload.
 	2. you should see blue screen with sept and it will boot into Atmosphere.
 

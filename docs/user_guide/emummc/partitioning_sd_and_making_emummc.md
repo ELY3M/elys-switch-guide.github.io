@@ -47,7 +47,7 @@ What you need:
 
 14. Tap on `Part 1`. It will start making the emuMMC now. After it's done return to the emuMMC menu using the `Close` buttons
 	
-15. It will take 15 to 30 mins creating your emuMMC in the new sd partition.    
+15. It will take 15 to 30 mins for the emuMMC to be done created in the new sd partition.    
 
 
 you can watch me making partition on my sd card and creating emuMMC in Hekate here.   
@@ -64,4 +64,4 @@ after the emuMMC is done, launching atmosphere.
     
 &nbsp;
 
-#### [Continue to SD Preparations <i class="fa fa-arrow-circle-right fa-lg"></i>](sd_preparation.md)
+#### [Continue to Launching CFW <i class="fa fa-arrow-circle-right fa-lg"></i>](launching_cfw.md)
