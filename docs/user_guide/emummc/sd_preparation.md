@@ -54,4 +54,4 @@ Atmosphere has its own bootloader, called fusee (primary). For the purposes of t
 
 &nbsp;
 
-#### [Continue to Making EmuMMC <i class="fa fa-arrow-circle-right fa-lg"></i>](sending_payload.md)
+#### [Continue to Entering RCM <i class="fa fa-arrow-circle-right fa-lg"></i>](entering_rcm.md)
