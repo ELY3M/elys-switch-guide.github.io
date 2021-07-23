@@ -25,7 +25,7 @@ RCM (short for ReCovery Mode) is a mode for the switch that allows nintendo to s
 	
 &nbsp;
 
-#### [Continue to Entering RCM <i class="fa fa-arrow-circle-right fa-lg"></i>](emummc/entering_rcm.md)
+#### [Continue to Entering RCM <i class="fa fa-arrow-circle-right fa-lg"></i>](emummc/sd_preparation.md)
 -----
 
 

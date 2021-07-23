@@ -20,8 +20,7 @@ Now that the device is in RCM, we will need to send it a payload. The methods ar
 
     Payloads you'll need for this guide:
 
-    - The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a> (either the hekate_ctcaer bin or the hekate_ctcaer zip)
-    - The latest release of <a href="https://github.com/suchmememanyskill/TegraExplorer/releases" target="_blank">TegraExplorer</a>
+    - The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a> (the hekate_ctcaer bin from hekate_ctcaer zip)
 	- The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">fusee-primary.bin</a> from  <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a>
 
 ### Instructions
@@ -35,7 +34,7 @@ Now that the device is in RCM, we will need to send it a payload. The methods ar
     5. Navigate to the `Payload` tab of TegraRcmGUI.
         - Your Switch should be shown as detected in the bottom left corner.
     6. Press the file button next to `Inject payload`, and navigate to and select your payload `.bin` file.
-        - The first time you read this page you should inject TegraExplorer.bin for partitioning your sd card for emuMMC.
+        - The first time you read this page you should inject hekate_ctcaer bin for partitioning your sd card for emuMMC.
     7. Click `Inject payload` to launch the payload you selected.
 
 
@@ -57,8 +56,7 @@ Now that the device is in RCM, we will need to send it a payload. The methods ar
 
     Payloads you'll need for this guide:
 
-    - The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a> (either the hekate_ctcaer bin or the hekate_ctcaer zip)
-    - The latest release of <a href="https://github.com/suchmememanyskill/TegraExplorer/releases" target="_blank">TegraExplorer</a>
+    - The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a> (the hekate_ctcaer bin from the hekate_ctcaer zip)
 	- The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">fusee-primary.bin</a> from  <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a>
 	
 
@@ -69,7 +67,7 @@ Now that the device is in RCM, we will need to send it a payload. The methods ar
     2. Connect your Switch in RCM to your PC using the USB cable.
     3. Wait for your Switch to be shown as found in the injector.
     4. Press `Select Payload`, and navigate to and select your payload `.bin` file.
-        - The first time you read this page you should inject TegraExplorer.bin.
+        - The first time you read this page you should inject hekate_ctcaer bin.
     5. Click `Send Payload!` to launch the payload you selected.
 
 &nbsp;
@@ -79,32 +77,25 @@ Now that the device is in RCM, we will need to send it a payload. The methods ar
 ### What you need
 
 !!! tip ""
-    - The latest release of <a href="https://github.com/ELY3M/Rekado---modded-by-ELY-M/releases" target="_blank">Rekado Modded by ELY M.</a>
+    - The latest release of <a href="https://github.com/ELY3M/NXloader103/releases" target="_blank">NXloader103 by ELY M.</a>
         - You will need to enable Unknown Sources in your device settings to install this
     - A USB-C cable
         - If your device has a USB-C port, you may use a C-C cable
         - If your device only has a Micro USB port, you will need a USB OTG adapter and a USB A-C cable
             - This **will not work** on every phone!
 
-    Payloads you'll need for this guide:
-
-    - The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a> (either the hekate_ctcaer bin or the hekate_ctcaer zip)
-    - The latest release of <a href="https://github.com/suchmememanyskill/TegraExplorer/releases" target="_blank">TegraExplorer</a>
-	- The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">fusee-primary.bin</a> from  <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a>
 		
 ### Instructions
 
 !!! tip ""
-    1. Copy the hekate_ctcaer `.bin` file from the Hekate `.zip` file, fusee-primary.bin, and TegraExplorer.bin to a location on your phone.
-        - A tool such as Amaze File Manager can do this.
-    2. Launch Rekado on your phone.
-    3. Navigate to `Payloads`, then press the `+` button at the bottom right.
-    4. Navigate to your hekate_ctcaer `.bin` file and tap it to add it to Rekado's menu.
-    5. **Optional, but recommended**: Navigate to Rekado's settings and enable `Hide bundled`.
-    6. Connect your Switch in RCM to your phone using the USB cable.
-    7. If prompted, grant Rekado access to the Switch.
-    8. Select your payload `.bin` file in the dialog that pops up.
-        - The first time you read this page you should inject TegraExplorer.bin for partitioning your sd card for emuMMC.
+    1. Launch NXLoader103 on your phone.
+    2. Tap on "Get or Update Built-in payloads" button to update payload bins.    
+	3. Tap on hekate_ctcaer.bin to set payload bin to be used to send payload.   
+    4. Connect your Switch in RCM to your phone using the USB cable
+    5. Make sure the text on top is in green and said device is connected.   
+	6. If prompted, grant NXLoader103 access to the Switch
+    7. Click on Injection to send payload to your Switch. 
+        - The first time you read this page you should inject hekate_ctcaer bin for partitioning your sd card for emuMMC.
 
 &nbsp;
 
@@ -119,7 +110,6 @@ Now that the device is in RCM, we will need to send it a payload. The methods ar
     Payloads you'll need for this guide:
 
     - The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a> (either the hekate_ctcaer bin or the hekate_ctcaer zip)
-    - The latest release of <a href="https://github.com/suchmememanyskill/TegraExplorer/releases" target="_blank">TegraExplorer</a>
     - The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">fusee-primary.bin</a> from  <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a>
 
 ### Instructions
@@ -127,7 +117,7 @@ Now that the device is in RCM, we will need to send it a payload. The methods ar
 !!! tip ""
     1. Go to the injection [website](https://switchgui.de/web-payload/) and scroll all the way down
     2. Select the "Upload Payload" option and upload the hekate_ctcaer `.bin` file from the Hekate `.zip` file.
-        - The first time you read this page you should inject TegraExplorer.bin.
+        - The first time you read this page you should inject hekate_ctcaer bin.
     3. Connect your Switch in RCM to your Chromebook using the USB cable.
     4. Select "Do the thing". A pop up will appear. Click the `APX` option.
     5. Press the Connect button and the payload will be injected.
@@ -139,4 +129,4 @@ Now that the device is in RCM, we will need to send it a payload. The methods ar
 
 &nbsp;
 
-#### [Continue to Partitioning the SD <i class="fa fa-arrow-circle-right fa-lg"></i>](partitioning_sd.md)
+#### [Continue to Partitioning the SD <i class="fa fa-arrow-circle-right fa-lg"></i>](partitioning_sd_and_making_emummc.md)

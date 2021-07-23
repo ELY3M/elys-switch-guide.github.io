@@ -20,6 +20,20 @@ When a new version of Atmosphere releases, you can always update Atmosphere by f
 4. Put your SD card back in your Switch and launch CFW.
 
 
+### USB method with Hekate: USB access to your sd card via your computer. 
+1. reboot to hekate via RCM and payload launcher app   
+2. Tap on Tools on top of the screen.  
+3. Tap on USB Tools on right side.  
+4. Tap on SD Card on Top and left side.  
+5. plug your switch to your computer.  
+6. Your Windows or OS should see the drives from your sd card in your switch.   
+7. copy the contents from latest atmosphere zip package and latest hekate zip package to the root of your sd card.  
+8. unplug the cable and the hekate will tell you that it is ejected.  just close the dialog.  
+9. update your fuse-primary.bin and hekate payload in your TegraRCMGui or payload launcher.  
+10. boot to atmosphere via latest fuse-primary.bin payload.  
+
+
+<!--
 ### FTP method: FTP access to your sd card.  
 
 I prefer this method because I try to avoid pulling out sd card unnecessarily.   
@@ -44,6 +58,7 @@ you should have the ftpd app in your hbmenu if you followed the guide.
 you can watch me updating my atmosphere using ftp method.   
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fhQiabtZq3I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+-->
 
 
 ## Updating Atmosphere fusee-primary.bin payload
@@ -75,9 +90,16 @@ When a new version of Hekate releases, you can always update by following these 
 4. Put your SD card back in your Switch and launch CFW.
 
 ### USB method: USB access to your sd card via your computer. 
-1. reboot to hekate 
-2. 
-
+1. reboot to hekate via RCM and payload launcher app   
+2. Tap on Tools on top of the screen.  
+3. Tap on USB Tools on right side.  
+4. Tap on SD Card on Top and left side.  
+5. plug your switch to your computer.  
+6. Your Windows or OS should see the drives from your sd card in your switch.   
+7. copy the contents from latest hekate zip package to the root of your sd card.  
+8. unplug the cable and the hekate will tell you that it is ejected.  just close the dialog.  
+9. update your fuse-primary.bin and hekate payload in your TegraRCMGui or payload launcher.  
+10. boot to atmosphere via latest fuse-primary.bin payload.  
 
 <!--
 ### FTP method: FTP access to your sd card.  

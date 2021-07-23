@@ -1,27 +1,14 @@
-# Making the Emummc, getting keys, and making essential backups 
+# Making Essential Backups and dumping keys
+
+!!! danger "Important"
+    It is critical to make these backups. Do not skip these steps.
 
 &nbsp;
 
-### Making the emuMMC
-
-!!!warning "Before you start"
-    Before you start, boot your switch normally, and delete all the wifi networks. You can add them back to your sysnand after completing this guide
-
-!!!tip ""
-    1. Enter RCM and inject the Hekate payload
-    2. Use the touch screen to navigate to `emuMMC`
-    3. Tap on `Create emuMMC`, then select `SD Partition`
-    4. Tap on `Part 1`. It will start making the emummc now. After it's done return to the emuMMC menu using the `Close` buttons
-    5. Tap on `Change emuMMC`, then `SD RAW 1`
-    6. Go back to the main menu
-
------
-
-### Making a NAND backup
-
+## Making a NAND Backup
 
 !!! danger "Important"
-    A NAND backup is crucial. They can be used to restore the device to a working state in case of emergencies.
+	A NAND backup is crucial. They can be used to restore the device to a working state in case of emergencies.
 
 	Once the backup is finished, **keep it somewhere safe.** The best backup is the one you have but never need, and the worst backup is the one you need but never made. To save space, it's recommended to compress the end-result with a `.zip` file or something similar.
 
@@ -30,6 +17,7 @@
 ### Instructions
 
 !!! tip ""
+
     1. Enter RCM and inject the Hekate payload
     2. Use the touch screen to navigate to `Tools` and then `Backup eMMC`
     3. Tap on `eMMC BOOT0 & BOOT1`
@@ -52,6 +40,8 @@
 
 -----
 
+&nbsp;
+
 ### Getting your Console's Unique Keys
 
 !!! danger "Important"
@@ -60,14 +50,14 @@
 !!!tip ""
     1. Enter RCM and inject the Hekate payload.
     2. Tap the `Payloads` option, then press Lockpick_RCM.bin.
-    3. If Lockpick_RCM asks you to select between SysNAND or emuMMC, choose SysNAND by navigating with the volume buttons and pressing the power button. If not, continue with step 4.
+    3. If Lockpick_RCM asks you to select between SysNAND and emuMMC, choose SysNAND by navigating with the volume buttons and pressing the power button. If not, continue with step 4.
     4. If Lockpick_RCM prompts you to `Reboot to Sept`, press power or either volume button to do so. A "sept by Atmosphere" logo will then display, followed by Lockpick_RCM starting again. If it does *not* prompt you, continue on to step 5.
     5. Lockpick_RCM should now inform you that your keys have been saved to `/switch/prod.keys` on the SD card.
     6. Press any button to return to the main menu.
     7. Navigate to 'Power off' with the volume buttons and select it with the power button.
     8. Insert your SD card into your PC.
     9. Copy `prod.keys` from the `switch` folder on your SD card to a safe location on your PC (it is suggested to copy it to the same place that you copied your NAND backup to).
-
+    
 &nbsp;
 
 #### [Continue to Launching CFW <i class="fa fa-arrow-circle-right fa-lg"></i>](launching_cfw.md)

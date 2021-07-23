@@ -6,9 +6,10 @@ Atmosphere has its own bootloader, called fusee (primary). For the purposes of t
 
 &nbsp;
 
-!!! danger "Notice"
+!!! danger "FAT32 vs exFAT"
     Your SD card will need to be formatted as either FAT32 or exFAT. FAT32 is recommended as it is more stable and will work out of the box with the Switch's operating system, but has a file size limit of 4GB. If you plan on using exFAT, you will need to install the exFAT update for your Switch, which is downloaded when you insert an exFAT formatted SD card in to your Switch. Note that this will update your console and requires an internet connection.
-	I recommend FAT32 because I read about too many data loss from the CFW users. 
+	I recommend FAT32 because I read about too many data loss from the CFW users.  There are two ways to format your sd card as fat32, use [guiformat](http://ridgecrop.co.uk/index.htm?guiformat.htm) or follow this [guide for formatting sd card as fat32](format_sd.md)
+
 
 !!! warning "File name extensions"
     If you use Windows, you should enable file name extensions before continuing. See [this link](../../extras/showing_file_extensions.md) for a guide on how to do this.
@@ -22,6 +23,7 @@ Atmosphere has its own bootloader, called fusee (primary). For the purposes of t
     - The hekate config file: <a href="../../../files/emu/hekate_ipl.ini" download>hekate_ipl.ini</a>
     - The 90dns DNS redirection config: <a href="../../../files/emummc.txt" download>emummc.txt</a> (Optional) (Best to use this, if you do not want to play online in CFW) (It will block normal online play)
     - The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a> (Download the `atmosphere-(version)-master-(version)+hbl-(version)+hbmenu-(version).zip` release of Atmosphere.)
+    - The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">fuse-primary.bin payload for launching Atmosphere</a> (Download the `fuse-primary.bin` payload of Atmosphere.)
     - The latest release of <a href="https://github.com/shchmue/Lockpick_RCM/releases" target="_blank">Lockpick_RCM</a> (Download the `Lockpick_RCM.bin` release of Lockpick)
     - The latest release of <a href="https://github.com/J-D-K/JKSV/releases" target="_blank">JKSV</a> (Download the `JKSV.nro` release of JKSV)
     - The latest release of <a href="https://github.com/mtheall/ftpd/releases" target="_blank">FTPD</a> (Download the `ftpd.nro` release of FTPD)
@@ -36,7 +38,7 @@ Atmosphere has its own bootloader, called fusee (primary). For the purposes of t
     2. Copy *the contents of* the Atmosphere `.zip` file to the root of your SD card
     3. Copy the `bootloader` folder from the Hekate `.zip` file to the root of your SD card
     4. Copy `hekate_ipl.ini` to the `bootloader` folder on your SD card
-    5. Copy `Lockpick_RCM.bin` to the `/bootloader/payloads` folder on your SD card
+    5. Copy `Lockpick_RCM.bin` and `fuse-primary.bin` to the `/bootloader/payloads` folder on your SD card
     6. Create a folder named `hosts` inside the `atmosphere` folder on your SD card, and put `emummc.txt` in it. (Optional) (Best to use this, if you do not want to play online in CFW) (It will block normal online play)
     7. Create a folder named `appstore` inside the `switch` folder on your SD card, and put `appstore.nro` in it
     8. Copy `JKSV.nro`, `ftpd.nro`, `NX-Shell.nro` and `NxThemesInstaller.nro` to the `switch` folder on your SD card
@@ -52,4 +54,4 @@ Atmosphere has its own bootloader, called fusee (primary). For the purposes of t
 
 &nbsp;
 
-#### [Continue to Making EmuMMC <i class="fa fa-arrow-circle-right fa-lg"></i>](making_emummc.md)
+#### [Continue to Making EmuMMC <i class="fa fa-arrow-circle-right fa-lg"></i>](sending_payload.md)
