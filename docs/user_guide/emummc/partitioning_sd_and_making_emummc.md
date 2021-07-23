@@ -55,7 +55,7 @@ you can watch me making partition on my sd card in Hekate here.
 
 
 after the emuMMC is done, launching atmosphere.   
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=rC4B930zIxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rC4B930zIxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
