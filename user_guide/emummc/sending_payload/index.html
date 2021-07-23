@@ -63,6 +63,10 @@
 </li>
                                     
 <li >
+    <a href="../sd_preparation/">SD preparations</a>
+</li>
+                                    
+<li >
     <a href="../entering_rcm/">Entering RCM</a>
 </li>
                                     
@@ -71,15 +75,7 @@
 </li>
                                     
 <li >
-    <a href="../partitioning_sd/">Partitioning the SD</a>
-</li>
-                                    
-<li >
-    <a href="../sd_preparation/">SD preparations</a>
-</li>
-                                    
-<li >
-    <a href="../making_emummc/">Making the emuMMC</a>
+    <a href="../partitioning_sd_and_making_emummc/">Partitioning the SD and Making emuMMC</a>
 </li>
                                     
 <li >
@@ -232,7 +228,7 @@
                                 </a>
                             </li>
                             <li >
-                                <a rel="prev" href="../partitioning_sd/">
+                                <a rel="prev" href="../partitioning_sd_and_making_emummc/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -256,7 +252,7 @@
 <h1 id="sending-a-payload">Sending a Payload</h1>
 <div class="admonition warning">
 <p class="admonition-title">If you are here to test if your Switch is patched</p>
-<p>Make sure you have <a href="../entering_rcm/">put your device into RCM</a> and downloaded Hekate (if necessary, extract its zip file onto the root of your SD card) before continuing. Once finished, if your console is <strong>not</strong> patched, continue with <a href="../partitioning_sd/">Partitioning the SD</a> instead of <code>Making the emuMMC</code> at the end of this page.</p>
+<p>Make sure you have <a href="../entering_rcm/">put your device into RCM</a> and downloaded Hekate (if necessary, extract its zip file onto the root of your SD card) before continuing. Once finished, if your console is <strong>not</strong> patched, continue with <a href="../emummc/partitioning_sd.md">Partitioning the SD</a> instead of <code>Making the emuMMC</code> at the end of this page.</p>
 </div>
 <p>Now that the device is in RCM, we will need to send it a payload. The methods are mostly the same, but slightly differ depending on what hardware you have available.</p>
 <p>&nbsp;</p>
@@ -269,8 +265,7 @@
 </ul>
 <p>Payloads you'll need for this guide:</p>
 <ul>
-<li>The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a> (either the hekate_ctcaer bin or the hekate_ctcaer zip)</li>
-<li>The latest release of <a href="https://github.com/suchmememanyskill/TegraExplorer/releases" target="_blank">TegraExplorer</a></li>
+<li>The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a> (the hekate_ctcaer bin from hekate_ctcaer zip)</li>
 <li>The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">fusee-primary.bin</a> from  <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a></li>
 </ul>
 </div>
@@ -289,7 +284,7 @@
 </ul>
 </li>
 <li>Press the file button next to <code>Inject payload</code>, and navigate to and select your payload <code>.bin</code> file.<ul>
-<li>The first time you read this page you should inject TegraExplorer.bin for partitioning your sd card for emuMMC.</li>
+<li>The first time you read this page you should inject hekate_ctcaer bin for partitioning your sd card for emuMMC.</li>
 </ul>
 </li>
 <li>Click <code>Inject payload</code> to launch the payload you selected.</li>
@@ -307,8 +302,7 @@
 </ul>
 <p>Payloads you'll need for this guide:</p>
 <ul>
-<li>The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a> (either the hekate_ctcaer bin or the hekate_ctcaer zip)</li>
-<li>The latest release of <a href="https://github.com/suchmememanyskill/TegraExplorer/releases" target="_blank">TegraExplorer</a></li>
+<li>The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a> (the hekate_ctcaer bin from the hekate_ctcaer zip)</li>
 <li>The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">fusee-primary.bin</a> from  <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a></li>
 </ul>
 </div>
@@ -319,7 +313,7 @@
 <li>Connect your Switch in RCM to your PC using the USB cable.</li>
 <li>Wait for your Switch to be shown as found in the injector.</li>
 <li>Press <code>Select Payload</code>, and navigate to and select your payload <code>.bin</code> file.<ul>
-<li>The first time you read this page you should inject TegraExplorer.bin.</li>
+<li>The first time you read this page you should inject hekate_ctcaer bin.</li>
 </ul>
 </li>
 <li>Click <code>Send Payload!</code> to launch the payload you selected.</li>
@@ -330,7 +324,7 @@
 <h3 id="what-you-need_2">What you need</h3>
 <div class="admonition tip">
 <ul>
-<li>The latest release of <a href="https://github.com/ELY3M/Rekado---modded-by-ELY-M/releases" target="_blank">Rekado Modded by ELY M.</a><ul>
+<li>The latest release of <a href="https://github.com/ELY3M/NXloader103/releases" target="_blank">NXloader103 by ELY M.</a><ul>
 <li>You will need to enable Unknown Sources in your device settings to install this</li>
 </ul>
 </li>
@@ -343,28 +337,18 @@
 </ul>
 </li>
 </ul>
-<p>Payloads you'll need for this guide:</p>
-<ul>
-<li>The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a> (either the hekate_ctcaer bin or the hekate_ctcaer zip)</li>
-<li>The latest release of <a href="https://github.com/suchmememanyskill/TegraExplorer/releases" target="_blank">TegraExplorer</a></li>
-<li>The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">fusee-primary.bin</a> from  <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a></li>
-</ul>
 </div>
 <h3 id="instructions_2">Instructions</h3>
 <div class="admonition tip">
 <ol>
-<li>Copy the hekate_ctcaer <code>.bin</code> file from the Hekate <code>.zip</code> file, fusee-primary.bin, and TegraExplorer.bin to a location on your phone.<ul>
-<li>A tool such as Amaze File Manager can do this.</li>
-</ul>
-</li>
-<li>Launch Rekado on your phone.</li>
-<li>Navigate to <code>Payloads</code>, then press the <code>+</code> button at the bottom right.</li>
-<li>Navigate to your hekate_ctcaer <code>.bin</code> file and tap it to add it to Rekado's menu.</li>
-<li><strong>Optional, but recommended</strong>: Navigate to Rekado's settings and enable <code>Hide bundled</code>.</li>
-<li>Connect your Switch in RCM to your phone using the USB cable.</li>
-<li>If prompted, grant Rekado access to the Switch.</li>
-<li>Select your payload <code>.bin</code> file in the dialog that pops up.<ul>
-<li>The first time you read this page you should inject TegraExplorer.bin for partitioning your sd card for emuMMC.</li>
+<li>Launch NXLoader103 on your phone.</li>
+<li>Tap on "Get or Update Built-in payloads" button to update payload bins.    </li>
+<li>Tap on hekate_ctcaer.bin to set payload bin to be used to send payload.   </li>
+<li>Connect your Switch in RCM to your phone using the USB cable</li>
+<li>Make sure the text on top is in green and said device is connected.   </li>
+<li>If prompted, grant NXLoader103 access to the Switch</li>
+<li>Click on Injection to send payload to your Switch. <ul>
+<li>The first time you read this page you should inject hekate_ctcaer bin for partitioning your sd card for emuMMC.</li>
 </ul>
 </li>
 </ol>
@@ -380,7 +364,6 @@
 <p>Payloads you'll need for this guide:</p>
 <ul>
 <li>The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a> (either the hekate_ctcaer bin or the hekate_ctcaer zip)</li>
-<li>The latest release of <a href="https://github.com/suchmememanyskill/TegraExplorer/releases" target="_blank">TegraExplorer</a></li>
 <li>The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">fusee-primary.bin</a> from  <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a></li>
 </ul>
 </div>
@@ -389,7 +372,7 @@
 <ol>
 <li>Go to the injection <a href="https://switchgui.de/web-payload/">website</a> and scroll all the way down</li>
 <li>Select the "Upload Payload" option and upload the hekate_ctcaer <code>.bin</code> file from the Hekate <code>.zip</code> file.<ul>
-<li>The first time you read this page you should inject TegraExplorer.bin.</li>
+<li>The first time you read this page you should inject hekate_ctcaer bin.</li>
 </ul>
 </li>
 <li>Connect your Switch in RCM to your Chromebook using the USB cable.</li>
@@ -403,7 +386,7 @@
 <p>If your console's screen remains black after you've sent Hekate, it's possible your payload was corrupted, or that your console is patched. If your payload injector program shows that 0 bytes were sent, then it is definitely patched, so you'll be unable to proceed with the rest of the guide.</p>
 </div>
 <p>&nbsp;</p>
-<h4 id="continue-to-partitioning-the-sd"><a href="../partitioning_sd/">Continue to Partitioning the SD <i class="fa fa-arrow-circle-right fa-lg"></i></a></h4></div>
+<h4 id="continue-to-partitioning-the-sd"><a href="../partitioning_sd_and_making_emummc/">Continue to Partitioning the SD <i class="fa fa-arrow-circle-right fa-lg"></i></a></h4></div>
         </div>
 
         <footer class="col-md-12">

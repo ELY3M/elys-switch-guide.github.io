@@ -63,6 +63,10 @@
 </li>
                                     
 <li >
+    <a href="../../user_guide/emummc/sd_preparation/">SD preparations</a>
+</li>
+                                    
+<li >
     <a href="../../user_guide/emummc/entering_rcm/">Entering RCM</a>
 </li>
                                     
@@ -71,15 +75,7 @@
 </li>
                                     
 <li >
-    <a href="../../user_guide/emummc/partitioning_sd/">Partitioning the SD</a>
-</li>
-                                    
-<li >
-    <a href="../../user_guide/emummc/sd_preparation/">SD preparations</a>
-</li>
-                                    
-<li >
-    <a href="../../user_guide/emummc/making_emummc/">Making the emuMMC</a>
+    <a href="../../user_guide/emummc/partitioning_sd_and_making_emummc/">Partitioning the SD and Making emuMMC</a>
 </li>
                                     
 <li >
@@ -271,27 +267,46 @@
 </li>
 <li>Put your SD card back in your Switch and launch CFW.</li>
 </ol>
-<h3 id="ftp-method-ftp-access-to-your-sd-card">FTP method: FTP access to your sd card.</h3>
-<p>I prefer this method because I try to avoid pulling out sd card unnecessarily. <br />
-you should have the ftpd app in your hbmenu if you followed the guide.   </p>
+<h3 id="usb-method-with-hekate-usb-access-to-your-sd-card-via-your-computer">USB method with Hekate: USB access to your sd card via your computer.</h3>
 <ol>
-<li>Open the Homebrew menu</li>
-<li>Open <code>ftpd</code>.</li>
-<li>Note the switch ip and port on your switch screen.  </li>
-<li>go on your pc and open windows explorer or ftp client.</li>
-<li>type in switch ip and ftp port (5000) in the address bar and press enter.</li>
-<li>The explorer should open up your sd card centents.  Make sure you are in the root of your sd card in the window.   </li>
-<li>Download the latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a> (Download the <code>atmosphere-(version).zip</code> release of Atmosphere.)</li>
-<li>Copy <em>the contents of</em> the Atmosphere <code>.zip</code> file to the root of your SD card.<ul>
-<li>If you are prompted to overwrite files, do so, <em>except</em> for the <code>.ini</code> files.</li>
-<li>If you do accidentally overwrite the <code>.ini</code> files, this is not an emergency but you will lose any changes you made to Atmospheres settings.</li>
-</ul>
-</li>
-<li>Exit the ftpd by press B two times.  once you go back to hbmenu, tap on reboot to payload to reboot the atmosphere CFW.</li>
+<li>reboot to hekate via RCM and payload launcher app   </li>
+<li>Tap on Tools on top of the screen.  </li>
+<li>Tap on USB Tools on right side.  </li>
+<li>Tap on SD Card on Top and left side.  </li>
+<li>plug your switch to your computer.  </li>
+<li>Your Windows or OS should see the drives from your sd card in your switch.   </li>
+<li>copy the contents from latest atmosphere zip package and latest hekate zip package to the root of your sd card.  </li>
+<li>unplug the cable and the hekate will tell you that it is ejected.  just close the dialog.  </li>
+<li>update your fuse-primary.bin and hekate payload in your TegraRCMGui or payload launcher.  </li>
+<li>boot to atmosphere via latest fuse-primary.bin payload.  </li>
 </ol>
-<p><img alt="ftpd windows" src="../img/ftpd_windows.png" /></p>
-<p>you can watch me updating my atmosphere using ftp method. <br />
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fhQiabtZq3I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<!--
+### FTP method: FTP access to your sd card.
+
+I prefer this method because I try to avoid pulling out sd card unnecessarily.   
+you should have the ftpd app in your hbmenu if you followed the guide.   
+
+1. Open the Homebrew menu
+2. Open `ftpd`.
+3. Note the switch ip and port on your switch screen.  
+4. go on your pc and open windows explorer or ftp client.
+5. type in switch ip and ftp port (5000) in the address bar and press enter.
+6. The explorer should open up your sd card centents.  Make sure you are in the root of your sd card in the window.   
+7. Download the latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a> (Download the `atmosphere-(version).zip` release of Atmosphere.)
+8. Copy *the contents of* the Atmosphere `.zip` file to the root of your SD card.
+    - If you are prompted to overwrite files, do so, _except_ for the `.ini` files.
+    - If you do accidentally overwrite the `.ini` files, this is not an emergency but you will lose any changes you made to Atmospheres settings.
+9. Exit the ftpd by press B two times.  once you go back to hbmenu, tap on reboot to payload to reboot the atmosphere CFW.
+
+
+![ftpd windows](../extras/img/ftpd_windows.png)
+
+
+you can watch me updating my atmosphere using ftp method.   
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fhQiabtZq3I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+-->
+
 <h2 id="updating-atmosphere-fusee-primarybin-payload">Updating Atmosphere fusee-primary.bin payload</h2>
 <p>It is important that you update the fusee-primary.bin payload.<br />
 you can get latest fusee-primary.bin from <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a> (Download the <code>fusee-primary.bin</code> release of Atmosphere.)
@@ -315,8 +330,16 @@ you should replace the payload.bin in atmosphere folder.  it may be named differ
 </ol>
 <h3 id="usb-method-usb-access-to-your-sd-card-via-your-computer">USB method: USB access to your sd card via your computer.</h3>
 <ol>
-<li>reboot to hekate </li>
-<li></li>
+<li>reboot to hekate via RCM and payload launcher app   </li>
+<li>Tap on Tools on top of the screen.  </li>
+<li>Tap on USB Tools on right side.  </li>
+<li>Tap on SD Card on Top and left side.  </li>
+<li>plug your switch to your computer.  </li>
+<li>Your Windows or OS should see the drives from your sd card in your switch.   </li>
+<li>copy the contents from latest hekate zip package to the root of your sd card.  </li>
+<li>unplug the cable and the hekate will tell you that it is ejected.  just close the dialog.  </li>
+<li>update your fuse-primary.bin and hekate payload in your TegraRCMGui or payload launcher.  </li>
+<li>boot to atmosphere via latest fuse-primary.bin payload.  </li>
 </ol>
 <!--
 ### FTP method: FTP access to your sd card.

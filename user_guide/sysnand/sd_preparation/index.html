@@ -63,6 +63,10 @@
 </li>
                                     
 <li >
+    <a href="../../emummc/sd_preparation/">SD preparations</a>
+</li>
+                                    
+<li >
     <a href="../../emummc/entering_rcm/">Entering RCM</a>
 </li>
                                     
@@ -71,15 +75,7 @@
 </li>
                                     
 <li >
-    <a href="../../emummc/partitioning_sd/">Partitioning the SD</a>
-</li>
-                                    
-<li >
-    <a href="../../emummc/sd_preparation/">SD preparations</a>
-</li>
-                                    
-<li >
-    <a href="../../emummc/making_emummc/">Making the emuMMC</a>
+    <a href="../../emummc/partitioning_sd_and_making_emummc/">Partitioning the SD and Making emuMMC</a>
 </li>
                                     
 <li >
@@ -264,6 +260,7 @@ I recommend FAT32 because I read about too many data loss from the CFW users.  T
 <li>The hekate config file: <a href="../../../files/sys/hekate_ipl.ini" download>hekate_ipl.ini</a></li>
 <li>The 90dns DNS redirection config: <a href="../../../files/sysmmc.txt" download>sysmmc.txt</a> (Optional) (Best to use this, if you do not want to play online in CFW) (It will block normal online play)</li>
 <li>The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a>. Download the <code>atmosphere-(version)-master-(version)+hbl-(version)+hbmenu-(version).zip</code> release of Atmosphere. Do not download the <code>atmosphere-(version)-master-(version)-WITHOUT_MESOSPHERE+hbl-(version)+hbmenu-(version).zip</code> release.</li>
+<li>The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">fuse-primary.bin payload for launching Atmosphere</a> (Download the <code>fuse-primary.bin</code> payload of Atmosphere.)</li>
 <li>The latest release of <a href="https://github.com/shchmue/Lockpick_RCM/releases" target="_blank">Lockpick_RCM</a> (Download the <code>Lockpick_RCM.bin</code> release of Lockpick)</li>
 <li>The latest release of <a href="https://github.com/J-D-K/JKSV/releases" target="_blank">JKSV</a> (Download the <code>JKSV.nro</code> release of JKSV)</li>
 <li>The latest release of <a href="https://github.com/mtheall/ftpd/releases" target="_blank">FTPD</a> (Download the <code>ftpd.nro</code> release of FTPD)</li>
@@ -281,7 +278,7 @@ alternatively, use tegraexplorer payload to format sd card as fat32. the guide i
 <li>Copy <em>the contents of</em> the Atmosphere <code>.zip</code> file to the root of your SD card</li>
 <li>Copy the <code>bootloader</code> folder from the Hekate <code>.zip</code> file to the root of your SD card</li>
 <li>Copy <code>hekate_ipl.ini</code> to the <code>bootloader</code> folder on your SD card</li>
-<li>Copy <code>Lockpick_RCM.bin</code> to the <code>/bootloader/payloads</code> folder on your SD card</li>
+<li>Copy <code>Lockpick_RCM.bin</code> and <code>fuse-primary.bin</code> to the <code>/bootloader/payloads</code> folder on your SD card</li>
 <li>Create a folder named <code>hosts</code> inside the <code>atmosphere</code> folder on your SD card, and put <code>sysmmc.txt</code> in it. (Optional) (Best to use this, if you do not want to play online in CFW) (It will block normal online play) </li>
 <li>Create a folder named <code>appstore</code> inside the <code>switch</code> folder on your SD card, and put <code>appstore.nro</code> in it</li>
 <li>Copy <code>JKSV.nro</code>, <code>ftpd.nro</code>, <code>NX-Shell.nro</code> and <code>NxThemesInstaller.nro</code> to the <code>switch</code> folder on your SD card</li>

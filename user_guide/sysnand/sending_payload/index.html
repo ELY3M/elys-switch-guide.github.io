@@ -63,6 +63,10 @@
 </li>
                                     
 <li >
+    <a href="../../emummc/sd_preparation/">SD preparations</a>
+</li>
+                                    
+<li >
     <a href="../../emummc/entering_rcm/">Entering RCM</a>
 </li>
                                     
@@ -71,15 +75,7 @@
 </li>
                                     
 <li >
-    <a href="../../emummc/partitioning_sd/">Partitioning the SD</a>
-</li>
-                                    
-<li >
-    <a href="../../emummc/sd_preparation/">SD preparations</a>
-</li>
-                                    
-<li >
-    <a href="../../emummc/making_emummc/">Making the emuMMC</a>
+    <a href="../../emummc/partitioning_sd_and_making_emummc/">Partitioning the SD and Making emuMMC</a>
 </li>
                                     
 <li >
@@ -255,9 +251,12 @@
 <div class="admonition tip">
 <ul>
 <li>The latest release of <a href="https://github.com/ELY3M/TegraRcmGUI---modded-by-ELY-M/releases" target="_blank">TegraRcmGUI</a> (portable zip)</li>
-<li>The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a> (either the hekate_ctcaer bin or the hekate_ctcaer zip)</li>
-<li>The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">fusee-primary.bin</a> from  <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a> </li>
 <li>A USB-A to USB-C cable (or a standard USB-C cable if your computer natively supports USB-C)</li>
+</ul>
+<p>Payloads you'll need for this guide:</p>
+<ul>
+<li>The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a> (the hekate_ctcaer bin from hekate_ctcaer zip)</li>
+<li>The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">fusee-primary.bin</a> from  <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a></li>
 </ul>
 </div>
 <h3 id="instructions">Instructions</h3>
@@ -276,15 +275,20 @@
 <li>Click <code>Inject payload</code> to launch Hekate</li>
 </ol>
 </div>
+<p><img alt="TegraRcmGUI before payload injected" src="../../img/tegrarcmgui1.png" /></p>
+<p><img alt="TegraRcmGUI after payload injected" src="../../img/tegrarcmgui2.png" /></p>
 <p>&nbsp;</p>
 <h2 id="mac-linux">Mac / Linux</h2>
 <h3 id="what-you-need_1">What you need</h3>
 <div class="admonition tip">
 <ul>
 <li>The latest release of <a href="https://github.com/nh-server/fusee-interfacee-tk/releases" target="_blank">fusee-interfacee-tk</a></li>
-<li>The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a> (either the hekate_ctcaer bin or the hekate_ctcaer zip)</li>
-<li>The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">fusee-primary.bin</a> from  <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a> </li>
 <li>A USB-A to USB-C cable (or a standard USB-C cable if your computer natively supports USB-C)</li>
+</ul>
+<p>Payloads you'll need for this guide:</p>
+<ul>
+<li>The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a> (the hekate_ctcaer bin from the hekate_ctcaer zip)</li>
+<li>The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">fusee-primary.bin</a> from  <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a></li>
 </ul>
 </div>
 <h3 id="instructions_1">Instructions</h3>
@@ -302,12 +306,10 @@
 <h3 id="what-you-need_2">What you need</h3>
 <div class="admonition tip">
 <ul>
-<li>The latest release of <a href="https://github.com/ELY3M/Rekado---modded-by-ELY-M/releases" target="_blank">Rekado Modded by ELY M.</a><ul>
+<li>The latest release of <a href="https://github.com/ELY3M/NXloader103/releases" target="_blank">NXloader103 by ELY M.</a><ul>
 <li>You will need to enable Unknown Sources in your device settings to install this</li>
 </ul>
 </li>
-<li>The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a> (either the hekate_ctcaer bin or the hekate_ctcaer zip)</li>
-<li>The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">fusee-primary.bin</a> from  <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a> </li>
 <li>A USB-C cable<ul>
 <li>If your device has a USB-C port, you may use a C-C cable</li>
 <li>If your device only has a Micro USB port, you will need a USB OTG adapter and a USB A-C cable<ul>
@@ -321,15 +323,16 @@
 <h3 id="instructions_2">Instructions</h3>
 <div class="admonition tip">
 <ol>
-<li>Copy the hekate_ctcaer <code>.bin</code> file from the Hekate <code>.zip</code> file and fusee-primary.bin to a location on your phone</li>
-<li>A tool such as Amaze File Manager can do this</li>
-<li>Launch Rekado on your phone</li>
-<li>Navigate to <code>Payloads</code>, then press the <code>+</code> button at the bottom right</li>
-<li>Navigate to your hekate_ctcaer <code>.bin</code> file, and tap it to add it to Rekado's menu</li>
-<li><strong>Optional, but recommended</strong>: Navigate to Rekado's settings and enable <code>Hide bundled</code></li>
+<li>Launch NXLoader103 on your phone.</li>
+<li>Tap on "Get or Update Built-in payloads" button to update payload bins.    </li>
+<li>Tap on hekate_ctcaer.bin to set payload bin to be used to send payload.   </li>
 <li>Connect your Switch in RCM to your phone using the USB cable</li>
-<li>If prompted, grant Rekado access to the Switch</li>
-<li>Select your hekate_ctcaer <code>.bin</code> file in the dialog that pops up</li>
+<li>Make sure the text on top is in green and said device is connected.   </li>
+<li>If prompted, grant NXLoader103 access to the Switch</li>
+<li>Click on Injection to send payload to your Switch. <ul>
+<li>The first time you read this page you should inject hekate_ctcaer bin for partitioning your sd card for emuMMC.</li>
+</ul>
+</li>
 </ol>
 </div>
 <p>&nbsp;</p>
@@ -343,13 +346,17 @@
 <p>Payloads you'll need for this guide:</p>
 <ul>
 <li>The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a> (either the hekate_ctcaer bin or the hekate_ctcaer zip)</li>
+<li>The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">fusee-primary.bin</a> from  <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a></li>
 </ul>
 </div>
 <h3 id="instructions_3">Instructions</h3>
 <div class="admonition tip">
 <ol>
 <li>Go to the injection <a href="https://switchgui.de/web-payload/">website</a> and scroll all the way down</li>
-<li>Select the "Upload Payload" option and upload the hekate_ctcaer <code>.bin</code> file from the Hekate <code>.zip</code> file.</li>
+<li>Select the "Upload Payload" option and upload the hekate_ctcaer <code>.bin</code> file from the Hekate <code>.zip</code> file.<ul>
+<li>The first time you read this page you should inject hekate_ctcaer bin.</li>
+</ul>
+</li>
 <li>Connect your Switch in RCM to your Chromebook using the USB cable.</li>
 <li>Select "Do the thing". A pop up will appear. Click the <code>APX</code> option.</li>
 <li>Press the Connect button and the payload will be injected.</li>

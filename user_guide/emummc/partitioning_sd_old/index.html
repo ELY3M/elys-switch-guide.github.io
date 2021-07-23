@@ -8,7 +8,7 @@
         <meta name="author" content="NH Discord Server. - Modifed by ELY M.">
         
         <link rel="shortcut icon" href="../../../img/favicon.ico">
-        <title>Making the emuMMC - NH Switch Guide - Modifed by ELY M.</title>
+        <title>Partitioning the SD Card - NH Switch Guide - Modifed by ELY M.</title>
         <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../../css/base.css" rel="stylesheet">
@@ -50,7 +50,7 @@
                             <li >
                                 <a href="../../..">Home</a>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -63,6 +63,10 @@
 </li>
                                     
 <li >
+    <a href="../sd_preparation/">SD preparations</a>
+</li>
+                                    
+<li >
     <a href="../entering_rcm/">Entering RCM</a>
 </li>
                                     
@@ -71,15 +75,7 @@
 </li>
                                     
 <li >
-    <a href="../partitioning_sd/">Partitioning the SD</a>
-</li>
-                                    
-<li >
-    <a href="../sd_preparation/">SD preparations</a>
-</li>
-                                    
-<li class="active">
-    <a href="./">Making the emuMMC</a>
+    <a href="../partitioning_sd_and_making_emummc/">Partitioning the SD and Making emuMMC</a>
 </li>
                                     
 <li >
@@ -226,16 +222,6 @@
                         </ul>
 
                     <ul class="nav navbar-nav navbar-right">
-                            <li >
-                                <a rel="next" href="../sd_preparation/">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li >
-                                <a rel="prev" href="../launching_cfw/">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
                     </ul>
                 </div>
             </div>
@@ -244,86 +230,52 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#making-the-emummc-getting-keys-and-making-essential-backups">Making the Emummc, getting keys, and making essential backups</a></li>
-            <li><a href="#making-the-emummc">Making the emuMMC</a></li>
-            <li><a href="#making-a-nand-backup">Making a NAND backup</a></li>
-            <li><a href="#instructions">Instructions</a></li>
-            <li><a href="#getting-your-consoles-unique-keys">Getting your Console's Unique Keys</a></li>
+        <li class="main active"><a href="#partitioning-the-sd-card">Partitioning the SD Card</a></li>
+            <li><a href="#preparations">Preparations</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="making-the-emummc-getting-keys-and-making-essential-backups">Making the Emummc, getting keys, and making essential backups</h1>
-<p>&nbsp;</p>
-<h3 id="making-the-emummc">Making the emuMMC</h3>
+<h1 id="partitioning-the-sd-card">Partitioning the SD Card</h1>
 <div class="admonition warning">
-<p class="admonition-title">Before you start</p>
-<p>Before you start, boot your switch normally, and delete all the wifi networks. You can add them back to your sysnand after completing this guide</p>
+<p class="admonition-title">This will delete everything on your sd card</p>
+<p>Doing this will delete all your data from your sd card, be warned!</p>
 </div>
-<div class="admonition tip">
-<ol>
-<li>Enter RCM and inject the Hekate payload</li>
-<li>Use the touch screen to navigate to <code>emuMMC</code></li>
-<li>Tap on <code>Create emuMMC</code>, then select <code>SD Partition</code></li>
-<li>Tap on <code>Part 1</code>. It will start making the emummc now. After it's done return to the emuMMC menu using the <code>Close</code> buttons</li>
-<li>Tap on <code>Change emuMMC</code>, then <code>SD RAW 1</code></li>
-<li>Go back to the main menu</li>
-</ol>
+<div class="admonition warning">
+<p class="admonition-title">Back up your existing Nintendo folder</p>
+<p>Before we start, if you are using a microSD card already as a storage device for your games, you will want to back up your <code>Nintendo</code> folder that is on the root of your microSD card to a safe place on your computer. This folder contains your downloaded games and game updates.</p>
 </div>
 <hr />
-<h3 id="making-a-nand-backup">Making a NAND backup</h3>
-<div class="admonition danger">
-<p class="admonition-title">Important</p>
-<p>A NAND backup is crucial. They can be used to restore the device to a working state in case of emergencies.</p>
-<p>Once the backup is finished, <strong>keep it somewhere safe.</strong> The best backup is the one you have but never need, and the worst backup is the one you need but never made. To save space, it's recommended to compress the end-result with a <code>.zip</code> file or something similar.</p>
-<p>It's highly recommended that you use an SD card that is formatted to FAT32 and has at least 32 gigabytes of space free. This will still work on smaller cards, but it's not ideal.</p>
-</div>
+<h2 id="preparations">Preparations</h2>
+<p>What you need:</p>
+<ul>
+<li>The latest release of <a href="https://github.com/suchmememanyskill/TegraExplorer/releases" target="_blank">TegraExplorer</a></li>
+</ul>
 <h3 id="instructions">Instructions</h3>
-<div class="admonition tip">
 <ol>
-<li>Enter RCM and inject the Hekate payload</li>
-<li>Use the touch screen to navigate to <code>Tools</code> and then <code>Backup eMMC</code></li>
-<li>Tap on <code>eMMC BOOT0 &amp; BOOT1</code></li>
-<li>This should only take a few seconds, but if your SD card is very slow, it may take around a minute.</li>
-<li>Tap on <code>Close</code> to continue, then tap on <code>eMMC RAW GPP</code></li>
-<li>This will take a long time. Expect it to take between 10 minutes to an hour (or more, if your SD card is very slow).</li>
-<li>On FAT32 SD cards or cards that have less than 32 gigabytes of space available, the NAND will be split into 1 or 2 gigabyte parts.<ul>
-<li>Hekate will stop producing these parts when it runs out of space. When this happens, do the following:</li>
-<li>Power off your system</li>
-<li>Insert your SD card into your PC</li>
-<li>Move all files from the <code>backup</code> folder on your SD card to a safe location on your PC</li>
-<li>Insert your SD card into your Switch</li>
-<li>Enter RCM again, inject Hekate again, and continue the backup by tapping on <code>Tools</code> &gt; <code>Backup eMMC</code> &gt; <code>eMMC RAW GPP</code></li>
-<li>Repeat the process until the NAND is completely dumped</li>
+<li>Inject the TegraExplorer payload with your 128GB (or larger) SD card inserted into your Switch.<ul>
+<li>If you forgot how to do this, re-read the <a href="../sending_payload/">sending payload</a> section of the guide.</li>
 </ul>
 </li>
-<li>Press <code>Close</code> &gt; <code>Home</code> &gt; <code>Power Off</code></li>
-<li>Insert your SD card into your PC</li>
-<li>Copy the <code>backup</code> folder on your SD card to a safe location on your PC</li>
-</ol>
-</div>
-<p>&nbsp;</p>
-<hr />
-<h3 id="getting-your-consoles-unique-keys">Getting your Console's Unique Keys</h3>
-<div class="admonition danger">
-<p class="admonition-title">Important</p>
-<p>These keys are critical to have. In an extreme emergency, they can be used in conjunction with your NAND backup and other tools to restore your console to a working state.</p>
-</div>
-<div class="admonition tip">
-<ol>
-<li>Enter RCM and inject the Hekate payload.</li>
-<li>Tap the <code>Payloads</code> option, then press Lockpick_RCM.bin.</li>
-<li>If Lockpick_RCM asks you to select between SysNAND or emuMMC, choose SysNAND by navigating with the volume buttons and pressing the power button. If not, continue with step 4.</li>
-<li>If Lockpick_RCM prompts you to <code>Reboot to Sept</code>, press power or either volume button to do so. A "sept by Atmosphere" logo will then display, followed by Lockpick_RCM starting again. If it does <em>not</em> prompt you, continue on to step 5.</li>
-<li>Lockpick_RCM should now inform you that your keys have been saved to <code>/switch/prod.keys</code> on the SD card.</li>
+<li>Navigate to <code>Partition the sd</code> and press the A button to enter the SD format menu.<ul>
+<li>If you can't find the Partition the sd option, make sure that your SD card is inserted and select Mount SD.</li>
+</ul>
+</li>
+<li>Navigate to <code>Fat32 + EmuMMC</code> and press the A button to confirm.</li>
+<li>Read the warning, and select Yes to partition &amp; format your SD card.<ul>
+<li>Note: This will delete all data on your SD card. Make sure you backed up your Nintendo folder!</li>
+<li>This should not take more than a few seconds.</li>
+</ul>
+</li>
 <li>Press any button to return to the main menu.</li>
-<li>Navigate to 'Power off' with the volume buttons and select it with the power button.</li>
-<li>Insert your SD card into your PC.</li>
-<li>Copy <code>prod.keys</code> from the <code>switch</code> folder on your SD card to a safe location on your PC (it is suggested to copy it to the same place that you copied your NAND backup to).</li>
+<li>Navigate to <code>Reboot to RCM</code> and press the A button to reboot to RCM. It's now safe to eject your sd card for the next part of the guide.</li>
 </ol>
+<div class="admonition warning">
+<p class="admonition-title">Windows complaining about an unreadable drive</p>
+<p>If you get the issue that Windows says the SD card is unreadable and wants to format it, do not format! This is likely your emuMMC partition. After partitioning your sd, your sd will show up as 2 drives on your pc. Use the drive that can be accessed</p>
 </div>
 <p>&nbsp;</p>
-<h4 id="continue-to-launching-cfw"><a href="../launching_cfw/">Continue to Launching CFW <i class="fa fa-arrow-circle-right fa-lg"></i></a></h4></div>
+<h4 id="continue-to-sd-preparations"><a href="../sd_preparation/">Continue to SD Preparations <i class="fa fa-arrow-circle-right fa-lg"></i></a></h4></div>
         </div>
 
         <footer class="col-md-12">
