@@ -22,7 +22,7 @@ for example, I made hbmenu nsp and installed hbmenu to my home screen for easy a
 
 &nbsp;
 
-1. download `fusee.zip` from <a href=https://github.com/ITotalJustice/patches/releases>Sigpatches from here</a> It will be a `fusee.zip` and `hekate.zip` download on bottom of the first post in the link.
+1. download `fusee.zip` from <a href=https://github.com/ITotalJustice/patches/releases>Sigpatches from here</a> There will be a `fusee.zip` and `hekate.zip` download on bottom of the first post in the link.
 2. open `fusee.zip` and there will be folder named `atmosphere` inside.  atmosphere folder to be copied over the atmosphere folder on the root of your sd card. 
 3. use reboot to payload to reboot atmosphere
 
