@@ -48,6 +48,7 @@ This guide was written by staff members of the [Nintendo Homebrew Discord Server
     - **Nexrem (meganukebmp)** for the [Switch 90DNS Tester](https://github.com/meganukebmp/Switch_90DNS_tester).
     - **exelix11** for [Switch Theme Injector](https://github.com/exelix11/SwitchThemeInjector/releases).
     - **vgmoose** for [hb-appstore](https://github.com/vgmoose/hb-appstore).
+    - **suchmememanyskill** for [TegraExplorer](https://github.com/suchmememanyskill/TegraExplorer)
 	- **noahc3, Team AtlasNX** for some of texts and ideas from [The Ultimate Noob Guide for Hacking your Nintendo Switch](https://switch.homebrew.guide/index) 
 	- **XorTroll** for [Goldleaf](https://github.com/XorTroll/Goldleaf)  
 	- **huntereb** for [Awoo-Installer](https://github.com/Huntereb/Awoo-Installer)

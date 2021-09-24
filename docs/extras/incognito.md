@@ -93,7 +93,7 @@ Backup            |  Restore
 	7. put sd card back in your switch.  
     8. inject the Hekate payload
 	9. Choose Incognito (emuMMC) to wipe personal information from your emunand/emuMMCs
-	10. reboot back to RCM AND Inject the fuse-primary.bin to boot atmosphere.  
+	10. reboot back to RCM AND Inject the fusee.bin to boot atmosphere.  
 	11. go to system settings and check the serial info. it should be blank like in the image below here.     
 
 

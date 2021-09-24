@@ -8,6 +8,9 @@ After following our guide, your system will consist of three core elements that 
 
 When updating Atmosphere always make sure to _read the release notes_. They may list important changes and modifications to your system.
 
+!!! warning "Updating from below Atmosphere 1.0.0"
+    If you update from below Atmosphere 1.0.0, there are additional steps to follow. You will have to delete the `sept` folder from your sd, delete `fusee-secondary.bin` from your `atmosphere` folder and update your hekate config file: <a href="../../files/emu/hekate_ipl.ini" download>hekate_ipl.ini</a> in the `bootloader` folder.
+
 ### Manual method: SD card
 
 When a new version of Atmosphere releases, you can always update Atmosphere by following these steps:
@@ -29,8 +32,8 @@ When a new version of Atmosphere releases, you can always update Atmosphere by f
 6. Your Windows or OS should see the drives from your sd card in your switch.   
 7. copy the contents from latest atmosphere zip package and latest hekate zip package to the root of your sd card.  
 8. unplug the cable and the hekate will tell you that it is ejected.  just close the dialog.  
-9. update your fuse-primary.bin and hekate payload in your TegraRCMGui or payload launcher.  
-10. boot to atmosphere via latest fuse-primary.bin payload.  
+9. update your fusee.bin and hekate payload in your TegraRCMGui or payload launcher.  
+10. boot to atmosphere via latest fusee.bin payload.  
 
 
 <!--
@@ -61,15 +64,15 @@ you can watch me updating my atmosphere using ftp method.
 -->
 
 
-## Updating Atmosphere fusee-primary.bin payload
+## Updating Atmosphere fusee.bin payload
 
-It is important that you update the fusee-primary.bin payload.  
-you can get latest fusee-primary.bin from <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a> (Download the `fusee-primary.bin` release of Atmosphere.)
+It is important that you update the fusee.bin payload.  
+you can get latest fusee.bin from <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a> (Download the `fusee.bin` release of Atmosphere.)
 It depends how are you injecting your payloads.   
 - tegraguircm: replace fusee-primary.bin in your favorites folder with latest fusee-primary.bin  
 - rcmloader: plug your rcmloader in your computer usb port and it should bring up a drive and 
-you should replace the payload.bin in atmosphere folder.  it may be named differently.  delete payload.bin then copy fusee-primary.bin and rename it to payload.bin  
-- hekate: replace fusee-primary.bin in /bootloader/payloads with latest fusee-primary.bin  (for trinket m0/mod chip users/hekate users)    
+you should replace the payload.bin in atmosphere folder.  it may be named differently.  delete payload.bin then copy fusee.bin and rename it to payload.bin  
+- hekate: replace fusee.bin in /bootloader/payloads with latest fusee-primary.bin  (for trinket m0/mod chip users/hekate users)    
 
  
 
@@ -98,8 +101,8 @@ When a new version of Hekate releases, you can always update by following these 
 6. Your Windows or OS should see the drives from your sd card in your switch.   
 7. copy the contents from latest hekate zip package to the root of your sd card.  
 8. unplug the cable and the hekate will tell you that it is ejected.  just close the dialog.  
-9. update your fuse-primary.bin and hekate payload in your TegraRCMGui or payload launcher.  
-10. boot to atmosphere via latest fuse-primary.bin payload.  
+9. update your fusee.bin and hekate payload in your TegraRCMGui or payload launcher.  
+10. boot to atmosphere via latest fusee.bin payload.  
 
 <!--
 ### FTP method: FTP access to your sd card.  

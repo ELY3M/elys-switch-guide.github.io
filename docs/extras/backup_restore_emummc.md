@@ -43,6 +43,6 @@ We will be using [hekate](https://github.com/CTCaer/hekate/releases/) to both ba
     - It is very important that for both of these the `SD emuMMC Raw Partition` option is enabled, otherwise you will be altering your sysMMC
       which is not what you want.
 8. Make sure you have latest atmosphere files on your sd card.   
-9. Your emuMMC is now restored on the SD card and you should be able to launch it with fuse-primary.bin in your TegraRcmGUI or payload launcher.  
+9. Your emuMMC is now restored on the SD card and you should be able to launch it with fusee.bin in your TegraRcmGUI or payload launcher.  
 
 

@@ -2,7 +2,7 @@
 
 Now that the preparation work is out of the way, we're finally ready to launch custom firmware on the Switch.
 
-Unlike systems such as the DSi, Wii, or 3DS, Switch CFW is currently volatile- it will only work as long as your Switch is on. As soon as your Switch completely loses power for any reason (shutting down, battery dying, etc.), CFW will no longer be active and you will need to follow these instructions again.
+Unlike systems such as the DSi, Wii, or 3DS, Switch CFW is currently volatile. It will only work as long as your Switch is on. As soon as your Switch completely loses power for any reason (shutting down, battery dying, etc.), CFW will no longer be active and you will need to follow these instructions again.
 
 &nbsp;
 
@@ -13,14 +13,14 @@ Unlike systems such as the DSi, Wii, or 3DS, Switch CFW is currently volatile- i
 
 !!! tip "There are several ways to launch atmosphere."
 1. via reboot to payload in hbmenu (for restarting)
-2. in Hekate, Tap on payloads and select fuse-primary.bin 
+2. in Hekate, Tap on payloads and select fusee.bin 
 3. in Hekate, Tap on launch and select atmosphere (emuMMC)
-4. RCM method - injecting with fuse-primary.bin via payload launcher  
+4. RCM method - injecting with fusee.bin via payload launcher  
 
 &nbsp;
 
 !!! tip "Launching Atmosphere"
-    1. if you are still in Hekate. you can tap on "Payloads" button and select fuse-primary.bin to launch atmosphere.  
+    1. if you are still in Hekate. you can tap on "Payloads" button and select fusee.bin to launch atmosphere.  
 	if you are not in Hekate anymore or powered off, follow below.  
     1. Power on your Switch into RCM, and inject the fusee-primary.bin payload.
 	2. you should see blue screen with sept and it will boot into Atmosphere.

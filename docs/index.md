@@ -29,7 +29,7 @@ This guide was written by staff members of the [Nintendo Homebrew Discord Server
 ### What is Custom Firmware?
 
 !!! tip ""
-    Custom Firmware (“CFW”) is a piece software that modifies the system firmware.
+    Custom Firmware (“CFW”) is a piece of software that modifies the system firmware.
     Atmosphere, for example, does this by running in the background and patching the OS on the fly.
 
     This allows one to extend the functionality of their system by giving homebrew higher levels of permission than most userland exploits and can be used to provide extra features for homebrew devs and users to take advantage of for various purposes, for instance, game modding using LayeredFS.
@@ -61,13 +61,12 @@ This guide was written by staff members of the [Nintendo Homebrew Discord Server
 
     This guide will work on first-generation Switch consoles in all regions on firmware {{ versions.firmware }} or below.
 
-    You will need one of the following in order to successfully follow this guide:
+    You will need **one** of the following in order to successfully follow this guide:
 
-    - A USB-A to USB-C cable, and a PC
-    - A USB-OTG cable, a USB-A to USB-C cable, and an Android device
+    - A PC and a USB cable capable of data transfer between your Switch and your PC
+    - An Android device and a USB cable capable of data transfer between your Switch and your Android device
 		- This does not work on every android phone
-    - A USB-C cable, and an Android device with a USB-C port
-    - A Lightning-OTG adapter, a USB-A to USB-C cable, and a jailbroken iOS device
+    - A Lightning-OTG adapter, a jailbroken iOS device and a USB cable capable of data transfer between your Switch and the adapter
         - This method is not covered by the guide, but you can read more about it at [this website](https://mologie.github.io/nxboot/)
 
 

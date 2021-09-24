@@ -25,7 +25,7 @@ Atmosphere has its own bootloader, called fusee (primary). For the purposes of t
     - The hekate config file: <a href="../../../files/sys/hekate_ipl.ini" download>hekate_ipl.ini</a>
     - The 90dns DNS redirection config: <a href="../../../files/sysmmc.txt" download>sysmmc.txt</a> (Optional) (Best to use this, if you do not want to play online in CFW) (It will block normal online play)
     - The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a>. Download the `atmosphere-(version)-master-(version)+hbl-(version)+hbmenu-(version).zip` release of Atmosphere. Do not download the `atmosphere-(version)-master-(version)-WITHOUT_MESOSPHERE+hbl-(version)+hbmenu-(version).zip` release.
-    - The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">fuse-primary.bin payload for launching Atmosphere</a> (Download the `fuse-primary.bin` payload of Atmosphere.)
+    - The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">fusee.bin payload for launching Atmosphere</a> (Download the `fusee.bin` payload of Atmosphere.)
     - The latest release of <a href="https://github.com/shchmue/Lockpick_RCM/releases" target="_blank">Lockpick_RCM</a> (Download the `Lockpick_RCM.bin` release of Lockpick)
     - The latest release of <a href="https://github.com/J-D-K/JKSV/releases" target="_blank">JKSV</a> (Download the `JKSV.nro` release of JKSV)
     - The latest release of <a href="https://github.com/mtheall/ftpd/releases" target="_blank">FTPD</a> (Download the `ftpd.nro` release of FTPD)
@@ -43,7 +43,7 @@ Atmosphere has its own bootloader, called fusee (primary). For the purposes of t
 	3. Copy *the contents of* the Atmosphere `.zip` file to the root of your SD card
     4. Copy the `bootloader` folder from the Hekate `.zip` file to the root of your SD card
     5. Copy `hekate_ipl.ini` to the `bootloader` folder on your SD card
-    5. Copy `Lockpick_RCM.bin` and `fuse-primary.bin` to the `/bootloader/payloads` folder on your SD card
+    5. Copy `Lockpick_RCM.bin` and `fusee.bin` to the `/bootloader/payloads` folder on your SD card
     7. Create a folder named `hosts` inside the `atmosphere` folder on your SD card, and put `sysmmc.txt` in it. (Optional) (Best to use this, if you do not want to play online in CFW) (It will block normal online play)	
     8. Create a folder named `appstore` inside the `switch` folder on your SD card, and put `appstore.nro` in it
     9. Copy `JKSV.nro`, `ftpd.nro`, `NX-Shell.nro` and `NxThemesInstaller.nro` to the `switch` folder on your SD card
