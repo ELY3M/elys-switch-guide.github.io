@@ -56,6 +56,11 @@ th {
   font-size: 16px;
 }
 
+pre, code {
+    background: transparent !important;
+    color: #bababa;
+}
+
 .admonition {
     background: transparent;
 }
@@ -64,7 +69,7 @@ th {
 }
 
 .bg-primary {
-    background-color: transparent; !important;
+    background-color: black !important;
 }
 
 
