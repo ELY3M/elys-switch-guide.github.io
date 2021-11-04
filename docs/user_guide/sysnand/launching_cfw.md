@@ -18,7 +18,7 @@ There are several ways to launch atmosphere.
 !!! tip ""
     1. if you are still in Hekate. you can tap on "Payloads" button and select fusee.bin to launch atmosphere.  
 	if you are not in Hekate anymore or powered off, follow below.  
-    1. Power on your Switch into RCM, and inject the fusee-primary.bin payload.
+    1. Power on your Switch into RCM, and inject the fusee.bin payload.
 	2. you should see blue screen with sept and it will boot into Atmosphere.
    
 Your Switch is now booting into Atmosphere.

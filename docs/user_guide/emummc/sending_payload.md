@@ -21,7 +21,7 @@ Now that the device is in RCM, we will need to send it a payload. The methods ar
     Payloads you'll need for this guide:
 
     - The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a> (the hekate_ctcaer bin from hekate_ctcaer zip)
-	- The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">fusee-primary.bin</a> from  <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a>
+	- The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">fusee.bin</a> from  <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a>
 
 ### Instructions
 
@@ -57,7 +57,7 @@ Now that the device is in RCM, we will need to send it a payload. The methods ar
     Payloads you'll need for this guide:
 
     - The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a> (the hekate_ctcaer bin from the hekate_ctcaer zip)
-	- The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">fusee-primary.bin</a> from  <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a>
+	- The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">fusee.bin</a> from  <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a>
 	
 
 ### Instructions
@@ -110,7 +110,7 @@ Now that the device is in RCM, we will need to send it a payload. The methods ar
     Payloads you'll need for this guide:
 
     - The latest release of <a href="https://github.com/CTCaer/hekate/releases/" target="_blank">Hekate</a> (either the hekate_ctcaer bin or the hekate_ctcaer zip)
-    - The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">fusee-primary.bin</a> from  <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a>
+    - The latest release of <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">fusee.bin</a> from  <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a>
 
 ### Instructions
     

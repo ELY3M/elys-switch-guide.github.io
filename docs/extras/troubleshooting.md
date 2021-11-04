@@ -13,7 +13,7 @@ You need to add ncgc = 0 in bottom of BCT.ini in /atmosphere/config
 3. open BCT.ini with notepad or your favorite text editor. 
 4. go down to [stratosphere] and add nogc = 0 after [stratosphere]    
 5. save the BCT.ini and if your sd card is in computer, put it back in switch.  
-6. reboot switch via reboot to payload or inject fusee-primary.bin payload.    
+6. reboot switch via reboot to payload or inject fusee.bin payload.    
 
 your BCT.ini should look like this: 
 

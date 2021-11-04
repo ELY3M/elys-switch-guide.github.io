@@ -6,8 +6,8 @@ Unlike systems such as the DSi, Wii, or 3DS, Switch CFW is currently volatile. I
 
 &nbsp;
 
-!!!danger "Keep emuMMC offline at all times"
-    You should keep your emuMMC(emunand) offline (or with 90dns) at all times. Not doing this will likely result in a ban
+!!! danger "Keep emuMMC offline at all times"
+    Your emuMMC (emuNAND) should never connect to Nintendo. For online play, eShop browsing, or any other Nintendo online activity, use your sysNAND. Using both emuMMC and sysNAND online will likely result in a ban.
 	
 ### Instructions
 
@@ -22,7 +22,7 @@ Unlike systems such as the DSi, Wii, or 3DS, Switch CFW is currently volatile. I
 !!! tip "Launching Atmosphere"
     1. if you are still in Hekate. you can tap on "Payloads" button and select fusee.bin to launch atmosphere.  
 	if you are not in Hekate anymore or powered off, follow below.  
-    1. Power on your Switch into RCM, and inject the fusee-primary.bin payload.
+    1. Power on your Switch into RCM, and inject the fusee.bin payload.
 	2. you should see blue screen with sept and it will boot into Atmosphere.
 
 Your Switch is now booting into Atmosphere.
@@ -53,10 +53,17 @@ You will now be able to launch the Homebrew Menu by opening the album or by hold
 !!! tip ""
     - JKSV is a save manager, it can dump and restore saves from/to your system. For more information, see [Save Management](../../extras/save_management.md)
 
-    - FTPD is a ftp tool for connecting your Switch's sd card wirelessly to your pc. Tools like Filezilla can connect to your switch on `(ip of switch):5000`
+    - FTPD is a ftp tool for connecting your Switch's sd card wirelessly to your pc. Tools like WinSCP can connect to your switch on `(ip of switch):5000`
 
     - NX-Shell is a file explorer for the Switch. You can move files, listen to mp3's, view images etc.
 
     - NXThemeInstaller is a theme installer app. See the [Theming section of our guide](../../extras/theming.md) for more information
 
     - hbappstore is a homebrew app store where a large collection of switch homebrew is kept.
+
+&nbsp;
+
+### Updating your setup
+
+!!! tip ""
+	Whenever a new Switch firmware update releases you may need to update your files to be able to use CFW on the new version. Make sure to follow the instructions on [this page](https://switchgui.de/switch-guide/extras/updating/) to update your setup correctly.

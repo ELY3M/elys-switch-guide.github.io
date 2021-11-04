@@ -69,10 +69,10 @@ you can watch me updating my atmosphere using ftp method.
 It is important that you update the fusee.bin payload.  
 you can get latest fusee.bin from <a href="https://github.com/Atmosphere-NX/Atmosphere/releases" target="_blank">Atmosphere</a> (Download the `fusee.bin` release of Atmosphere.)
 It depends how are you injecting your payloads.   
-- tegraguircm: replace fusee-primary.bin in your favorites folder with latest fusee-primary.bin  
+- tegraguircm: replace fusee.bin in your favorites folder with latest fusee.bin  
 - rcmloader: plug your rcmloader in your computer usb port and it should bring up a drive and 
 you should replace the payload.bin in atmosphere folder.  it may be named differently.  delete payload.bin then copy fusee.bin and rename it to payload.bin  
-- hekate: replace fusee.bin in /bootloader/payloads with latest fusee-primary.bin  (for trinket m0/mod chip users/hekate users)    
+- hekate: replace fusee.bin in /bootloader/payloads with latest fusee.bin  (for trinket m0/mod chip users/hekate users)    
 
  
 
