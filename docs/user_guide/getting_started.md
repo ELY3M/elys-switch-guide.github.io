@@ -29,7 +29,7 @@ The homebrew community has crowdsourced a list of known serial numbers which are
 - If your serial number is on this list as "potentially patched", follow the guide and see if your system works. 
 - If your serial number is listed as "patched", there is nothing you can do at this time.  It is good idea to test payload sending.  I know several cases that the switch is hackable even the serial is "patched". 
 - If your system is patched, it is highly advised to keep it on 7.0.1 or lower, if possible, as there may be a vulnerability for these versions in the far future. **DO NOT update patched consoles past 7.0.1 if you want to ever have a chance of running homebrew and/or CFW on them.**
-- Team Xecuter have been working on a situation for patched switches and switch lites. You can read more about it [here.](https://gbatemp.net/threads/more-info-regarding-switch-mariko-lite-mods-by-team-xecuter.551848/)
+- There are Mod chips for patched switches and switch lites.  They are very difficult to install and someone must be very skillful with micro-soldering and very knowledge with the motherboards and soldering.    
 
 !!! tip "Notice"
     If you are unsure if your serial is patched, you can test your console yourself following the instructions [here.](emummc/sending_payload.md)
